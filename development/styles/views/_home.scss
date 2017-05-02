@@ -1,4 +1,44 @@
 .outer-wrap {
     width: 100%;
     height: 100vh;
+    background-image: url("./pictures/blankChalkboard.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: chalk;
+    .head {
+        width: 100%;
+        height: 20vh;
+        // background: pink;
+    }
+    .mid {
+        width: 100%;
+        height: 60vh;
+        // background: yellow;
+        // @include flexSetUp(center, center, column);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .title {
+            letter-spacing: 2px;
+            font-size: 9em;
+            // background: black;
+        }
+        .arrow {
+            background-image: url("./pictures/chalkArrow.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            height: 110px;
+            width: 150px;
+            // background: brown;
+        }
+    }
+    .footer {
+        width: 100%;
+        height: 20vh;
+        // background: lightblue;
+    }
 }
