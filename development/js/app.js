@@ -13,5 +13,25 @@ angular.module("App", ['ui.router'])
                templateUrl: './views/about.html',
                controller: 'aboutCtrl',
                url: '/about'
-           });
+           })
+           .state('tutorlist', {
+               templateUrl: './views/tutorlist.html',
+               controller: 'tutorlistCtrl',
+               url: '/tutorlist'
+           })
+          .state('tutorlistdetail', {
+              templateUrl: './views/tutorlistdetail.html',
+              controller: 'tutorlistDetailCtrl',
+              url: '/tutorlist/:detail'
+          })
+          .state('review', {
+              templateUrl: './views/review.html',
+              controller: 'reviewCtrl',
+              url: '/review'
+          })
+          .state('form', {
+              templateUrl: './views/form.html',
+              controller: 'formCtrl',
+              url: '/form'
+          })
  });

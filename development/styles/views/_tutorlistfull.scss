@@ -1,0 +1,63 @@
+    .box {
+        width: 500px;
+        height: 115px;
+        border: 1px solid white;
+        border-right: none;
+        border-left: none;
+        @include flexSetUp(center, center);
+        .profile-box {
+            width: 95%;
+            height: 75%;
+            // border: 1px solid white;
+            @include flexSetUp(flex-start, flex-start, row);
+            .profilepic-box {
+                height: 100%;
+                width: 65px;
+                // background: yellow;
+                @include flexSetUp(flex-start, flex-start);
+                .profilepic {
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 50%;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                }
+            }
+            .name-box {
+                height: 100%;
+                width: 175px;
+                // background: pink;
+                .tutor-name {
+                    font-size: 1em;
+                }
+                .tutor-location {
+                    font-size: .7em;
+                    line-height: 1.5em;
+                }
+            }
+            .bio-box {
+                height: 100%;
+                width: 210px;
+                // background: lightblue;
+                .title {
+                    height: 30%;
+                    width: 100%;
+                    // background: yellow;
+                    font-size: .7em;
+                }
+                .bio {
+                    height: 70%;
+                    width: 100%;
+                    // background: green;
+                    font-size: .5em;
+                }
+            }
+            .rate-box {
+                height: 100%;
+                width: 50px;
+                // background: red;
+                @include flexSetUp(center, flex-start);
+            }
+        }
+    }

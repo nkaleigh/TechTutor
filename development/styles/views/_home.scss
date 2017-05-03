@@ -1,7 +1,7 @@
 .outer-wrap {
     width: 100%;
     height: 100vh;
-    background-image: url("./pictures/blankChalkboard.png");
+    background-image: url("../pictures/blankChalkboard.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -11,29 +11,48 @@
         width: 100%;
         height: 20vh;
         // background: pink;
+        position: relative;
+        .login {
+            cursor: pointer;
+            background: none;
+            color: white;
+            text-align: center;
+            font-family: chalk;
+            font-size: .7em;
+            white-space: no wrap;
+            width: 7%;
+            height: 25px;
+            margin: auto;
+            // border-style: solid;
+            // border-color: white;
+            // border-width: 2px;
+            border: none;
+            float: right;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+        }
     }
     .mid {
         width: 100%;
         height: 60vh;
         // background: yellow;
-        // @include flexSetUp(center, center, column);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        @include flexSetUp(center,
+        center,
+        column);
         .title {
             letter-spacing: 2px;
             font-size: 9em;
             // background: black;
         }
         .arrow {
-            background-image: url("./pictures/chalkArrow.png");
+            height: 110px;
+            width: 150px;
+            background: url("../pictures/chalkArrow.png");
             background-repeat: no-repeat;
             background-size: contain;
             background-position: center;
-            height: 110px;
-            width: 150px;
-            // background: brown;
+            cursor: pointer;
         }
     }
     .footer {

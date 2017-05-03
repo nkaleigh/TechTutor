@@ -1,0 +1,20 @@
+<div class="outer-wrap-tutorlist">
+    <div class="box" ng-repeat="tutor in tutors">
+        <div class="profile-box">
+            <div class="profilepic-box">
+                <img class="profilepic" src="https://unsplash.it/50" alt="profile picture">
+            </div>
+            <div class="name-box">
+                <p class="tutor-name">{{tutor.name}}</p>
+                <p class="tutor-location">{{tutor.location}}</p>
+            </div>
+            <div class="bio-box">
+                <div class="title">{{tutor.title}}</div>
+                <div class="bio">{{tutor.bio}}</div>
+            </div>
+            <div class="rate-box">
+                <p class="tutor-rate">{{tutor.rate}}</p>
+            </div>
+        </div>
+    </div>
+</div>
