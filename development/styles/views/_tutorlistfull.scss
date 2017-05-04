@@ -5,6 +5,7 @@
         border-right: none;
         border-left: none;
         @include flexSetUp(center, center);
+        letter-spacing: .7px;
         .profile-box {
             width: 95%;
             height: 75%;
@@ -27,13 +28,19 @@
             .name-box {
                 height: 100%;
                 width: 175px;
-                // background: pink;
+                background: pink;
                 .tutor-name {
                     font-size: 1em;
                 }
+                .rating-box {
+                    .rating {
+                        line-height: 1.5em;
+                        font-size: .7em;
+                    }
+                }
                 .tutor-location {
-                    font-size: .7em;
-                    line-height: 1.5em;
+                    font-size: .6em;
+                    // line-height: 1.5em;
                 }
             }
             .bio-box {
