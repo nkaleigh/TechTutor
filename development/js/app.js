@@ -21,8 +21,8 @@ angular.module("App", ['ui.router'])
            })
           .state('tutorlistdetail', {
               templateUrl: './views/tutorlistdetail.html',
-              controller: 'tutorlistDetailCtrl',
-              url: '/tutorlist/:detail'
+              controller: 'tutorlistdetailCtrl',
+              url: '/tutorlist/:id'
           })
           .state('review', {
               templateUrl: './views/review.html',

@@ -1,9 +1,11 @@
+.tutorlist-directive {
+    @include flexSetUp(flex-start, center, column);
     .box {
-        width: 500px;
-        height: 115px;
+        width: 425px;
+        height: 100px;
         border: 1px solid white;
-        border-right: none;
-        border-left: none;
+        // border-right: none;
+        // border-left: none;
         @include flexSetUp(center, center);
         letter-spacing: .7px;
         .profile-box {
@@ -13,7 +15,7 @@
             @include flexSetUp(flex-start, flex-start, row);
             .profilepic-box {
                 height: 100%;
-                width: 65px;
+                width: 60px;
                 // background: yellow;
                 @include flexSetUp(flex-start, flex-start);
                 .profilepic {
@@ -23,14 +25,22 @@
                     background-repeat: no-repeat;
                     background-size: cover;
                     background-position: center;
+                    cursor: pointer;
                 }
             }
             .name-box {
                 height: 100%;
-                width: 175px;
-                background: pink;
+                width: 125px;
+                // background: pink;
                 .tutor-name {
                     font-size: 1em;
+                    cursor: default;
+                }
+                .tutornameSpan {
+                    cursor: pointer;
+                }
+                .tutornameSpan:hover {
+                    text-decoration: underline;
                 }
                 .rating-box {
                     .rating {
@@ -45,13 +55,20 @@
             }
             .bio-box {
                 height: 100%;
-                width: 210px;
+                width: 175px;
                 // background: lightblue;
                 .title {
                     height: 30%;
                     width: 100%;
                     // background: yellow;
                     font-size: .7em;
+                    cursor: default;
+                }
+                .tutortitleSpan {
+                    cursor: pointer;
+                }
+                .tutortitleSpan:hover {
+                    text-decoration: underline;
                 }
                 .bio {
                     height: 70%;
@@ -68,3 +85,4 @@
             }
         }
     }
+}

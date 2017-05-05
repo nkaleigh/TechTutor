@@ -1,0 +1,147 @@
+.tutorlistdetail-directive {
+    @include flexSetUp(center, center, column);
+    .box-name {
+        width: 450px;
+        height: 80px;
+        border: 1px solid white;
+        // border-right: none;
+        // border-left: none;
+        @include flexSetUp(center, center);
+        letter-spacing: .7px;
+        .box-name-inner {
+            width: 95%;
+            height: 75%;
+            border: 1px solid blue;
+            @include flexSetUp(flex-start, flex-start);
+            .profilepic-box-detail {
+                height: 100%;
+                width: 60px;
+                background: yellow;
+                .profilepic-detail {
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 50%;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                }
+            }
+            .name-box-detail {
+                height: 100%;
+                width: 125px;
+                background: pink;
+                .tutor-name-detail {
+                    font-size: 1em;
+                }
+                .rating-box-detail {
+                    .rating-detail {
+                        line-height: 1.5em;
+                        font-size: .7em;
+                    }
+                }
+                .tutor-location-detail {
+                    font-size: .6em;
+                    // line-height: 1.5em;
+                }
+            }
+            .bio-box-detail {
+                height: 100%;
+                width: 210px;
+                background: lightblue;
+                .title-detail {
+                    font-size: .6em;
+                }
+            }
+        }
+    }
+    .box-qualifications {
+        width: 450px;
+        height: 80px;
+        border: 1px solid white;
+        // border-right: none;
+        // border-left: none;
+        @include flexSetUp(center, center);
+        letter-spacing: .7px;
+        .box-qualifications-inner {
+            width: 95%;
+            height: 75%;
+            border: 1px solid blue;
+            @include flexSetUp(flex-start, flex-start);
+        }
+    }
+    .box-about {
+        width: 450px;
+        height: 80px;
+        border: 1px solid white;
+        // border-right: none;
+        // border-left: none;
+        @include flexSetUp(center, center);
+        letter-spacing: .7px;
+        .box-about-inner {
+            width: 95%;
+            height: 75%;
+            border: 1px solid blue;
+            @include flexSetUp(flex-start, flex-start);
+        }
+    }
+    .box-education {
+        width: 450px;
+        height: 80px;
+        border: 1px solid white;
+        // border-right: none;
+        // border-left: none;
+        @include flexSetUp(center, center);
+        letter-spacing: .7px;
+        .box-education-inner {
+            width: 95%;
+            height: 75%;
+            border: 1px solid blue;
+            @include flexSetUp(flex-start, flex-start);
+        }
+    }
+    .box-policies {
+        width: 450px;
+        height: 80px;
+        border: 1px solid white;
+        // border-right: none;
+        // border-left: none;
+        @include flexSetUp(center, center);
+        letter-spacing: .7px;
+        .box-policies-inner {
+            width: 95%;
+            height: 75%;
+            border: 1px solid blue;
+            @include flexSetUp(flex-start, flex-start);
+        }
+    }
+    .box-subjects {
+        width: 450px;
+        height: 80px;
+        border: 1px solid white;
+        // border-right: none;
+        // border-left: none;
+        @include flexSetUp(center, center);
+        letter-spacing: .7px;
+        .box-subjects-inner {
+            width: 95%;
+            height: 75%;
+            border: 1px solid blue;
+            @include flexSetUp(flex-start, flex-start);
+        }
+    }
+    .box-reviews {
+        width: 450px;
+        height: 80px;
+        border: 1px solid white;
+        // border-right: none;
+        // border-left: none;
+        @include flexSetUp(center, center);
+        letter-spacing: .7px;
+        .box-reviews-inner {
+            width: 95%;
+            height: 75%;
+            border: 1px solid blue;
+            @include flexSetUp(flex-start, flex-start);
+        }
+    }
+}

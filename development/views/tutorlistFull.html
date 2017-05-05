@@ -1,25 +1,23 @@
-<div class="outer-wrap-tutorlist">
-    <div class="box" ng-repeat="tutor in tutors">
-        <div class="profile-box">
-            <div class="profilepic-box">
-                <img class="profilepic" src="https://unsplash.it/50" alt="profile picture">
-            </div>
-            <div class="name-box">
-                <p class="tutor-name" ui-sref="tutorlistdetail({detail: tutor.tutorId})">{{tutor.firstname}} {{tutor.lastname[0]}}.</p>
-                <div class="rating-box">
-                    <div class="rating">
-                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                    </div>
+<div class="box" ng-repeat="tutor in tutors">
+    <div class="profile-box">
+        <div class="profilepic-box">
+            <img class="profilepic" src="https://unsplash.it/50" alt="profile picture" ui-sref="tutorlistdetail({id: tutor.tutorId})">
+        </div>
+        <div class="name-box">
+            <p class="tutor-name"><span class="tutornameSpan" ui-sref="tutorlistdetail({id: tutor.tutorId})">{{tutor.firstname}} {{tutor.lastname[0]}}.</span></p>
+            <div class="rating-box">
+                <div class="rating">
+                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
                 </div>
-                <p class="tutor-location">{{tutor.location}}</p>
             </div>
-            <div class="bio-box">
-                <div class="title">{{tutor.title}}</div>
-                <div class="bio">{{tutor.bio}}</div>
-            </div>
-            <div class="rate-box">
-                <p class="tutor-rate">{{tutor.rate}}</p>
-            </div>
+            <p class="tutor-location">{{tutor.location}}</p>
+        </div>
+        <div class="bio-box">
+            <div class="title"><span class="tutortitleSpan" ui-sref="tutorlistdetail({id: tutor.tutorId})">{{tutor.title}}</span></div>
+            <div class="bio">{{tutor.bio}}</div>
+        </div>
+        <div class="rate-box">
+            <p class="tutor-rate">{{tutor.rate}}</p>
         </div>
     </div>
 </div>

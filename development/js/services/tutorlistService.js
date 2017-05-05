@@ -87,7 +87,17 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
 
     }]
 
-    this.getData = function () {
+    this.getData = function (id) {
+        console.log(id);
         return tutors;
     }
+
+    this.getSpecificData = function(id) {
+        var tutor = tutors.filter(function(a){
+            return a.tutorId === parseInt(id);
+        })
+        return tutor[0];
+    }
+
+    this.getSpecificData();
 })
