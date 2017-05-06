@@ -1,22 +1,22 @@
 .tutorlistdetail-directive {
     @include flexSetUp(center, center, column);
     .box-name {
-        width: 450px;
+        width: 425px;
         height: 80px;
         border: 1px solid white;
-        // border-right: none;
-        // border-left: none;
+        border-right: none;
+        border-left: none;
         @include flexSetUp(center, center);
         letter-spacing: .7px;
         .box-name-inner {
             width: 95%;
             height: 75%;
-            border: 1px solid blue;
+            // border: 1px solid blue;
             @include flexSetUp(flex-start, flex-start);
             .profilepic-box-detail {
                 height: 100%;
                 width: 60px;
-                background: yellow;
+                // background: yellow;
                 .profilepic-detail {
                     height: 50px;
                     width: 50px;
@@ -28,83 +28,70 @@
             }
             .name-box-detail {
                 height: 100%;
-                width: 125px;
-                background: pink;
+                width: 225px;
+                // background: pink;
+                .title-detail {
+                    font-size: 1.5em;
+                    // line-height: 2em;
+                }
                 .tutor-name-detail {
-                    font-size: 1em;
-                }
-                .rating-box-detail {
-                    .rating-detail {
-                        line-height: 1.5em;
-                        font-size: .7em;
-                    }
-                }
-                .tutor-location-detail {
-                    font-size: .6em;
-                    // line-height: 1.5em;
+                    font-size: .8em;
                 }
             }
             .bio-box-detail {
                 height: 100%;
-                width: 210px;
-                background: lightblue;
-                .title-detail {
-                    font-size: .6em;
+                width: 120px;
+                // background: lightblue;
+                @include flexSetUp(flex-start, flex-end, column);
+                .rate-detail {
+                    font-size: .8em;
+                    letter-spacing: 1px;
+                }
+                .rating-box-detail {
+                    .rating-detail {
+                        line-height: 1.5em;
+                        font-size: .4em;
+                    }
+                }
+                .tutor-location-detail {
+                    font-size: .4em;
                 }
             }
         }
     }
-    .box-qualifications {
-        width: 450px;
-        height: 80px;
-        border: 1px solid white;
-        // border-right: none;
-        // border-left: none;
-        @include flexSetUp(center, center);
-        letter-spacing: .7px;
-        .box-qualifications-inner {
-            width: 95%;
-            height: 75%;
-            border: 1px solid blue;
-            @include flexSetUp(flex-start, flex-start);
-        }
-    }
     .box-about {
-        width: 450px;
+        width: 425px;
         height: 80px;
         border: 1px solid white;
-        // border-right: none;
-        // border-left: none;
+        border-right: none;
+        border-left: none;
         @include flexSetUp(center, center);
         letter-spacing: .7px;
         .box-about-inner {
             width: 95%;
             height: 75%;
-            border: 1px solid blue;
-            @include flexSetUp(flex-start, flex-start);
+            // border: 1px solid blue;
+            // @include flexSetUp(flex-start, flex-start);
+            .about-top {
+                width: 100%;
+                height: 40%;
+                font-size: .8em;
+                // background: yellow;
+            }
+            .about-bottom {
+                width: 100%;
+                height: 60%;
+                font-size: .4em;
+                // background: pink;
+            }
         }
     }
-    .box-education {
-        width: 450px;
+    .box-skills {
+        width: 425px;
         height: 80px;
         border: 1px solid white;
-        // border-right: none;
-        // border-left: none;
-        @include flexSetUp(center, center);
-        letter-spacing: .7px;
-        .box-education-inner {
-            width: 95%;
-            height: 75%;
-            border: 1px solid blue;
-            @include flexSetUp(flex-start, flex-start);
-        }
-    }
-    .box-policies {
-        width: 450px;
-        height: 80px;
-        border: 1px solid white;
-        // border-right: none;
-        // border-left: none;
+        border-right: none;
+        border-left: none;
         @include flexSetUp(center, center);
         letter-spacing: .7px;
         .box-policies-inner {
@@ -112,29 +99,57 @@
             height: 75%;
             border: 1px solid blue;
             @include flexSetUp(flex-start, flex-start);
+            .skills-top {
+                width: 100%;
+                height: 40%;
+                font-size: .8em;
+                // background: yellow;
+                .skills-title {}
+            }
+            .skills-bottom {
+                width: 100%;
+                height: 60%;
+                font-size: .4em;
+                // background: pink;
+                .skills-text {}
+            }
         }
     }
-    .box-subjects {
-        width: 450px;
+    .box-education {
+        width: 425px;
         height: 80px;
         border: 1px solid white;
-        // border-right: none;
-        // border-left: none;
+        border-right: none;
+        border-left: none;
         @include flexSetUp(center, center);
         letter-spacing: .7px;
-        .box-subjects-inner {
+        .box-education-inner {
             width: 95%;
             height: 75%;
             border: 1px solid blue;
             @include flexSetUp(flex-start, flex-start);
+            .education-top {
+                width: 100%;
+                height: 40%;
+                font-size: .8em;
+                // background: yellow;
+                .education-title {}
+            }
+            .education-bottom {
+                width: 100%;
+                height: 60%;
+                font-size: .4em;
+                // background: pink;
+                .education-text {}
+            }
         }
     }
     .box-reviews {
-        width: 450px;
+        width: 425px;
         height: 80px;
         border: 1px solid white;
-        // border-right: none;
-        // border-left: none;
+        border-right: none;
+        border-left: none;
         @include flexSetUp(center, center);
         letter-spacing: .7px;
         .box-reviews-inner {
@@ -142,6 +157,20 @@
             height: 75%;
             border: 1px solid blue;
             @include flexSetUp(flex-start, flex-start);
+            .reviews-top {
+                width: 100%;
+                height: 40%;
+                font-size: .8em;
+                // background: yellow;
+                .reviews-title {}
+            }
+            .reviews-bottom {
+                width: 100%;
+                height: 60%;
+                font-size: .4em;
+                // background: pink;
+                .reviews-text {}
+            }
         }
     }
 }

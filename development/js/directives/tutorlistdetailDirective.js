@@ -3,7 +3,8 @@ angular.module("App").directive("tutorlistdetailDirective", function() {
         restrict: "E",
         templateUrl: "./views/tutorlistdetailFull.html",
         scope: {
-            tutor: "="
+            tutor: "=",
+            rd: "="
         },
         link: function (scope, elem, attrs) {
             console.log(scope.tutors);

@@ -80,6 +80,7 @@
             .rate-box {
                 height: 100%;
                 width: 50px;
+                letter-spacing: 1px;
                 // background: red;
                 @include flexSetUp(center, flex-start);
             }

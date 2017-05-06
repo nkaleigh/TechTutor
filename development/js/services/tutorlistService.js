@@ -7,6 +7,13 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
         img: "x",
         title: "Web Developer Tutor",
         bio: "I recently completed Dev Mountain's Web Development course. I have grown to love coding and also teaching others more about code. I am available most evening hours and I am flexible with transportation.",
+        skills: ["Angular.js", "Javascript", "Node.js", "React", "SQL", "GitHub"],
+        education: [{
+            school: "Brigham Young University",
+            degree: "BA English Linguistics"
+        }, {
+            school: "DevMountain"
+        }],
         rate: "free",
         rating: 5
     }, {
@@ -18,7 +25,15 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
         title: "Javascript Tutor",
         bio: "I recently completed Dev Mountain's Web Development course. I have grown to love coding and also teaching others more about code. I am available most evening hours and I am flexible with transportation.",
         rate: "$10/hr",
-        rating: 4,
+        skills: ["Angular.js", "Javascript", "Node.js", "React", "SQL", "GitHub"],
+        education: [{
+            school: "Brigham Young University",
+            degree: "BA English Linguistics"
+        }, {
+            school: "DevMountain"
+        }],
+        rate: "$10/hr",
+        rating: 4
     }, {
         firstname: "Oshion",
         lastname: "Niemela",
@@ -28,8 +43,15 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
         title: "Python Tutor",
         bio: "I recently completed Dev Mountain's Web Development course. I have grown to love coding and also teaching others more about code. I am available most evening hours and I am flexible with transportation.",
         rate: "$20/hr",
-        rating: 5,
-
+        skills: ["Angular.js", "Javascript", "Node.js", "React", "SQL", "GitHub"],
+        education: [{
+            school: "Brigham Young University",
+            degree: "BA English Linguistics"
+        }, {
+            school: "DevMountain"
+        }],
+        rate: "15/hr",
+        rating: 5
     }, {
         firstname: "Ed",
         lastname: "Smith",
@@ -39,8 +61,15 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
         title: "Angular Tutor",
         bio: "I recently completed Dev Mountain's Web Development course. I have grown to love coding and also teaching others more about code. I am available most evening hours and I am flexible with transportation.",
         rate: "$12/hr",
-        rating: 2,
-
+        skills: ["Angular.js", "Javascript", "Node.js", "React", "SQL", "GitHub"],
+        education: [{
+            school: "Brigham Young University",
+            degree: "BA English Linguistics"
+        }, {
+            school: "DevMountain"
+        }],
+        rate: "$100/hr",
+        rating: 2
     }, {
         firstname: "Anna",
         lastname: "Wright",
@@ -50,8 +79,15 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
         title: "Web Developer Tutor",
         bio: "I recently completed Dev Mountain's Web Development course. I have grown to love coding and also teaching others more about code. I am available most evening hours and I am flexible with transportation.",
         rate: "$15/hr",
-        rating: 1,
-
+        skills: ["Angular.js", "Javascript", "Node.js", "React", "SQL", "GitHub"],
+        education: [{
+            school: "Brigham Young University",
+            degree: "BA English Linguistics"
+        }, {
+            school: "DevMountain"
+        }],
+        rate: "$20/hr",
+        rating: 1
     }, {
         firstname: "Luis",
         lastname: "Jones",
@@ -61,8 +97,15 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
         title: "React Tutor",
         bio: "I recently completed Dev Mountain's Web Development course. I have grown to love coding and also teaching others more about code. I am available most evening hours and I am flexible with transportation.",
         rate: "$10/hr",
-        rating: 4,
-
+        skills: ["Angular.js", "Javascript", "Node.js", "React", "SQL", "GitHub"],
+        education: [{
+            school: "Brigham Young University",
+            degree: "BA English Linguistics"
+        }, {
+            school: "DevMountain"
+        }],
+        rate: "10/hr",
+        rating: 4
     }, {
         firstname: "Miriam",
         lastname: "Nelson",
@@ -72,8 +115,15 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
         title: "Node.js Tutor",
         bio: "I recently completed Dev Mountain's Web Development course. I have grown to love coding and also teaching others more about code. I am available most evening hours and I am flexible with transportation.",
         rate: "$100/hr",
-        rating: 4,
-
+        skills: ["Angular.js", "Javascript", "Node.js", "React", "SQL", "GitHub"],
+        education: [{
+            school: "Brigham Young University",
+            degree: "BA English Linguistics"
+        }, {
+            school: "DevMountain"
+        }],
+        rate: "free",
+        rating: 4
     }, {
         firstname: "Laura",
         lastname: "Andrews",
@@ -83,21 +133,29 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
         title: "Web Developer Tutor",
         bio: "I recently completed Dev Mountain's Web Development course. I have grown to love coding and also teaching others more about code. I am available most evening hours and I am flexible with transportation.",
         rate: "$70/hr",
-        rating: 2,
-
+        skills: ["Angular.js", "Javascript", "Node.js", "React", "SQL", "GitHub"],
+        education: [{
+            school: "Brigham Young University",
+            degree: "BA English Linguistics"
+        }, {
+            school: "DevMountain"
+        }],
+        rate: "$25/hr",
+        rating: 2
     }]
+
+
 
     this.getData = function (id) {
         console.log(id);
         return tutors;
     }
 
-    this.getSpecificData = function(id) {
-        var tutor = tutors.filter(function(a){
+    this.getSpecificData = function (id) {
+        var tutor = tutors.filter(function (a) {
             return a.tutorId === parseInt(id);
         })
         return tutor[0];
     }
 
-    this.getSpecificData();
 })
