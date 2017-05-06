@@ -23,6 +23,7 @@
     </div>
 </div>
 <div class="box-about">
+    <div class="box-about-padding"></div>
     <div class="box-about-inner">
         <div class="about-top">
             <p class="about-title">About {{tutor.firstname}}</p>
@@ -33,7 +34,8 @@
     </div>
 </div>
 <div class="box-skills">
-    <div class="box-policies-inner">
+    <div class="box-skills-padding"></div>
+    <div class="box-skills-inner">
         <div class="skills-top">
             <p class="skills-title">Skills</p>
         </div>
@@ -43,6 +45,7 @@
     </div>
 </div>
 <div class="box-education">
+    <div class="box-education-padding"></div>
     <div class="box-education-inner">
         <div class="education-top">
             <p class="education-title">Education</p>
@@ -53,17 +56,19 @@
     </div>
 </div>
 <div class="box-reviews">
+    <div class="box-reviews-padding"></div>
     <div class="box-reviews-inner">
         <div class="reviews-top">
-            <p class="reviews-title">Reviews <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-</p>
+            <div class="reviews-top-left">
+                <p class="reviews-title">Reviews <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span></p>
+            </div>
+            <div class="reviews-top-right">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+            </div>
         </div>
         <div class="reviews-bottom">
-            <!--<div class="rating-review-detail">
-<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-            </div>-->
             <div class="reviews-comment">
-                "{{rd.review}}"  —{{rd.studentfirstname}}                  
+                "{{rd.review}}" —{{rd.studentfirstname}}
             </div>
         </div>
     </div>

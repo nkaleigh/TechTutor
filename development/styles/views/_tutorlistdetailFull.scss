@@ -61,12 +61,17 @@
     }
     .box-about {
         width: 425px;
-        height: 80px;
+        height: 120px;
         border: 1px solid white;
         border-right: none;
         border-left: none;
-        @include flexSetUp(center, center);
+        @include flexSetUp(flex-start, center, column);
         letter-spacing: .7px;
+        .box-about-padding {
+            width: 100%;
+            height: 20px;
+            // background: orange;
+        }
         .box-about-inner {
             width: 95%;
             height: 75%;
@@ -92,12 +97,17 @@
         border: 1px solid white;
         border-right: none;
         border-left: none;
-        @include flexSetUp(center, center);
+        @include flexSetUp(flex-start, center, column);
         letter-spacing: .7px;
-        .box-policies-inner {
+        .box-skills-padding {
+            width: 100%;
+            height: 20px;
+            // background: orange;
+        }
+        .box-skills-inner {
             width: 95%;
             height: 75%;
-            border: 1px solid blue;
+            // border: 1px solid blue;
             @include flexSetUp(flex-start, flex-start);
             .skills-top {
                 width: 100%;
@@ -117,16 +127,21 @@
     }
     .box-education {
         width: 425px;
-        height: 80px;
+        height: 160px;
         border: 1px solid white;
         border-right: none;
         border-left: none;
-        @include flexSetUp(center, center);
+        @include flexSetUp(flex-start, center, column);
         letter-spacing: .7px;
+        .box-education-padding {
+            width: 100%;
+            height: 20px;
+            // background: orange;
+        }
         .box-education-inner {
             width: 95%;
             height: 75%;
-            border: 1px solid blue;
+            // border: 1px solid blue;
             @include flexSetUp(flex-start, flex-start);
             .education-top {
                 width: 100%;
@@ -150,36 +165,53 @@
         border: 1px solid white;
         border-right: none;
         border-left: none;
-        @include flexSetUp(center, center);
+        @include flexSetUp(flex-start, center, column);
         letter-spacing: .7px;
+        .box-reviews-padding {
+            width: 100%;
+            height: 20px;
+            // background: orange;
+        }
         .box-reviews-inner {
             width: 95%;
             height: 75%;
-            border: 1px solid blue;
+            // border: 1px solid blue;
             @include flexSetUp(flex-start, flex-start, column);
             .reviews-top {
                 width: 100%;
                 height: 25px;
                 font-size: .8em;
-                // background: yellow;
-                .reviews-title {}
-            }
-            .reviews-bottom {
-                width: 100%;
-                height: 60%;
-                // background: pink;
-                .rating-review-detail {
-                    width: 100%;
-                    height: 15px;
-                    font-size: .6em;
+                @include flexSetUp(space-between, flex-start, row);
+                // background: orange;
+                .reviews-top-left {
+                    width: 50%;
+                    height: 100%;
                     // background: blue;
+                    @include flexSetUp(space-between, flex-start, row);
                 }
-                .reviews-comment {
-                    width: 100%;
-                    height: 20%;
-                    font-size: .6em;
-                    // background: brown;
+                .reviews-top-right {
+                    width: 50%;
+                    height: 100%;
+                    // background: red;
+                    @include flexSetUp(flex-end, flex-start);
                 }
+            }
+        }
+        .reviews-bottom {
+            width: 100%;
+            height: 60%;
+            // background: pink;
+            .rating-review-detail {
+                width: 100%;
+                height: 15px;
+                font-size: .6em;
+                // background: blue;
+            }
+            .reviews-comment {
+                width: 100%;
+                height: 20%;
+                font-size: .6em;
+                // background: brown;
             }
         }
     }
