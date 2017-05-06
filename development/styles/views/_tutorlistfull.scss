@@ -4,8 +4,8 @@
         width: 425px;
         height: 100px;
         border: 1px solid white;
-        // border-right: none;
-        // border-left: none;
+        border-right: none;
+        border-left: none;
         @include flexSetUp(center, center);
         letter-spacing: .7px;
         .profile-box {
@@ -86,4 +86,8 @@
             }
         }
     }
+}
+
+hr {
+    width: 425px;
 }

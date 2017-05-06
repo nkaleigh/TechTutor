@@ -55,12 +55,16 @@
 <div class="box-reviews">
     <div class="box-reviews-inner">
         <div class="reviews-top">
-            <p class="reviews-title">Reviews</p>
+            <p class="reviews-title">Reviews <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+</p>
         </div>
         <div class="reviews-bottom">
-            <p class="reviews-text">
-                {{rd}}
-            </p>
+            <!--<div class="rating-review-detail">
+<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>-->
+            <div class="reviews-comment">
+                "{{rd.review}}"  —{{rd.studentfirstname}}                  
+            </div>
         </div>
     </div>
 </div>

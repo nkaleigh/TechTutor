@@ -74,14 +74,14 @@
             // @include flexSetUp(flex-start, flex-start);
             .about-top {
                 width: 100%;
-                height: 40%;
+                height: 25px;
                 font-size: .8em;
                 // background: yellow;
             }
             .about-bottom {
                 width: 100%;
                 height: 60%;
-                font-size: .4em;
+                font-size: .6em;
                 // background: pink;
             }
         }
@@ -101,7 +101,7 @@
             @include flexSetUp(flex-start, flex-start);
             .skills-top {
                 width: 100%;
-                height: 40%;
+                height: 25px;
                 font-size: .8em;
                 // background: yellow;
                 .skills-title {}
@@ -130,7 +130,7 @@
             @include flexSetUp(flex-start, flex-start);
             .education-top {
                 width: 100%;
-                height: 40%;
+                height: 25px;
                 font-size: .8em;
                 // background: yellow;
                 .education-title {}
@@ -146,7 +146,7 @@
     }
     .box-reviews {
         width: 425px;
-        height: 80px;
+        height: 200px;
         border: 1px solid white;
         border-right: none;
         border-left: none;
@@ -156,10 +156,10 @@
             width: 95%;
             height: 75%;
             border: 1px solid blue;
-            @include flexSetUp(flex-start, flex-start);
+            @include flexSetUp(flex-start, flex-start, column);
             .reviews-top {
                 width: 100%;
-                height: 40%;
+                height: 25px;
                 font-size: .8em;
                 // background: yellow;
                 .reviews-title {}
@@ -167,9 +167,19 @@
             .reviews-bottom {
                 width: 100%;
                 height: 60%;
-                font-size: .4em;
                 // background: pink;
-                .reviews-text {}
+                .rating-review-detail {
+                    width: 100%;
+                    height: 15px;
+                    font-size: .6em;
+                    // background: blue;
+                }
+                .reviews-comment {
+                    width: 100%;
+                    height: 20%;
+                    font-size: .6em;
+                    // background: brown;
+                }
             }
         }
     }
