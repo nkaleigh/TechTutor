@@ -1,9 +1,18 @@
 <div class="outer-wrap">
     <div class="head">
-        <button class="login" type="submit" name="button" ui-sref="form">LogIn</button>
+        <!--<button class="login" ui-sref="login">Log in</button>-->
+        <!--<div class="divider">x</div>
+        <button class="signup" type="submit" name="button" ui-sref="login">Sign up</button>-->
+        <div class="head-inner">
+        <div class="login-signup-box">
+            <div class="log-in" ui-sref="login">Log in</div>
+            <div class="divider">|</div>
+            <div class="sign-up" ui-sref="signup">Sign up</div>
+        </div>
+        </div>
     </div>
     <div class="mid">
-        <div class="title">{{techTutor}}</div>
+        <div class="title">TechTutor</div>
         <div class="arrow" ui-sref="tutorlist">
         </div>
     </div>

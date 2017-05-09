@@ -1,0 +1,119 @@
+login-form-directive {
+    @include flexSetUp(flex-start, center, column);
+    .loginform-head {
+        width: 425px;
+        border: 1px solid white;
+        background: pink;
+        @include flexSetUp(center, center, column);
+        .loginform-head-padding-top {
+            width: 100%;
+            height: 20px;
+            background: yellow;
+        }
+        .box-loginform-header-inner {
+            width: 95%;
+            height: 75%;
+            border: 1px solid blue;
+            @include flexSetUp(flex-start, center);
+            .loginform-home {
+                cursor: pointer;
+            }
+        }
+        .loginform-head-padding-bottom {
+            width: 100%;
+            height: 20px;
+            background: yellow;
+        }
+    }
+}
+
+.loginform-name {
+    width: 425px;
+    border: 1px solid white;
+    background: pink;
+    @include flexSetUp(center, center, column);
+    .loginform-name-padding-top {
+        width: 100%;
+        height: 20px;
+        background: yellow;
+    }
+    .box-loginform-name-inner {
+        height: 75%;
+        border: 1px solid blue;
+        @include flexSetUp(flex-start, center);
+    }
+    .loginform-name-padding-bottom {
+        width: 100%;
+        height: 20px;
+        background: yellow;
+    }
+}
+
+.loginform-about {
+    width: 425px;
+    border: 1px solid white;
+    background: pink;
+    @include flexSetUp(center, center, column);
+    .loginform-about-padding-top {
+        width: 100%;
+        height: 20px;
+        background: yellow;
+    }
+    .box-loginform-about-inner {
+        width: 95%;
+        height: 75%;
+        border: 1px solid blue;
+        @include flexSetUp(flex-start, center);
+    }
+    .loginform-name-padding-bottom {
+        width: 100%;
+        height: 20px;
+        background: yellow;
+    }
+}
+
+.loginform-skills {
+    width: 425px;
+    border: 1px solid white;
+    background: pink;
+    @include flexSetUp(center, center, column);
+    .loginform-skills-padding-top {
+        width: 100%;
+        height: 20px;
+        background: yellow;
+    }
+    .box-loginform-skills-inner {
+        width: 95%;
+        height: 75%;
+        border: 1px solid blue;
+        @include flexSetUp(flex-start, center);
+    }
+    .loginform-skills-padding-bottom {
+        width: 100%;
+        height: 20px;
+        background: yellow;
+    }
+}
+
+.loginform-education {
+    width: 425px;
+    border: 1px solid white;
+    background: pink;
+    @include flexSetUp(center, center, column);
+    .loginform-education-padding-top {
+        width: 100%;
+        height: 20px;
+        background: yellow;
+    }
+    .box-loginform-education-inner {
+        width: 95%;
+        height: 75%;
+        border: 1px solid blue;
+        @include flexSetUp(flex-start, center);
+    }
+    .loginform-education-padding-bottom {
+        width: 100%;
+        height: 20px;
+        background: yellow;
+    }
+}

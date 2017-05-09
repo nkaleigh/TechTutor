@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300");
+
 .outer-wrap {
     width: 100%;
     height: 100vh;
@@ -11,27 +13,49 @@
         width: 100%;
         height: 20vh;
         // background: pink;
-        position: relative;
-        .login {
-            cursor: pointer;
-            background: none;
-            color: white;
-            text-align: center;
-            font-family: chalk;
-            font-size: .7em;
-            white-space: no wrap;
-            width: 7%;
-            height: 25px;
-            margin: auto;
-            // border-style: solid;
-            // border-color: white;
-            // border-width: 2px;
-            border: none;
-            float: right;
-            position: absolute;
-            top: 5px;
-            right: 5px;
-            letter-spacing: 1px;
+        @include flexSetUp(center,
+        center);
+        .head-inner {
+            width: 95%;
+            height: 75%;
+            // border: 1px solid blue;
+            @include flexSetUp(flex-end,
+            flex-start);
+            .login-signup-box {
+                width: 85px;
+                height: 20px;
+                // background: black;
+                @include flexSetUp(space-around,
+                center) .log-in {
+                    cursor: pointer;
+                    background: none;
+                    color: white;
+                    text-align: center;
+                    font-family: chalk;
+                    font-size: .7em;
+                    white-space: no wrap;
+                    letter-spacing: 1px;
+                    // background: blue;
+                }
+                .divider {
+                    font-family: 'Open Sans Condensed', sans-serif;
+                    // background: green;
+                }
+                .sign-up {
+                    cursor: pointer;
+                    background: none;
+                    color: white;
+                    text-align: center;
+                    font-family: chalk;
+                    font-size: .7em;
+                    // white-space: no wrap;
+                    // border-style: solid;
+                    // border-color: white;
+                    border-width: 1px;
+                    letter-spacing: 1px;
+                    // background: red;
+                }
+            }
         }
     }
     .mid {

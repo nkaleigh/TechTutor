@@ -1,4 +1,12 @@
+<div class="tutorlist-detail-head">
+    <div class="tutorlist-detail-head-padding-top"></div>
+    <div class="box-tutorlist-detail-header-inner">
+        <div class="tutorlist-detail-home" ui-sref="tutorlist">Back to List</div>
+    </div>
+    <div class="tutorlist-detail-head-padding-bottom"></div>
+</div>
 <div class="box-name">
+    <div class="name-padding-top"></div>
     <div class="box-name-inner">
         <div class="profilepic-box-detail">
             <img class="profilepic-detail" src="https://unsplash.it/50" alt="profile picture">
@@ -21,42 +29,48 @@
             <p class="tutor-location-detail">{{tutor.location}}</p>
         </div>
     </div>
+    <div class="name-padding-bottom"></div>
 </div>
 <div class="box-about">
-    <div class="box-about-padding"></div>
+    <div class="about-padding-top"></div>
     <div class="box-about-inner">
         <div class="about-top">
             <p class="about-title">About {{tutor.firstname}}</p>
         </div>
-        <div class="about-bottom">
+        <div class="about-mid">
             <p class="about-text">{{tutor.bio}}</p>
         </div>
     </div>
+    <div class="about-padding-bottom"></div>
 </div>
 <div class="box-skills">
-    <div class="box-skills-padding"></div>
+    <div class="skills-padding-top"></div>
     <div class="box-skills-inner">
         <div class="skills-top">
             <p class="skills-title">Skills</p>
         </div>
-        <div class="skills-bottom">
-            <p class="skills-text"></p>
+        <div class="skills-bottom" ng-repeat="skill in tutor.skills">
+            <p class="skills-text">{{skill}}</p>
         </div>
     </div>
+    <div class="skills-padding-bottom"></div>
 </div>
 <div class="box-education">
-    <div class="box-education-padding"></div>
+    <div class="education-padding-top"></div>
     <div class="box-education-inner">
         <div class="education-top">
             <p class="education-title">Education</p>
         </div>
-        <div class="education-bottom">
-            <p class="education-text"></p>
+        <div class="education-bottom" ng-repeat="edu in tutor.education">
+            <p class="school-text">{{edu.school}}</p>
+            <p class="degree-text">{{edu.degree}}</p>
+            <br>
         </div>
     </div>
+    <div class="education-padding-bottom"></div>
 </div>
 <div class="box-reviews">
-    <div class="box-reviews-padding"></div>
+    <div class="reviews-padding-top"></div>
     <div class="box-reviews-inner">
         <div class="reviews-top">
             <div class="reviews-top-left">
@@ -66,10 +80,14 @@
                 <i class="fa fa-plus" aria-hidden="true"></i>
             </div>
         </div>
-        <div class="reviews-bottom">
-            <div class="reviews-comment">
-                "{{rd.review}}" —{{rd.studentfirstname}}
-            </div>
+        <div class="reviews-bottom" ng-repeat="studentreviews in rd">
+            <p class="reviews-comment">
+                "{{studentreviews.review}}" —{{studentreviews.studentfirstname}}
+                <br>
+                <br>
+            </p>
         </div>
     </div>
+        <div class="reviews-padding-bottom"></div>
+
 </div>

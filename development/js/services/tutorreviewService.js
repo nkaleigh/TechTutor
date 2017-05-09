@@ -146,13 +146,10 @@ angular.module("App").service("tutorreviewService", function ($http, $q, $state)
             ]
 
 
-
             this.getTutorReview = function (id) {
                 var review = tutorReviews.filter(function(a) {
                     return a.tutorId === parseInt(id);
                 })
-                return review[0];
+                return review;
             }
 });
-
-

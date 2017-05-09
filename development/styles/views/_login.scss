@@ -1,0 +1,56 @@
+    .outer-wrap-login {
+        width: 100%;
+        height: 100vh;
+        background-image: url("../pictures/blankChalkboard.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        color: white;
+        font-family: chalk;
+        @include flexSetUp(center,
+        center);
+        .login-box {
+            width: 425px;
+            border: 1px solid white;
+            border-right: none;
+            border-left: none;
+            @include flexSetUp(flex-between,
+            flex-start,
+            column);
+            .login-padding-top {
+                width: 100%;
+                height: 20px;
+                background: yellow;
+            }
+            .login-box-mid {
+                width: 100%;
+                height: 150px;
+                background: green;
+                .login-box-top {
+                    width: 100%;
+                    height: 20%;
+                    font-size: 1.5em;
+                    background: black;
+                }
+                .login-box-bottom {
+                    width: 100%;
+                    height: 80%;
+                    background: blue;
+                    @include flexSetUp(center,
+                    center,
+                    column);
+                    .login-email {}
+                    .login-password {
+                    }
+                    .login-submit {
+                        pointer: cursor;
+                    }
+                }
+            }
+            .login-padding-bottom {
+                width: 100%;
+                height: 20px;
+                background: yellow;
+            }
+        }
+    }

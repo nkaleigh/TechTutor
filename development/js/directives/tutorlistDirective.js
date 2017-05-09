@@ -1,7 +1,7 @@
 angular.module("App").directive("tutorlistDirective", function() {
     return {
         restrict: "E",
-        templateUrl: "./views/tutorlistFull.html",
+        templateUrl: "./views/tutorlistDirective.html",
         scope: {
             tutors: "="
         },
