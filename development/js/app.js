@@ -31,7 +31,7 @@ angular.module("App", ['ui.router'])
             })
             .state('signup', {
                 templateUrl: './views/signup.html',
-                controler: 'signupCtrl',
+                controller: 'signupCtrl',
                 url: '/signup'
             })
             .state('tutorlist', {

@@ -1,8 +1,10 @@
 angular.module("App").service("tutorlistService", function ($http, $q, $state) {
     var tutors = [{
+        tutorId: 1,
+        email: "kaleigh@gmail.com",
+        password: "password",
         firstname: "Kaleigh",
         lastname: "Niemela",
-        tutorId: 1,
         location: "Orem, Utah",
         img: "x",
         title: "Web Developer Tutor",
@@ -17,9 +19,11 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
         rate: "free",
         rating: 5
     }, {
+        tutorId: 2,
+        email: "christopher@gmail.com",
+        password: "password",
         firstname: "Christopher",
         lastname: "Vosters",
-        tutorId: 2,
         location: "Orem, Utah",
         img: "x",
         title: "Javascript Tutor",
@@ -35,9 +39,11 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
         rate: "$10/hr",
         rating: 4
     }, {
+        tutorId: 3,
+        email: "oshion@gmail.com",
+        password: "password",
         firstname: "Oshion",
         lastname: "Niemela",
-        tutorId: 3,
         location: "Provo, Utah",
         img: "x",
         title: "Python Tutor",
@@ -53,9 +59,11 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
         rate: "15/hr",
         rating: 5
     }, {
+        tutorId: 4,
+        email: "ed@gmail.com",
+        password: "password",
         firstname: "Ed",
         lastname: "Smith",
-        tutorId: 4,
         location: "Orem, Utah",
         img: "x",
         title: "Angular Tutor",
@@ -71,9 +79,11 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
         rate: "$100/hr",
         rating: 2
     }, {
+        tutorId: 5,
+        email: "anna@gmail.com",
+        password: "password",
         firstname: "Anna",
         lastname: "Wright",
-        tutorId: 5,
         location: "Orem, Utah",
         img: "x",
         title: "Web Developer Tutor",
@@ -89,9 +99,11 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
         rate: "$20/hr",
         rating: 1
     }, {
+        tutorId: 6,
+        email: "luis@gmail.com",
+        password: "password",
         firstname: "Luis",
         lastname: "Jones",
-        tutorId: 6,
         location: "Orem, Utah",
         img: "x",
         title: "React Tutor",
@@ -107,9 +119,11 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
         rate: "10/hr",
         rating: 4
     }, {
+        tutorId: 7,
+        email: "miriam@gmail.com",
+        password: "password",
         firstname: "Miriam",
         lastname: "Nelson",
-        tutorId: 7,
         location: "Orem, Utah",
         img: "x",
         title: "Node.js Tutor",
@@ -125,9 +139,11 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
         rate: "free",
         rating: 4
     }, {
+        tutorId: 8,
+        email: "laura@gmail.com",
+        password: "password",
         firstname: "Laura",
         lastname: "Andrews",
-        tutorId: 8,
         location: "Orem, Utah",
         img: "x",
         title: "Web Developer Tutor",
@@ -145,13 +161,33 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
     }]
 
 
+    this.login = function (tutorparameter) {
+        console.log(tutorparameter);
+        for (var i = 0; i < tutors.length; i++) {
+            // console.log("for loop running");
+            if (tutors[i].email === tutorparameter.email && tutors[i].password === tutorparameter.password) {
+                console.log("found user");
+                $state.go("tutorlist")
+                return;
+            }
+        }
+        alert("incorrect password");
+    }
+
+    this.signup = function (tutorparam) {
+        console.log("test");
+        if(tutorparam.firstname && tutorparam.lastname && tutorparam.email && tutorparam.password) {
+            tutors.push(tutorparam);
+            $state.go("tutorlist");
+        }
+    }
 
     this.getData = function (id) {
         console.log(id);
         return tutors;
     }
 
-    this.getSpecificData = function(id) {
+    this.getSpecificData = function (id) {
         var tutor = tutors.filter(function (a) {
             return a.tutorId === parseInt(id);
         })
