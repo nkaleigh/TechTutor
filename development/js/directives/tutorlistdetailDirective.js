@@ -1,4 +1,4 @@
-angular.module("App").directive("tutorlistdetailDirective", function() {
+angular.module("App").directive("tutorlistdetailDirective", function () {
     return {
         restrict: "E",
         templateUrl: "./views/tutorlistdetailDirective.html",
@@ -11,3 +11,8 @@ angular.module("App").directive("tutorlistdetailDirective", function() {
         }
     }
 })
+
+
+
+
+

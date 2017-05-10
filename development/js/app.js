@@ -19,11 +19,6 @@ angular.module("App", ['ui.router'])
                 controller: 'loginCtrl',
                 url: '/login'
             })
-            .state('review', {
-                templateUrl: './views/review.html',
-                controller: 'reviewCtrl',
-                url: '/review'
-            })
             .state('signup', {
                 templateUrl: './views/signup.html',
                 controller: 'signupCtrl',

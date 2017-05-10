@@ -77,7 +77,8 @@
                 <p class="reviews-title">Reviews <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span></p>
             </div>
             <div class="reviews-top-right">
-                <i class="fa fa-plus" aria-hidden="true"></i>
+                <i class="fa fa-plus" aria-hidden="true" ng-click="showmodal = !showmodal"></i>
+                <review-directive tutor="tutordata" review="tutorreviewdata" showhide="showmodal" ng-show="showmodal"></review-directive>
             </div>
         </div>
         <div class="reviews-bottom" ng-repeat="studentreviews in rd">
@@ -88,6 +89,5 @@
             </p>
         </div>
     </div>
-        <div class="reviews-padding-bottom"></div>
-
+    <div class="reviews-padding-bottom"></div>
 </div>
