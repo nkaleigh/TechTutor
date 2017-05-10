@@ -5,9 +5,9 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
         password: "password",
         firstname: "Kaleigh",
         lastname: "Niemela",
-        location: "Orem, Utah",
+        zipcode: "Orem, Utah",
         img: "x",
-        title: "Web Developer Tutor",
+        jobtitle: "Web Developer Tutor",
         bio: "I recently completed Dev Mountain's Web Development course. I have grown to love coding and also teaching others more about code. I am available most evening hours and I am flexible with transportation.",
         skills: ["Angular.js", "Javascript", "Node.js", "React", "SQL", "GitHub"],
         education: [{
@@ -24,9 +24,9 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
         password: "password",
         firstname: "Christopher",
         lastname: "Vosters",
-        location: "Orem, Utah",
+        zipcode: "Orem, Utah",
         img: "x",
-        title: "Javascript Tutor",
+        jobtitle: "Javascript Tutor",
         bio: "I recently completed Dev Mountain's Web Development course. I have grown to love coding and also teaching others more about code. I am available most evening hours and I am flexible with transportation.",
         rate: "$10/hr",
         skills: ["Angular.js", "Javascript", "Node.js", "React", "SQL", "GitHub"],
@@ -44,9 +44,9 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
         password: "password",
         firstname: "Oshion",
         lastname: "Niemela",
-        location: "Provo, Utah",
+        zipcode: "Provo, Utah",
         img: "x",
-        title: "Python Tutor",
+        jobtitle: "Python Tutor",
         bio: "I recently completed Dev Mountain's Web Development course. I have grown to love coding and also teaching others more about code. I am available most evening hours and I am flexible with transportation.",
         rate: "$20/hr",
         skills: ["Angular.js", "Javascript", "Node.js", "React", "SQL", "GitHub"],
@@ -64,9 +64,9 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
         password: "password",
         firstname: "Ed",
         lastname: "Smith",
-        location: "Orem, Utah",
+        zipcode: "Orem, Utah",
         img: "x",
-        title: "Angular Tutor",
+        jobtitle: "Angular Tutor",
         bio: "I recently completed Dev Mountain's Web Development course. I have grown to love coding and also teaching others more about code. I am available most evening hours and I am flexible with transportation.",
         rate: "$12/hr",
         skills: ["Angular.js", "Javascript", "Node.js", "React", "SQL", "GitHub"],
@@ -84,9 +84,9 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
         password: "password",
         firstname: "Anna",
         lastname: "Wright",
-        location: "Orem, Utah",
+        zipcode: "Orem, Utah",
         img: "x",
-        title: "Web Developer Tutor",
+        jobtitle: "Web Developer Tutor",
         bio: "I recently completed Dev Mountain's Web Development course. I have grown to love coding and also teaching others more about code. I am available most evening hours and I am flexible with transportation.",
         rate: "$15/hr",
         skills: ["Angular.js", "Javascript", "Node.js", "React", "SQL", "GitHub"],
@@ -104,9 +104,9 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
         password: "password",
         firstname: "Luis",
         lastname: "Jones",
-        location: "Orem, Utah",
+        zipcode: "Orem, Utah",
         img: "x",
-        title: "React Tutor",
+        jobtitle: "React Tutor",
         bio: "I recently completed Dev Mountain's Web Development course. I have grown to love coding and also teaching others more about code. I am available most evening hours and I am flexible with transportation.",
         rate: "$10/hr",
         skills: ["Angular.js", "Javascript", "Node.js", "React", "SQL", "GitHub"],
@@ -124,9 +124,9 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
         password: "password",
         firstname: "Miriam",
         lastname: "Nelson",
-        location: "Orem, Utah",
+        zipcode: "Orem, Utah",
         img: "x",
-        title: "Node.js Tutor",
+        jobtitle: "Node.js Tutor",
         bio: "I recently completed Dev Mountain's Web Development course. I have grown to love coding and also teaching others more about code. I am available most evening hours and I am flexible with transportation.",
         rate: "$100/hr",
         skills: ["Angular.js", "Javascript", "Node.js", "React", "SQL", "GitHub"],
@@ -144,9 +144,9 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
         password: "password",
         firstname: "Laura",
         lastname: "Andrews",
-        location: "Orem, Utah",
+        zipcode: "Orem, Utah",
         img: "x",
-        title: "Web Developer Tutor",
+        jobtitle: "Web Developer Tutor",
         bio: "I recently completed Dev Mountain's Web Development course. I have grown to love coding and also teaching others more about code. I am available most evening hours and I am flexible with transportation.",
         rate: "$70/hr",
         skills: ["Angular.js", "Javascript", "Node.js", "React", "SQL", "GitHub"],
@@ -176,9 +176,20 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
 
     this.signup = function (tutorparam) {
         console.log("test");
-        if(tutorparam.firstname && tutorparam.lastname && tutorparam.email && tutorparam.password) {
+        if (tutorparam.firstname && tutorparam.lastname && tutorparam.email && tutorparam.password) {
+            console.log(tutors);
             tutors.push(tutorparam);
             $state.go("signupform");
+        }
+    }
+
+    this.signupform = function (tutorformparam) {
+        console.log("made it to the service");
+        if (tutorformparam.zipcode && tutorformparam.rate && tutorformparam.jobtitle && tutorformparam.bio) {
+            console.log("tutors before", tutors);
+            tutors.push(tutorformparam);
+            console.log("tutors after", tutors);
+            $state.go("tutorlist");
         }
     }
 
@@ -193,5 +204,4 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
         })
         return tutor[0];
     }
-
 })

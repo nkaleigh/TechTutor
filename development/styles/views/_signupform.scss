@@ -1,6 +1,5 @@
 .outer-wrap-signupform {
     width: 100%;
-    height: 100vh;
     background-image: url("../pictures/blankChalkboard.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -64,124 +63,120 @@
             // background: yellow;
         }
     }
-    .signupform-box-basic {
-        width: 425px;
-        border: 1px solid white;
-        border-right: none;
-        border-left: none;
-        @include flexSetUp(flex-start,
-        center,
-        column);
-        letter-spacing: .7px;
-        .signupform-basic-padding-top {
-            width: 100%;
-            height: 20px;
-            background: orange;
-        }
-        .signupform-box-basic-inner {
-            width: 95%;
-            // border: 1px solid blue;
-            .signupform-basic-top {
+    .signupform-form {
+        .signupform-box-basic {
+            width: 425px;
+            border: 1px solid white;
+            border-right: none;
+            border-left: none;
+            @include flexSetUp(flex-start,
+            center,
+            column);
+            letter-spacing: .7px;
+            .signupform-basic-padding-top {
                 width: 100%;
-                height: 25px;
-                font-size: .8em;
-                // background: yellow;
-                .signupform-basic-title {}
+                height: 20px;
+                // background: orange;
             }
-            .signupform-basic-mid {
-                width: 100%;
-                font-size: .6em;
-                // background: pink;
-                .signupform-basic-text {
-                    .signupform-basic-form {
-                        .signupform-location {}
+            .signupform-box-basic-inner {
+                width: 95%;
+                // border: 1px solid blue;
+                .signupform-basic-top {
+                    width: 100%;
+                    height: 25px;
+                    font-size: .8em;
+                    // background: yellow;
+                    .signupform-basic-title {}
+                }
+                .signupform-basic-mid {
+                    width: 100%;
+                    font-size: .6em;
+                    // background: pink;
+                    .signupform-basic-text {
+                        .signupform-zipcode {}
                         .signupform-rate {}
                     }
                 }
             }
-        }
-        .signupform-basic-padding-bottom {
-            width: 100%;
-            height: 20px;
-            // background: grey;
-        }
-    }
-    .signupform-box-about {
-        width: 425px;
-        border: 1px solid white;
-        border-right: none;
-        border-left: none;
-        @include flexSetUp(flex-start,
-        center,
-        column);
-        letter-spacing: .7px;
-        .signupform-about-padding-top {
-            width: 100%;
-            height: 20px;
-            // background: orange;
-        }
-        .signupform-box-about-inner {
-            width: 95%;
-            // border: 1px solid blue;
-            .signupform-about-top {
+            .signupform-basic-padding-bottom {
                 width: 100%;
-                height: 25px;
-                font-size: .8em;
-                // background: yellow;
-                .signup-form-about-title {}
+                height: 20px;
+                // background: grey;
             }
-            .signupform-about-mid {
+        }
+        .signupform-box-about {
+            width: 425px;
+            border: 1px solid white;
+            border-right: none;
+            border-left: none;
+            @include flexSetUp(flex-start,
+            center,
+            column);
+            letter-spacing: .7px;
+            .signupform-about-padding-top {
                 width: 100%;
-                font-size: .6em;
-                // background: pink;
-                .signupform-about-text {
-                    .signupform-about-form {
-                        .signupform-title {}
+                height: 20px;
+                // background: orange;
+            }
+            .signupform-box-about-inner {
+                width: 95%;
+                // border: 1px solid blue;
+                .signupform-about-top {
+                    width: 100%;
+                    height: 25px;
+                    font-size: .8em;
+                    // background: yellow;
+                    .signupform-about-title {}
+                }
+                .signupform-about-mid {
+                    width: 100%;
+                    font-size: .6em;
+                    // background: pink;
+                    .signupform-about-text {
+                        .signupform-jobtitle {}
                         .signupform-bio {}
                     }
                 }
             }
-        }
-        .signupform-about-padding-bottom {
-            width: 100%;
-            height: 20px;
-            // background: grey;
-        }
-    }
-    .signupform-box-skills {
-        width: 425px;
-        border: 1px solid white;
-        border-right: none;
-        border-left: none;
-        @include flexSetUp(flex-start,
-        center,
-        column);
-        letter-spacing: .7px;
-        .signupform-skills-padding-top {
-            width: 100%;
-            height: 20px;
-            // background: orange;
-        }
-        .signupform-box-skills-inner {
-            width: 95%;
-            height: 75%;
-            // border: 1px solid blue;
-            @include flexSetUp(flex-start,
-            flex-start,
-            column);
-            .signupform-skills-top {
+            .signupform-about-padding-bottom {
                 width: 100%;
-                height: 25px;
-                font-size: .8em;
-                // background: yellow;
-                .skills-title {}
+                height: 20px;
+                // background: grey;
             }
-            .signupform-skills-bottom {
+        }
+        .signupform-box-skills {
+            width: 425px;
+            border: 1px solid white;
+            border-right: none;
+            border-left: none;
+            @include flexSetUp(flex-start,
+            center,
+            column);
+            letter-spacing: .7px;
+            .signupform-skills-padding-top {
                 width: 100%;
-                height: 60%;
-                font-size: .6em;
-                // background: pink;
-                .signupform-skills-form {
+                height: 20px;
+                // background: orange;
+            }
+            .signupform-box-skills-inner {
+                width: 95%;
+                height: 75%;
+                // border: 1px solid blue;
+                @include flexSetUp(flex-start,
+                flex-start,
+                column);
+                .signupform-skills-top {
+                    width: 100%;
+                    height: 25px;
+                    font-size: .8em;
+                    // background: yellow;
+                    .skills-title {}
+                }
+                .signupform-skills-bottom {
+                    width: 100%;
+                    height: 60%;
+                    font-size: .6em;
+                    // background: pink;
                     .signupform-skillone {}
                     .signupform-skilltwo {}
                     .signupform-skillthree {}
@@ -190,96 +185,82 @@
                     .signupform-skill-six {}
                 }
             }
-        }
-        .signupform-skills-padding-bottom {
-            width: 100%;
-            height: 20px;
-            // background: orange;
-        }
-    }
-    .signupform-box-education {
-        width: 425px;
-        border: 1px solid white;
-        border-right: none;
-        border-left: none;
-        @include flexSetUp(flex-start,
-        center,
-        column);
-        letter-spacing: .7px;
-        .signupform-education-padding-top {
-            width: 100%;
-            height: 20px;
-            // background: orange;
-        }
-        .signupform-box-education-inner {
-            width: 95%;
-            // border: 1px solid blue;
-            @include flexSetUp(flex-start,
-            flex-start,
-            column);
-            .signupform-education-top {
+            .signupform-skills-padding-bottom {
                 width: 100%;
-                height: 25px;
-                font-size: .8em;
-                // background: yellow;
-                .signupform-education-title {}
+                height: 20px;
+                // background: orange;
             }
-            .signupform-education-bottom {
+        }
+        .signupform-box-education {
+            width: 425px;
+            border: 1px solid white;
+            border-right: none;
+            border-left: none;
+            @include flexSetUp(flex-start,
+            center,
+            column);
+            letter-spacing: .7px;
+            .signupform-education-padding-top {
                 width: 100%;
-                font-size: .6em;
-                // background: pink;
-                .signupform-education-form {
-                    .signupform-schoolone {
-
-                    }
-                    .signupform-schooltwo {
-                        
-                    }
-                    .signupform-schoolthree {
-
-                    }
-                    .signupform-degreeone {
-
-                    }
-                    .signupform-degreetwo {
-
-                    }
-                    ..signupform-degreethree {
-
-                    }
+                height: 20px;
+                // background: orange;
+            }
+            .signupform-box-education-inner {
+                width: 95%;
+                // border: 1px solid blue;
+                @include flexSetUp(flex-start,
+                flex-start,
+                column);
+                .signupform-education-top {
+                    width: 100%;
+                    height: 25px;
+                    font-size: .8em;
+                    // background: yellow;
+                    .signupform-education-title {}
+                }
+                .signupform-education-bottom {
+                    width: 100%;
+                    font-size: .6em;
+                    // background: pink;
+                    .signupform-schoolone {}
+                    .signupform-schooltwo {}
+                    .signupform-schoolthree {}
+                    .signupform-degreeone {}
+                    .signupform-degreetwo {}
+                    .signupform-degreethree {}
                 }
             }
+            .signupform-education-padding-bottom {
+                width: 100%;
+                height: 20px;
+                // background: orange;
+            }
         }
-        .signupform-education-padding-bottom {
-            width: 100%;
-            height: 20px;
-            // background: orange;
-        }
-    }
-    .signupform-submit-box {
-        width: 425px;
-        border: 1px solid white;
-        border-right: none;
-        border-left: none;
-        @include flexSetUp(flex-start,
-        center,
-        column);
-        .signupform-submit-padding-top {
-            width: 100%;
-            height: 20px;
-            // background: orange;
-        }
-        .signupform-submit {
-            // cursor: pointer;
-            // background: none;
-            // border: none;
-            color: white;
-            font-family: chalk;
-        }
-        .signupform-submit-padding-bottom {
-            width: 100%;
-            height: 20px;
-            // background: orange;
+        .signupform-submit-box {
+            width: 425px;
+            border: 1px solid white;
+            border-right: none;
+            border-left: none;
+            @include flexSetUp(flex-start,
+            center,
+            column);
+            .signupform-submit-padding-top {
+                width: 100%;
+                height: 20px;
+                // background: orange;
+            }
+            .signupform-submit {
+                cursor: pointer;
+                // background: none;
+                // border: none;
+                color: white;
+                font-family: chalk;
+            }
+            .signupform-submit-padding-bottom {
+                width: 100%;
+                height: 20px;
+                // background: orange;
+            }
         }
     }
 }

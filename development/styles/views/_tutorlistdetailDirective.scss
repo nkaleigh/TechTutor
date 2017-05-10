@@ -81,7 +81,7 @@
                         font-size: .4em;
                     }
                 }
-                .tutor-location-detail {
+                .tutor-zipcode-detail {
                     font-size: .4em;
                 }
             }
@@ -235,6 +235,9 @@
                     height: 100%;
                     // background: red;
                     @include flexSetUp(flex-end, flex-start);
+                    .fa-plus {
+                        cursor: pointer;
+                    }
                 }
             }
         }
@@ -252,3 +255,5 @@
         }
     }
 }
+
+
