@@ -19,11 +19,6 @@ angular.module("App", ['ui.router'])
                 controller: 'loginCtrl',
                 url: '/login'
             })
-            .state('loginform', {
-                templateUrl: './views/loginform.html',
-                controller: 'loginformCtrl',
-                url: '/loginform'
-            })
             .state('review', {
                 templateUrl: './views/review.html',
                 controller: 'reviewCtrl',
@@ -33,6 +28,11 @@ angular.module("App", ['ui.router'])
                 templateUrl: './views/signup.html',
                 controller: 'signupCtrl',
                 url: '/signup'
+            })
+            .state('signupform', {
+                templateUrl: './views/signupform.html',
+                controller: 'signupformCtrl',
+                url: '/signupform'
             })
             .state('tutorlist', {
                 templateUrl: './views/tutorlist.html',

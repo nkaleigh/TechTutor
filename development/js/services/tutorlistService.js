@@ -178,7 +178,7 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
         console.log("test");
         if(tutorparam.firstname && tutorparam.lastname && tutorparam.email && tutorparam.password) {
             tutors.push(tutorparam);
-            $state.go("tutorlist");
+            $state.go("signupform");
         }
     }
 
