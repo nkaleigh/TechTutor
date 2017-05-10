@@ -76,7 +76,7 @@
         .signupform-basic-padding-top {
             width: 100%;
             height: 20px;
-            // background: orange;
+            background: orange;
         }
         .signupform-box-basic-inner {
             width: 95%;
@@ -86,11 +86,18 @@
                 height: 25px;
                 font-size: .8em;
                 // background: yellow;
+                .signupform-basic-title {}
             }
             .signupform-basic-mid {
                 width: 100%;
                 font-size: .6em;
                 // background: pink;
+                .signupform-basic-text {
+                    .signupform-basic-form {
+                        .signupform-location {}
+                        .signupform-rate {}
+                    }
+                }
             }
         }
         .signupform-basic-padding-bottom {
@@ -121,11 +128,18 @@
                 height: 25px;
                 font-size: .8em;
                 // background: yellow;
+                .signup-form-about-title {}
             }
             .signupform-about-mid {
                 width: 100%;
                 font-size: .6em;
                 // background: pink;
+                .signupform-about-text {
+                    .signupform-about-form {
+                        .signupform-title {}
+                        .signupform-bio {}
+                    }
+                }
             }
         }
         .signupform-about-padding-bottom {
@@ -167,7 +181,14 @@
                 height: 60%;
                 font-size: .6em;
                 // background: pink;
-                .signupform-skills-text {}
+                .signupform-skills-form {
+                    .signupform-skillone {}
+                    .signupform-skilltwo {}
+                    .signupform-skillthree {}
+                    .signupform-skill-four {}
+                    .signupform-skill-five {}
+                    .signupform-skill-six {}
+                }
             }
         }
         .signupform-skills-padding-bottom {
@@ -207,11 +228,55 @@
                 width: 100%;
                 font-size: .6em;
                 // background: pink;
-                .signupform-school-text {}
-                .signupform-degree-text {}
+                .signupform-education-form {
+                    .signupform-schoolone {
+
+                    }
+                    .signupform-schooltwo {
+                        
+                    }
+                    .signupform-schoolthree {
+
+                    }
+                    .signupform-degreeone {
+
+                    }
+                    .signupform-degreetwo {
+
+                    }
+                    ..signupform-degreethree {
+
+                    }
+                }
             }
         }
         .signupform-education-padding-bottom {
+            width: 100%;
+            height: 20px;
+            // background: orange;
+        }
+    }
+    .signupform-submit-box {
+        width: 425px;
+        border: 1px solid white;
+        border-right: none;
+        border-left: none;
+        @include flexSetUp(flex-start,
+        center,
+        column);
+        .signupform-submit-padding-top {
+            width: 100%;
+            height: 20px;
+            // background: orange;
+        }
+        .signupform-submit {
+            // cursor: pointer;
+            // background: none;
+            // border: none;
+            color: white;
+            font-family: chalk;
+        }
+        .signupform-submit-padding-bottom {
             width: 100%;
             height: 20px;
             // background: orange;

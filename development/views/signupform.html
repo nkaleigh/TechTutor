@@ -19,13 +19,11 @@
             </div>
             <div class="signupform-basic-mid">
                 <p class="signupform-basic-text">
-                    <form class="signupform-form" ng-submit="signupform(tutorsignupform)">
-                        <input class="signupform-firstname" ng-model="tutorsignupform.firstname" placeholder="First Name" required>
-                        <input class="signupform-lastname" ng-model="tutorsignupform.lastname" placeholder="Last Name" required>
+                    <form class="signupform-basic-form" ng-submit="signupform(tutorsignupform)">
+                        <input class="signupform-location" ng-model="tutorsignupform.location" placeholder="Location" required>
                         <br>
                         <br>
-                        <input class="signupform-email" ng-model="tutorsignupform.email" placeholder="Email" required>
-                        <input class="signupform-password" type="password" ng-model="tutorsignupform.password" placeholder="Password" required>
+                        <input class="signupform-rate" ng-model="tutorsignupform.rate" placeholder="Rate" required>
                     </form>
                 </p>
             </div>
@@ -40,13 +38,11 @@
             </div>
             <div class="signupform-about-mid">
                 <p class="signupform-about-text">
-                    <form class="signupform-form" ng-submit="signupform(tutorsignupform)">
-                        <input class="signupform-firstname" ng-model="tutorsignupform.firstname" placeholder="First Name" required>
-                        <input class="signupform-lastname" ng-model="tutorsignupform.lastname" placeholder="Last Name" required>
+                    <form class="signupform-about-form" ng-submit="signupform(tutorsignupform)">
+                        <input class="signupform-title" ng-model="tutorsignupform.title" placeholder="Title" required>
                         <br>
                         <br>
-                        <input class="signupform-email" ng-model="tutorsignupform.email" placeholder="Email" required>
-                        <input class="signupform-password" type="password" ng-model="tutorsignupform.password" placeholder="Password" required>
+                        <input class="signupform-bio" ng-model="tutorsignupform.bio" placeholder="Bio" required>
                     </form>
                 </p>
             </div>
@@ -60,16 +56,16 @@
                 <p class="signupform-skills-title">Skills</p>
             </div>
             <div class="signupform-skills-bottom">
-                <p class="signupform-skills-text">
-                    <form class="signupform-form" ng-submit="signupform(tutorsignupform)">
-                        <input class="signupform-firstname" ng-model="tutorsignupform.firstname" placeholder="First Name" required>
-                        <input class="signupform-lastname" ng-model="tutorsignupform.lastname" placeholder="Last Name" required>
+                    <form class="signupform-skills-form" ng-submit="signupform(tutorsignupform)">
+                        <input class="signupform-skillone" ng-model="tutorsignupform.skillone" placeholder="Skill">
+                        <input class="signupform-skilltwo" ng-model="tutorsignupform.skilltwo" placeholder="Skill">
+                        <input class="signupform-skillthree" ng-model="tutorsignupform.skillthree" placeholder="Skill">
                         <br>
                         <br>
-                        <input class="signupform-email" ng-model="tutorsignupform.email" placeholder="Email" required>
-                        <input class="signupform-password" type="password" ng-model="tutorsignupform.password" placeholder="Password" required>
+                        <input class="signupform-skillfour" ng-model="tutorsignupform.skillfour" placeholder="Skill">
+                        <input class="signupform-skillfive" ng-model="tutorsignupform.skillfive" placeholder="Skill">
+                        <input class="signupform-skillsix" ng-model="tutorsignupform.skillsix" placeholder="Skill">
                     </form>
-                </p>
             </div>
         </div>
         <div class="signupform-skills-padding-bottom"></div>
@@ -81,16 +77,23 @@
                 <p class="signupform-education-title">Education</p>
             </div>
             <div class="signupform-education-bottom">
-                <form class="signupform-form" ng-submit="signupform(tutorsignupform)">
-                    <input class="signupform-firstname" ng-model="tutorsignupform.firstname" placeholder="First Name" required>
-                    <input class="signupform-lastname" ng-model="tutorsignupform.lastname" placeholder="Last Name" required>
+                <form class="signupform-education-form" ng-submit="signupform(tutorsignupform)">
+                    <input class="signupform-schoolone" ng-model="tutorsignupform.schoolone" placeholder="School Name">
+                    <input class="signupform-schooltwo" ng-model="tutorsignupform.schooltwo" placeholder="School Name">
+                    <input class="schoolthree" ng-model="schoolthree" placeholder="School Name">
                     <br>
                     <br>
-                    <input class="signupform-email" ng-model="tutorsignupform.email" placeholder="Email" required>
-                    <input class="signupform-password" type="password" ng-model="tutorsignupform.password" placeholder="Password" required>
+                    <input class="signupform-degreeone" ng-model="tutorsignupform.degreeone" placeholder="Degree">
+                    <input class="signupform-degreetwo" ng-model="tutorsignupform.degreetwo" placeholder="Degree">
+                    <input class="degreethree" ng-model="degreethree" placeholder="Degree">
                 </form>
                 <br>
             </div>
         </div>
         <div class="signupform-education-padding-bottom"></div>
+    </div>
+    <div class="signupform-submit-box">
+        <div class="signupform-submit-padding-top"></div>
+        <input class="signupform-submit" type="submit" value="Submit">
+        <div class="signupform-submit-padding-bottom"></div>
     </div>
