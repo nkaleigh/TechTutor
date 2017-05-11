@@ -202,7 +202,9 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
         var tutor = tutors.filter(function (a) {
             return a.tutorId === parseInt(id);
         })
+        console.log(tutor)
         return tutor[0];
+        
     }
 
 }) 

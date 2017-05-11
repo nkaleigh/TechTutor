@@ -2,12 +2,12 @@
     @include flexSetUp(flex-start, center, column);
     .tutorlist-head {
         width: 425px;
-        // background: pink;
+        background: pink;
         @include flexSetUp(center, center, column);
         .tutorlist-head-padding-top {
             width: 100%;
             height: 20px;
-            // background: yellow;
+            background: yellow;
         }
         .box-tutorlist-header-inner {
             width: 95%;
@@ -21,7 +21,7 @@
         .tutorlist-head-padding-bottom {
             width: 100%;
             height: 20px;
-            // background: yellow;
+            background: yellow;
         }
     }
     .box {
@@ -40,7 +40,7 @@
             .profilepic-box {
                 height: 100%;
                 width: 60px;
-                // background: yellow;
+                background: yellow;
                 @include flexSetUp(flex-start, flex-start);
                 .profilepic {
                     height: 50px;
@@ -55,7 +55,7 @@
             .name-box {
                 height: 100%;
                 width: 125px;
-                // background: pink;
+                background: pink;
                 .tutor-name {
                     font-size: 1em;
                     cursor: default;
@@ -67,6 +67,14 @@
                     text-decoration: underline;
                 }
                 .rating-box {
+                    // background: url("../pictures/stars/star-ratings.png");
+                    // background-repeat: no-repeat;
+                    // background-size: cover;
+                    // background-position: top;
+                    background: blue;
+                    width: 100%;
+                    // height: 100%;
+
                     .rating {
                         line-height: 1.5em;
                         font-size: .7em;
@@ -80,11 +88,11 @@
             .bio-box {
                 height: 100%;
                 width: 175px;
-                // background: lightblue;
+                background: lightblue;
                 .title {
                     height: 30%;
                     width: 100%;
-                    // background: yellow;
+                    background: yellow;
                     font-size: .7em;
                     cursor: default;
                 }
@@ -97,7 +105,7 @@
                 .bio {
                     height: 70%;
                     width: 100%;
-                    // background: green;
+                    background: green;
                     font-size: .5em;
                 }
             }
@@ -105,8 +113,9 @@
                 height: 100%;
                 width: 50px;
                 letter-spacing: 1px;
-                // background: red;
-                @include flexSetUp(center, flex-start);
+                background: red;
+                @include flexSetUp(center,
+                flex-start);
             }
         }
     }

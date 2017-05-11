@@ -74,11 +74,12 @@
     <div class="box-reviews-inner">
         <div class="reviews-top">
             <div class="reviews-top-left">
-                <p class="reviews-title">Reviews <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span></p>
+                <div class="reviews-top-title">Reviews</div>
+                <div class="reviews-top-stars"></div> 
             </div>
             <div class="reviews-top-right">
                 <i class="fa fa-plus" aria-hidden="true" ng-click="showmodal = !showmodal"></i>
-                <review-directive tutor="data" review="tutorreviewdata" showhide="showmodal" writereview="writetutorreview" ng-show="showmodal"></review-directive>
+                <review-directive tutor="tutor" showhide="showmodal" writereview="writereview" ng-show="showmodal"></review-directive>
             </div>
         </div>
         <div class="reviews-bottom" ng-repeat="studentreviews in rd">

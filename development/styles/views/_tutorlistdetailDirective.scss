@@ -1,4 +1,4 @@
-.tutorlistdetail-directive {
+    .tutorlistdetail-directive {
     @include flexSetUp(center, center, column);
     .tutorlist-detail-head {
         width: 425px;
@@ -190,10 +190,8 @@
                 width: 100%;
                 font-size: .6em;
                 // background: pink;
-                .school-text {
-                }
-                .degree-text {   
-                }
+                .school-text {}
+                .degree-text {}
             }
         }
         .education-padding-bottom {
@@ -212,7 +210,7 @@
         .reviews-padding-top {
             width: 100%;
             height: 20px;
-            // background: orange;
+            background: orange;
         }
         .box-reviews-inner {
             width: 95%;
@@ -223,37 +221,49 @@
                 height: 25px;
                 font-size: .8em;
                 @include flexSetUp(space-between, flex-start, row);
-                // background: yellow;
+                background: yellow;
                 .reviews-top-left {
                     width: 50%;
                     height: 100%;
-                    // background: blue;
-                    @include flexSetUp(space-between, flex-start, row);
+                    background: blue;
+                    @include flexSetUp(flex-start, flex-start);
+                    .reviews-top-title {
+                        width: 27%;
+                        height: 100%;
+                    }
+                    .reviews-top-stars {
+                        width: 69px;
+                        height: 14px;
+                        background: black;
+                        background-image: url("../pictures/stars/star-ratings.png");
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: top;
+                    }
                 }
-                .reviews-top-right {
-                    width: 50%;
-                    height: 100%;
-                    // background: red;
-                    @include flexSetUp(flex-end, flex-start);
-                    .fa-plus {
-                        cursor: pointer;
+                    .reviews-top-right {
+                        width: 50%;
+                        height: 100%;
+                        background: red;
+                        @include flexSetUp(flex-end,
+                        flex-start);
+                        .fa-plus {
+                            cursor: pointer;
+                        }
                     }
                 }
             }
-        }
-        .reviews-padding-bottom {
-            width: 100%;
-            height: 20px;
-            // background: orange;
-        }
-        .reviews-bottom {
-            width: 100%;
-            // background: pink;
-            .reviews-comment {
-                font-size: .6em;
+            .reviews-padding-bottom {
+                width: 100%;
+                height: 20px;
+                background: orange;
+            }
+            .reviews-bottom {
+                width: 100%;
+                background: pink;
+                .reviews-comment {
+                    font-size: .6em;
+                }
             }
         }
     }
-}
-
-

@@ -4,10 +4,13 @@ angular.module("App").directive("tutorlistdetailDirective", function () {
         templateUrl: "./views/tutorlistdetailDirective.html",
         scope: {
             tutor: "=",
-            rd: "="
+            rd: "=",
+            writereview: '&'
         },
         link: function (scope, elem, attrs) {
-            console.log(scope.tutors);
+            console.log(scope.tutor); 
+            console.log('detail', scope)
+            console.log(scope.writereview)
         }
     }
 })

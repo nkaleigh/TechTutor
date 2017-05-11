@@ -14,6 +14,7 @@ angular.module("App").controller("tutorlistdetailCtrl", function ($scope, tutorl
     }
 
     $scope.writetutorreview = function(review) {
+        console.log('running function', review)
         tutorreviewService.writeTutorReview(review);
     }
 

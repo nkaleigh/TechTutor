@@ -10,10 +10,11 @@
     <div class="reviewdirective-body">
         <div class="reviewdirective-body-top">
             <div class="reviewdirective-body-top-text">Write a Review for {{tutor.firstname}}</div>
-            <div class="reviewdirective-body-top-stars"> <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            <div class="reviewdirective-body-top-stars"> 
+                <div class="reviewdirective-body-top-stars-inner"></div>
             </div>
         </div>
-        <form class="reviewdirective-form" ng-submit=writetutorreview(reviewObj)>
+        <form class="reviewdirective-form" ng-submit="writereview({review:reviewObj}); showhide = !showhide">
             <div class="reviewdirective-body-mid">
                 <div class="reviewdirective-reviewtext-box">
                     <input class="reviewdirective-reviewtext" ng-model="reviewObj.writereview" type="text" placeholder="Write your review here"
@@ -25,7 +26,7 @@
                 </div>
             </div>
             <div class="reviewdirective-body-lower">
-                <input class="reviewdirective-reviewsubmit" type="button" value="Submit">
+                <input class="reviewdirective-reviewsubmit" type="submit" value="Submit">
             </div>
         </form>
     </div>
