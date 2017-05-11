@@ -38,7 +38,7 @@
             // background: yellow;
         }
     }
-    .reviewdirective-body {
+    .reviewdirective-form {
         .reviewdirective-body-top {
             width: 100%;
             // background: blue;
@@ -48,23 +48,15 @@
                 // background: pink;
                 @include flexSetUp(center, center);
             }
-            .reviewdirective-body-top-stars {
+            .reviewdirective-body-top-rating {
                 width: 100%;
                 height: 25px;
                 @include flexSetUp(center, center);
-                .reviewdirective-body-top-stars-inner {
-                    width: 70px;
-                    height: 15px;
-                    // background: black;
-                    background-image: url("../pictures/stars/star-ratings.png");
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    background-position: 0px -164px;
-
+                .rating-select {
+                    background: none;
                 }
             }
         }
-        .reviewdirective-form {
             .reviewdirective-body-mid {
                 width: 100%;
                 // background: orange;
@@ -100,6 +92,5 @@
                 center);
                 .reviewdirective-reviewsubmit {}
             }
-        }
     }
 }

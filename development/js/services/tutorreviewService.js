@@ -4,7 +4,7 @@ angular.module("App").service("tutorreviewService", function ($http, $q, $state)
             studentfirstname: "Cathleene",
             studentlastname: "Monson",
             tutorId: 1,
-            rating: 5,
+            rating: "Excellent",
             review: "Great experience. Tutor was responsible and an excellent communicator. Would hire again."
         },
         {
@@ -12,7 +12,7 @@ angular.module("App").service("tutorreviewService", function ($http, $q, $state)
             studentfirstname: "Cathleene",
             studentlastname: "Monson",
             tutorId: 2,
-            rating: 5,
+            rating: "Excellent",
             review: "Great experience. Tutor was responsible and an excellent communicator. Would hire again."
         },
         {
@@ -20,7 +20,7 @@ angular.module("App").service("tutorreviewService", function ($http, $q, $state)
             studentfirstname: "Cathleene",
             studentlastname: "Monson",
             tutorId: 3,
-            rating: 5,
+            rating: "Excellent",
             review: "Great experience. Tutor was responsible and an excellent communicator. Would hire again."
         },
         {
@@ -28,7 +28,7 @@ angular.module("App").service("tutorreviewService", function ($http, $q, $state)
             studentfirstname: "Cathleene",
             studentlastname: "Monson",
             tutorId: 4,
-            rating: 5,
+            rating: "Excellent",
             review: "Great experience. Tutor was responsible and an excellent communicator. Would hire again."
         },
         {
@@ -36,7 +36,7 @@ angular.module("App").service("tutorreviewService", function ($http, $q, $state)
             studentfirstname: "Cathleene",
             studentlastname: "Monson",
             tutorId: 5,
-            rating: 5,
+            rating: "Excellent",
             review: "Great experience. Tutor was responsible and an excellent communicator. Would hire again."
         },
         {
@@ -44,7 +44,7 @@ angular.module("App").service("tutorreviewService", function ($http, $q, $state)
             studentfirstname: "Aaron",
             studentlastname: "Smith",
             tutorId: 6,
-            rating: 1,
+            rating: "Poor",
             review: "Terrible experience. Tutor was not responsible and was a poor communicator. Would not hire again."
         },
         {
@@ -52,7 +52,7 @@ angular.module("App").service("tutorreviewService", function ($http, $q, $state)
             studentfirstname: "Aaron",
             studentlastname: "Smith",
             tutorId: 7,
-            rating: 1,
+            rating: "Poor",
             review: "Terrible experience. Tutor was not responsible and was a poor communicator. Would not hire again."
         },
         {
@@ -60,7 +60,7 @@ angular.module("App").service("tutorreviewService", function ($http, $q, $state)
             studentfirstname: "Aaron",
             studentlastname: "Smith",
             tutorId: 8,
-            rating: 1,
+            rating: "Poor",
             review: "Terrible experience. Tutor was not responsible and was a poor communicator. Would not hire again."
         },
         {
@@ -68,7 +68,7 @@ angular.module("App").service("tutorreviewService", function ($http, $q, $state)
             studentfirstname: "Aaron",
             studentlastname: "Smith",
             tutorId: 1,
-            rating: 1,
+            rating: "Poor",
             review: "Terrible experience. Tutor was not responsible and was a poor communicator. Would not hire again."
         },
         {
@@ -76,7 +76,7 @@ angular.module("App").service("tutorreviewService", function ($http, $q, $state)
             studentfirstname: "Aaron",
             studentlastname: "Smith",
             tutorId: 2,
-            rating: 1,
+            rating: "Poor",
             review: "Terrible experience. Tutor was not responsible and was a poor communicator. Would not hire again."
         },
         {
@@ -84,7 +84,7 @@ angular.module("App").service("tutorreviewService", function ($http, $q, $state)
             studentfirstname: "Aaron",
             studentlastname: "Smith",
             tutorId: 3,
-            rating: 1,
+            rating: "Poor",
             review: "Terrible experience. Tutor was not responsible and was a poor communicator. Would not hire again."
         },
         {
@@ -92,7 +92,7 @@ angular.module("App").service("tutorreviewService", function ($http, $q, $state)
             studentfirstname: "Camry",
             studentlastname: "Nelson",
             tutorId: 4,
-            rating: 3,
+            rating: "Average",
             review: "Tutor was a good listener and very nice; however, the tutor had a hard time explaining concepts.",
         },
         {
@@ -100,7 +100,7 @@ angular.module("App").service("tutorreviewService", function ($http, $q, $state)
             studentfirstname: "Camry",
             studentlastname: "Nelson",
             tutorId: 5,
-            rating: 3,
+            rating: "Average",
             review: "Tutor was a good listener and very nice; however, the tutor had a hard time explaining concepts.",
         },
         {
@@ -108,7 +108,7 @@ angular.module("App").service("tutorreviewService", function ($http, $q, $state)
             studentfirstname: "Camry",
             studentlastname: "Nelson",
             tutorId: 6,
-            rating: 3,
+            rating: "Average",
             review: "Tutor was a good listener and very nice; however, the tutor had a hard time explaining concepts.",
         },
         {
@@ -116,7 +116,7 @@ angular.module("App").service("tutorreviewService", function ($http, $q, $state)
             studentfirstname: "Camry",
             studentlastname: "Nelson",
             tutorId: 7,
-            rating: 3,
+            rating: "Average",
             review: "Tutor was a good listener and very nice; however, the tutor had a hard time explaining concepts.",
         },
         {
@@ -124,7 +124,7 @@ angular.module("App").service("tutorreviewService", function ($http, $q, $state)
             studentfirstname: "Camry",
             studentlastname: "Nelson",
             tutorId: 8,
-            rating: 3,
+            rating: "Average",
             review: "Tutor was a good listener and very nice; however, the tutor had a hard time explaining concepts.",
         },
         {
@@ -132,7 +132,7 @@ angular.module("App").service("tutorreviewService", function ($http, $q, $state)
             studentfirstname: "Camry",
             studentlastname: "Nelson",
             tutorId: 1,
-            rating: 3,
+            rating: "Average",
             review: "Tutor was a good listener and very nice; however, the tutor had a hard time explaining concepts.",
         },
         {
@@ -140,7 +140,7 @@ angular.module("App").service("tutorreviewService", function ($http, $q, $state)
             studentfirstname: "Camry",
             studentlastname: "Nelson",
             tutorId: 2,
-            rating: 3,
+            rating: "Average",
             review: "Tutor was a good listener and very nice; however, the tutor had a hard time explaining concepts.",
         }
     ]
