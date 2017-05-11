@@ -194,7 +194,7 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
     }
 
     this.getData = function (id) {
-        console.log(id);
+        console.log("id", id);
         return tutors;
     }
 
@@ -204,4 +204,5 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
         })
         return tutor[0];
     }
-})
+
+}) 

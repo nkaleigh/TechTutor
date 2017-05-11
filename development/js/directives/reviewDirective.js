@@ -3,9 +3,10 @@ angular.module("App").directive("reviewDirective", function () {
         restrict: "E",
         templateUrl: "./views/reviewDirective.html",
         scope: {
-            tutor: "=",
+            writereview: '=',
             review: '=',
-            showhide: '='
+            showhide: '=',
+            tutor: "=",
         },
         link: function (scope, elem, attrs) {
             console.log("made it to the directive");
@@ -13,5 +14,3 @@ angular.module("App").directive("reviewDirective", function () {
         }
     }
 })
-
-

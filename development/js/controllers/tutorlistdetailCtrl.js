@@ -13,17 +13,14 @@ angular.module("App").controller("tutorlistdetailCtrl", function ($scope, tutorl
         console.log("review", $scope.reviewdata);
     }
 
-    // var getTutorForReview = function () {
-    //     $scope.tutordata = tutorreviewService.getTutorForReview();
-    // }
-
-    // var writeTutorReview = function (review) {
-    //     $scope.tutorreviewdata = tutorreviewService.writeTutorReview(review);
-    // }
+    $scope.writetutorreview = function(review) {
+        tutorreviewService.writeTutorReview(review);
+    }
 
     getTutor();
     getTutorReview();
+
     // getTutorForReview();
-    // writeTutorReview();
+
 
 })

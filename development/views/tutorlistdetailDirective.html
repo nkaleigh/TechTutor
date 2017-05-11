@@ -13,7 +13,7 @@
         </div>
         <div class="name-box-detail">
             <div class="title-detail">
-                {{tutor.title}}
+                {{tutor.jobtitle}}
             </div>
             <p class="tutor-name-detail">{{tutor.firstname}} {{tutor.lastname[0]}}.</p>
         </div>
@@ -78,7 +78,7 @@
             </div>
             <div class="reviews-top-right">
                 <i class="fa fa-plus" aria-hidden="true" ng-click="showmodal = !showmodal"></i>
-                <review-directive tutor="tutordata" review="tutorreviewdata" showhide="showmodal" ng-show="showmodal"></review-directive>
+                <review-directive tutor="data" review="tutorreviewdata" showhide="showmodal" writereview="writetutorreview" ng-show="showmodal"></review-directive>
             </div>
         </div>
         <div class="reviews-bottom" ng-repeat="studentreviews in rd">

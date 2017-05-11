@@ -18,7 +18,7 @@
     transform: translate(-50%, -50%);
     .reviewdirective-head {
         width: 100%;
-        background: pink;
+        // background: pink;
         .reviewdirective-head-padding-top {
             width: 100%;
             height: 10px;
@@ -39,22 +39,47 @@
         }
     }
     .reviewdirective-body {
-        width: 100%;
-        height: 200px;
         .reviewdirective-body-top {
             width: 100%;
-            height: 30%;
+            height: 50px;
             background: blue;
+            @include flexSetUp(center, center, column);
+            .reviewdirective-body-top-text {}
+            .reviewdirective-body-top-stars {}
         }
-        .reviewdirective-body-mid {
-            width: 100%;
-            height: 50%;
-            background: orange;
-        }
-        .reviewdirective-body-lower {
-            width: 100%;
-            height: 20%;
-            background: blue;
+        .reviewdirective-form {
+            .reviewdirective-body-mid {
+                width: 100%;
+                background: orange;
+                @include flexSetUp(space-around, center, column);
+                .reviewdirective-reviewtext-box {
+                    width: 100%;
+                    height: 50px;
+                    background: purple;
+                    @include flexSetUp(center, center);
+                    .reviewdirective-reviewtext {
+                        width: 300px;
+                        height: 30px;
+                        font-size: 13px;
+                    }
+                }
+                .reviewdirective-reviewname-box {
+                    width: 100%;
+                    height: 50px;
+                    @include flexSetUp(center, center);
+                    .reviewdirective-firstname {}
+                    .reviewdirective-lastname {}
+                }
+            }
+            .reviewdirective-body-lower {
+                width: 100%;
+                height: 50px;
+                background: blue;
+                @include flexSetUp(center, center);
+                .reviewdirective-reviewsubmit {
+                    
+                }
+            }
         }
     }
 }
