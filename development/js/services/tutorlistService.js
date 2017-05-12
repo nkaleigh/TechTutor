@@ -1,14 +1,15 @@
 angular.module("App").service("tutorlistService", function ($http, $q, $state) {
     var tutors = [{
-        tutorId: 1,
+        tutor_id: 1,
         email: "kaleigh@gmail.com",
         password: "password",
         firstname: "Kaleigh",
         lastname: "Niemela",
         citystate: "Orem, Utah",
-        img: "x",
+        picture_url: "",
         jobtitle: "Web Developer Tutor",
         bio: "I recently completed Dev Mountain's Web Development course. I have grown to love coding and also teaching others more about code. I am available most evening hours and I am flexible with transportation.",
+        rate: "$10/hr",
         skillone: "Angular.js",
         skilltwo: "Javascript",
         skillthree: "Node.js",
@@ -21,15 +22,15 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
         degreeone: "BA English Linguistics",
         degreetwo: "",
         degreethree: "",
-        rate: "$10/hr",
+        rating: 3
     }, {
-        tutorId: 2,
+        tutor_id: 2,
         email: "christopher@gmail.com",
         password: "password",
         firstname: "Christopher",
         lastname: "Vosters",
         citystate: "Orem, Utah",
-        img: "x",
+        img: "",
         jobtitle: "Javascript Tutor",
         bio: "I recently completed Dev Mountain's Web Development course. I have grown to love coding and also teaching others more about code. I am available most evening hours and I am flexible with transportation.",
         rate: "$10/hr",
@@ -47,13 +48,13 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
         degreethree: "",
         rating: 4
     }, {
-        tutorId: 3,
+        tutor_id: 3,
         email: "oshion@gmail.com",
         password: "password",
         firstname: "Oshion",
         lastname: "Niemela",
         citystate: "Provo, Utah",
-        img: "x",
+        img: "",
         jobtitle: "Python Tutor",
         bio: "I recently completed Dev Mountain's Web Development course. I have grown to love coding and also teaching others more about code. I am available most evening hours and I am flexible with transportation.",
         rate: "$20/hr",
@@ -71,13 +72,13 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
         degreethree: "",
         rating: 5
     }, {
-        tutorId: 4,
+        tutor_id: 4,
         email: "ed@gmail.com",
         password: "password",
         firstname: "Ed",
         lastname: "Smith",
         citystate: "Orem, Utah",
-        img: "x",
+        img: "",
         jobtitle: "Angular Tutor",
         bio: "I recently completed Dev Mountain's Web Development course. I have grown to love coding and also teaching others more about code. I am available most evening hours and I am flexible with transportation.",
         rate: "$12/hr",
@@ -95,13 +96,13 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
         degreethree: "",
         rating: 2
     }, {
-        tutorId: 5,
+        tutor_id: 5,
         email: "anna@gmail.com",
         password: "password",
         firstname: "Anna",
         lastname: "Wright",
         citystate: "Orem, Utah",
-        img: "x",
+        img: "",
         jobtitle: "Web Developer Tutor",
         bio: "I recently completed Dev Mountain's Web Development course. I have grown to love coding and also teaching others more about code. I am available most evening hours and I am flexible with transportation.",
         rate: "$15/hr",
@@ -119,13 +120,13 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
         degreethree: "",
         rating: 1
     }, {
-        tutorId: 6,
+        tutor_id: 6,
         email: "luis@gmail.com",
         password: "password",
         firstname: "Luis",
         lastname: "Jones",
         citystate: "Orem, Utah",
-        img: "x",
+        img: "",
         jobtitle: "React Tutor",
         bio: "I recently completed Dev Mountain's Web Development course. I have grown to love coding and also teaching others more about code. I am available most evening hours and I am flexible with transportation.",
         rate: "$10/hr",
@@ -143,16 +144,16 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
         degreethree: "",
         rating: 4
     }, {
-        tutorId: 7,
+        tutor_id: 7,
         email: "miriam@gmail.com",
         password: "password",
         firstname: "Miriam",
         lastname: "Nelson",
         citystate: "Orem, Utah",
-        img: "x",
-        jobtitle: "Node.js Tutor",
+        img: "",
+        jobtitle: "SQL Tutor",
         bio: "I recently completed Dev Mountain's Web Development course. I have grown to love coding and also teaching others more about code. I am available most evening hours and I am flexible with transportation.",
-        rate: "$100/hr",
+        rate: "$25/hr",
         skillone: "Angular.js",
         skilltwo: "Javascript",
         skillthree: "Node.js",
@@ -165,18 +166,18 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
         degreeone: "BA English Linguistics",
         degreetwo: "",
         degreethree: "",
-        rating: 4
+        rating: 5
     }, {
-        tutorId: 8,
+        tutor_id: 8,
         email: "laura@gmail.com",
         password: "password",
         firstname: "Laura",
         lastname: "Andrews",
         citystate: "Orem, Utah",
-        img: "x",
+        img: "",
         jobtitle: "Web Developer Tutor",
         bio: "I recently completed Dev Mountain's Web Development course. I have grown to love coding and also teaching others more about code. I am available most evening hours and I am flexible with transportation.",
-        rate: "$70/hr",
+        rate: "$20/hr",
         skillone: "Angular.js",
         skilltwo: "Javascript",
         skillthree: "Node.js",
@@ -232,7 +233,7 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
 
     this.getSpecificData = function (id) {
         var tutor = tutors.filter(function (a) {
-            return a.tutorId === parseInt(id);
+            return a.tutor_id === parseInt(id);
         })
         console.log(tutor)
         return tutor[0];
