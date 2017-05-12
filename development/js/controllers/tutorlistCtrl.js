@@ -1,11 +1,7 @@
-angular.module("App").controller('tutorlistCtrl', function ($scope, tutorlistService) {
+angular.module("App").controller('tutorlistCtrl', function ($scope, tutorlistService, getAllTutors) {
 
 
-  var getTutors = function () {
-    console.log("data")
-    $scope.data = tutorlistService.getData();
-  }
 
-  getTutors();
+  $scope.data = getAllTutors
 
 })

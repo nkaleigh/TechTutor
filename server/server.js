@@ -3,7 +3,9 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var cors = require('cors');
 var massive = require('massive');
-var config = require('./config');
+var config = require('../config');
+var port = 3001;
+
 
 //allows our controllers to use the express object
 var app = module.exports = express();
@@ -11,6 +13,10 @@ var app = module.exports = express();
 //middleware
 app.use(bodyParser.json());
 app.use(cors());
+
+//looking for index.html file, which has everything imorted into it
+app.use(express.static(__dirname + './../dist'));
+
 
 //connects us to database (pgAdmin)
 var conn = massive.connectSync({
@@ -21,20 +27,24 @@ var conn = massive.connectSync({
 //puts a key value ('db': conn) on the settings object inside the express object
 app.set('db', conn);
 
+//controllers must be required after 'db' is set
+var serverCtrl = require('./serverCtrl');
+
 //gets db from the settings object inside the express object
 var db = app.get('db');
 
-//controllers must be required after 'db' is set
-var productsCtrl = require('./productsCtrl');
-
 
 //endpoints
+
+app.get("/api/gettutors", serverCtrl.getTutors);
+app.post("/api/writereview", serverCtrl.writeReview);
+app.get("/api/getspecifictutor/:id", serverCtrl.getSpecificTutor);
+app.get("/api/gettutorreviews/:reviewid", serverCtrl.getTutorReviews);
 
 
 
 //port
 
-var port = 3001;
 app.listen(port, function () {
-    console.log("Started server on port: " + port);
+    console.log("Running on port" + port);
 });

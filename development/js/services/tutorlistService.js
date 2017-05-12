@@ -197,7 +197,6 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
     this.login = function (tutorparameter) {
         console.log(tutorparameter);
         for (var i = 0; i < tutors.length; i++) {
-            // console.log("for loop running");
             if (tutors[i].email === tutorparameter.email && tutors[i].password === tutorparameter.password) {
                 console.log("found user");
                 $state.go("tutorlist")
@@ -217,7 +216,7 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
     }
 
     this.signupform = function (tutorformparam) {
-        console.log("made it to the service");
+        console.log(tutorformparam);
         if (tutorformparam.citystate && tutorformparam.rate && tutorformparam.jobtitle && tutorformparam.bio) {
             console.log("tutors before", tutors);
             tutors.push(tutorformparam);
@@ -226,18 +225,13 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
         }
     }
 
-    this.getData = function (id) {
-        console.log("id", id);
-        return tutors;
-    }
 
-    this.getSpecificData = function (id) {
-        var tutor = tutors.filter(function (a) {
-            return a.tutor_id === parseInt(id);
+    this.getSpecificTutor = function (id) {
+        return $http.get("/api/getspecifictutor/"+id).then(function(response) {
+            return response.data;
         })
-        console.log(tutor)
-        return tutor[0];
-
     }
+
+    
 
 })

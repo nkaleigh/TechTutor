@@ -6,7 +6,7 @@ angular.module("App").directive("tutorlistDirective", function() {
             tutors: "="
         },
         link: function(scope, elem, attrs) {
-            console.log(scope.tutor);
+            // console.log(scope.tutors);
             
         }
     }

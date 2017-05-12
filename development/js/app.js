@@ -32,7 +32,15 @@ angular.module("App", ['ui.router'])
             .state('tutorlist', {
                 templateUrl: './views/tutorlist.html',
                 controller: 'tutorlistCtrl',
-                url: '/tutorlist'
+                url: '/tutorlist',
+                resolve: {
+                            getAllTutors: function($http) {
+                                return $http.get("/api/gettutors").then(function(response){
+                                console.log(response)
+                                return response.data;
+                            })
+                         }
+                }
             })
             .state('tutorlistdetail', {
                 templateUrl: './views/tutorlistdetail.html',

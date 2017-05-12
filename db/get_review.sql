@@ -1,0 +1,1 @@
+select * from reviews where tutor_id = $1;

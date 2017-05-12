@@ -8,8 +8,8 @@ angular.module("App").directive("reviewDirective", function () {
             tutor: "=",
         },
         link: function (scope, elem, attrs) {
-            console.log("made it to the directive");
-            console.log('rd', scope)
+            console.log("made it to the review directive");
+            // console.log('rd', scope)
 
         }
     }

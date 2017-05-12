@@ -8,15 +8,15 @@
 <div class="box" ng-repeat="tutor in tutors">
     <div class="profile-box">
         <div class="profilepic-box">
-            <img class="profilepic" src="https://unsplash.it/50" alt="profile picture" ui-sref="tutorlistdetail({id: tutor.tutor_id})">
+            <img class="profilepic" src="https://unsplash.it/50" alt="profile picture" ui-sref="tutorlistdetail({id: tutor.id})">
         </div>
         <div class="name-box">
-            <p class="tutor-name"><span class="tutornameSpan" ui-sref="tutorlistdetail({id: tutor.tutor_id})">{{tutor.firstname}} {{tutor.lastname[0]}}.</span></p>
+            <p class="tutor-name"><span class="tutornameSpan" ui-sref="tutorlistdetail({id: tutor.id})">{{tutor.firstname}} {{tutor.lastname[0]}}.</span></p>
             <p class="tutor-citystate">{{tutor.citystate}}</p>
             <i class="fa fa-envelope-o" aria-hidden="true"></i>
         </div>
         <div class="bio-box">
-            <div class="title"><span class="tutortitleSpan" ui-sref="tutorlistdetail({id: tutor.tutor_id})">{{tutor.jobtitle}}</span></div>
+            <div class="title"><span class="tutortitleSpan" ui-sref="tutorlistdetail({id: tutor.id})">{{tutor.jobtitle}}</span></div>
             <div class="bio">{{tutor.bio}}</div>
         </div>
         <div class="rate-box">

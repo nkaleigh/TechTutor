@@ -147,18 +147,18 @@ angular.module("App").service("tutorreviewService", function ($http, $q, $state)
 
 
     this.getTutorReview = function (id) {
-        var review = tutorReviews.filter(function (a) {
-            return a.tutor_id === parseInt(id);
+        console.log(id);
+        return $http.get("/api/gettutorreviews/" + id).then(function (response) {
+            console.log(response.data);
+            return response.data;
         })
-        return review;
     }
 
-    this.writeTutorReview = function(reviewparam) {
-        console.log("review made it to the service");
-        if (reviewparam.writereview && reviewparam.yourfirstname && reviewparam.yourlastname) {
-            tutorReviews.push(reviewparam);
-            console.log("Review info pushed to array");
-            console.log(reviewparam);
-        }
+    this.writeTutorReview = function (reviewparam) {
+        console.log(reviewparam);
+        return $http.post("/api/writereview", reviewparam).then(function (response) {
+            console.log(response);
+            return response;
+        })
     }
 });

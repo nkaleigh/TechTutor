@@ -9,8 +9,8 @@ angular.module("App").directive("tutorlistdetailDirective", function () {
         },
         link: function (scope, elem, attrs) {
             console.log(scope.tutor); 
-            console.log('detail', scope)
-            console.log(scope.writereview)
+            // console.log('detail', scope)
+            // console.log(scope.writereview)
         }
     }
 })
