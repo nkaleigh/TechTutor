@@ -12,12 +12,8 @@
         </div>
         <div class="name-box">
             <p class="tutor-name"><span class="tutornameSpan" ui-sref="tutorlistdetail({id: tutor.tutorId})">{{tutor.firstname}} {{tutor.lastname[0]}}.</span></p>
-            <div class="rating-box">
-                <div class="rating">
-                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                </div>
-            </div>
-            <p class="tutor-zipcode">{{tutor.zipcode}}</p>
+            <p class="tutor-citystate">{{tutor.citystate}}</p>
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
         </div>
         <div class="bio-box">
             <div class="title"><span class="tutortitleSpan" ui-sref="tutorlistdetail({id: tutor.tutorId})">{{tutor.jobtitle}}</span></div>

@@ -5,38 +5,46 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
         password: "password",
         firstname: "Kaleigh",
         lastname: "Niemela",
-        zipcode: "Orem, Utah",
+        citystate: "Orem, Utah",
         img: "x",
         jobtitle: "Web Developer Tutor",
         bio: "I recently completed Dev Mountain's Web Development course. I have grown to love coding and also teaching others more about code. I am available most evening hours and I am flexible with transportation.",
-        skills: ["Angular.js", "Javascript", "Node.js", "React", "SQL", "GitHub"],
-        education: [{
-            school: "Brigham Young University",
-            degree: "BA English Linguistics"
-        }, {
-            school: "DevMountain"
-        }],
-        rate: "free",
-        rating: 5
+        skillone: "Angular.js",
+        skilltwo: "Javascript",
+        skillthree: "Node.js",
+        skillfour: "React",
+        skillfive: "SQL",
+        skillsix: "GitHub",
+        schoolone: "Brigham Young University",
+        schooltwo: "DevMountain",
+        schoolthree: "",
+        degreeone: "BA English Linguistics",
+        degreetwo: "",
+        degreethree: "",
+        rate: "$10/hr",
     }, {
         tutorId: 2,
         email: "christopher@gmail.com",
         password: "password",
         firstname: "Christopher",
         lastname: "Vosters",
-        zipcode: "Orem, Utah",
+        citystate: "Orem, Utah",
         img: "x",
         jobtitle: "Javascript Tutor",
         bio: "I recently completed Dev Mountain's Web Development course. I have grown to love coding and also teaching others more about code. I am available most evening hours and I am flexible with transportation.",
         rate: "$10/hr",
-        skills: ["Angular.js", "Javascript", "Node.js", "React", "SQL", "GitHub"],
-        education: [{
-            school: "Brigham Young University",
-            degree: "BA English Linguistics"
-        }, {
-            school: "DevMountain"
-        }],
-        rate: "$10/hr",
+        skillone: "Angular.js",
+        skilltwo: "Javascript",
+        skillthree: "Node.js",
+        skillfour: "React",
+        skillfive: "SQL",
+        skillsix: "GitHub",
+        schoolone: "Brigham Young University",
+        schooltwo: "DevMountain",
+        schoolthree: "",
+        degreeone: "BA English Linguistics",
+        degreetwo: "",
+        degreethree: "",
         rating: 4
     }, {
         tutorId: 3,
@@ -44,19 +52,23 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
         password: "password",
         firstname: "Oshion",
         lastname: "Niemela",
-        zipcode: "Provo, Utah",
+        citystate: "Provo, Utah",
         img: "x",
         jobtitle: "Python Tutor",
         bio: "I recently completed Dev Mountain's Web Development course. I have grown to love coding and also teaching others more about code. I am available most evening hours and I am flexible with transportation.",
         rate: "$20/hr",
-        skills: ["Angular.js", "Javascript", "Node.js", "React", "SQL", "GitHub"],
-        education: [{
-            school: "Brigham Young University",
-            degree: "BA English Linguistics"
-        }, {
-            school: "DevMountain"
-        }],
-        rate: "15/hr",
+        skillone: "Angular.js",
+        skilltwo: "Javascript",
+        skillthree: "Node.js",
+        skillfour: "React",
+        skillfive: "SQL",
+        skillsix: "GitHub",
+        schoolone: "Brigham Young University",
+        schooltwo: "DevMountain",
+        schoolthree: "",
+        degreeone: "BA English Linguistics",
+        degreetwo: "",
+        degreethree: "",
         rating: 5
     }, {
         tutorId: 4,
@@ -64,19 +76,23 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
         password: "password",
         firstname: "Ed",
         lastname: "Smith",
-        zipcode: "Orem, Utah",
+        citystate: "Orem, Utah",
         img: "x",
         jobtitle: "Angular Tutor",
         bio: "I recently completed Dev Mountain's Web Development course. I have grown to love coding and also teaching others more about code. I am available most evening hours and I am flexible with transportation.",
         rate: "$12/hr",
-        skills: ["Angular.js", "Javascript", "Node.js", "React", "SQL", "GitHub"],
-        education: [{
-            school: "Brigham Young University",
-            degree: "BA English Linguistics"
-        }, {
-            school: "DevMountain"
-        }],
-        rate: "$100/hr",
+        skillone: "Angular.js",
+        skilltwo: "Javascript",
+        skillthree: "Node.js",
+        skillfour: "React",
+        skillfive: "SQL",
+        skillsix: "GitHub",
+        schoolone: "Brigham Young University",
+        schooltwo: "DevMountain",
+        schoolthree: "",
+        degreeone: "BA English Linguistics",
+        degreetwo: "",
+        degreethree: "",
         rating: 2
     }, {
         tutorId: 5,
@@ -84,19 +100,23 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
         password: "password",
         firstname: "Anna",
         lastname: "Wright",
-        zipcode: "Orem, Utah",
+        citystate: "Orem, Utah",
         img: "x",
         jobtitle: "Web Developer Tutor",
         bio: "I recently completed Dev Mountain's Web Development course. I have grown to love coding and also teaching others more about code. I am available most evening hours and I am flexible with transportation.",
         rate: "$15/hr",
-        skills: ["Angular.js", "Javascript", "Node.js", "React", "SQL", "GitHub"],
-        education: [{
-            school: "Brigham Young University",
-            degree: "BA English Linguistics"
-        }, {
-            school: "DevMountain"
-        }],
-        rate: "$20/hr",
+        skillone: "Angular.js",
+        skilltwo: "Javascript",
+        skillthree: "Node.js",
+        skillfour: "React",
+        skillfive: "SQL",
+        skillsix: "GitHub",
+        schoolone: "Brigham Young University",
+        schooltwo: "DevMountain",
+        schoolthree: "",
+        degreeone: "BA English Linguistics",
+        degreetwo: "",
+        degreethree: "",
         rating: 1
     }, {
         tutorId: 6,
@@ -104,19 +124,23 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
         password: "password",
         firstname: "Luis",
         lastname: "Jones",
-        zipcode: "Orem, Utah",
+        citystate: "Orem, Utah",
         img: "x",
         jobtitle: "React Tutor",
         bio: "I recently completed Dev Mountain's Web Development course. I have grown to love coding and also teaching others more about code. I am available most evening hours and I am flexible with transportation.",
         rate: "$10/hr",
-        skills: ["Angular.js", "Javascript", "Node.js", "React", "SQL", "GitHub"],
-        education: [{
-            school: "Brigham Young University",
-            degree: "BA English Linguistics"
-        }, {
-            school: "DevMountain"
-        }],
-        rate: "10/hr",
+        skillone: "Angular.js",
+        skilltwo: "Javascript",
+        skillthree: "Node.js",
+        skillfour: "React",
+        skillfive: "SQL",
+        skillsix: "GitHub",
+        schoolone: "Brigham Young University",
+        schooltwo: "DevMountain",
+        schoolthree: "",
+        degreeone: "BA English Linguistics",
+        degreetwo: "",
+        degreethree: "",
         rating: 4
     }, {
         tutorId: 7,
@@ -124,19 +148,23 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
         password: "password",
         firstname: "Miriam",
         lastname: "Nelson",
-        zipcode: "Orem, Utah",
+        citystate: "Orem, Utah",
         img: "x",
         jobtitle: "Node.js Tutor",
         bio: "I recently completed Dev Mountain's Web Development course. I have grown to love coding and also teaching others more about code. I am available most evening hours and I am flexible with transportation.",
         rate: "$100/hr",
-        skills: ["Angular.js", "Javascript", "Node.js", "React", "SQL", "GitHub"],
-        education: [{
-            school: "Brigham Young University",
-            degree: "BA English Linguistics"
-        }, {
-            school: "DevMountain"
-        }],
-        rate: "free",
+        skillone: "Angular.js",
+        skilltwo: "Javascript",
+        skillthree: "Node.js",
+        skillfour: "React",
+        skillfive: "SQL",
+        skillsix: "GitHub",
+        schoolone: "Brigham Young University",
+        schooltwo: "DevMountain",
+        schoolthree: "",
+        degreeone: "BA English Linguistics",
+        degreetwo: "",
+        degreethree: "",
         rating: 4
     }, {
         tutorId: 8,
@@ -144,19 +172,23 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
         password: "password",
         firstname: "Laura",
         lastname: "Andrews",
-        zipcode: "Orem, Utah",
+        citystate: "Orem, Utah",
         img: "x",
         jobtitle: "Web Developer Tutor",
         bio: "I recently completed Dev Mountain's Web Development course. I have grown to love coding and also teaching others more about code. I am available most evening hours and I am flexible with transportation.",
         rate: "$70/hr",
-        skills: ["Angular.js", "Javascript", "Node.js", "React", "SQL", "GitHub"],
-        education: [{
-            school: "Brigham Young University",
-            degree: "BA English Linguistics"
-        }, {
-            school: "DevMountain"
-        }],
-        rate: "$25/hr",
+        skillone: "Angular.js",
+        skilltwo: "Javascript",
+        skillthree: "Node.js",
+        skillfour: "React",
+        skillfive: "SQL",
+        skillsix: "GitHub",
+        schoolone: "Brigham Young University",
+        schooltwo: "DevMountain",
+        schoolthree: "",
+        degreeone: "BA English Linguistics",
+        degreetwo: "",
+        degreethree: "",
         rating: 2
     }]
 
@@ -185,7 +217,7 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
 
     this.signupform = function (tutorformparam) {
         console.log("made it to the service");
-        if (tutorformparam.zipcode && tutorformparam.rate && tutorformparam.jobtitle && tutorformparam.bio) {
+        if (tutorformparam.citystate && tutorformparam.rate && tutorformparam.jobtitle && tutorformparam.bio) {
             console.log("tutors before", tutors);
             tutors.push(tutorformparam);
             console.log("tutors after", tutors);
@@ -204,7 +236,7 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
         })
         console.log(tutor)
         return tutor[0];
-        
+
     }
 
-}) 
+})

@@ -21,12 +21,8 @@
             <div class="rate-detail">
                 {{tutor.rate}}
             </div>
-            <div class="rating-box-detail">
-                <div class="rating-detail">
-                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                </div>
-            </div>
-            <p class="tutor-zipcode-detail">{{tutor.zipcode}}</p>
+            <p class="tutor-citystate-detail">{{tutor.citystate}}</p>
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
         </div>
     </div>
     <div class="name-padding-bottom"></div>
@@ -49,8 +45,13 @@
         <div class="skills-top">
             <p class="skills-title">Skills</p>
         </div>
-        <div class="skills-bottom" ng-repeat="skill in tutor.skills">
-            <p class="skills-text">{{skill}}</p>
+        <div class="skills-bottom">
+            <p class="skills-text">{{tutor.skillone}}</p>
+            <p class="skills-text">{{tutor.skilltwo}}</p>
+            <p class="skills-text">{{tutor.skillthree}}</p>
+            <p class="skills-text">{{tutor.skillfour}}</p>
+            <p class="skills-text">{{tutor.skillfive}}</p>
+            <p class="skills-text">{{tutor.skillsix}}</p>
         </div>
     </div>
     <div class="skills-padding-bottom"></div>
@@ -61,9 +62,15 @@
         <div class="education-top">
             <p class="education-title">Education</p>
         </div>
-        <div class="education-bottom" ng-repeat="edu in tutor.education">
-            <p class="school-text">{{edu.school}}</p>
-            <p class="degree-text">{{edu.degree}}</p>
+        <div class="education-bottom">
+            <p class="school-text">{{tutor.schoolone}}</p>
+            <p class="degree-text">{{tutor.degreeone}}</p>
+            <br>
+            <p class="school-text">{{tutor.schooltwo}}</p>
+            <p class="degree-text">{{tutor.degreetwo}}</p>
+            <br>
+            <p class="school-text">{{tutor.schoolthree}}</p>
+            <p class="degree-text">{{tutor.degreethree}}</p>
             <br>
         </div>
     </div>
@@ -75,7 +82,6 @@
         <div class="reviews-top">
             <div class="reviews-top-left">
                 <div class="reviews-top-title">Reviews</div>
-                <div class="reviews-top-stars"></div> 
             </div>
             <div class="reviews-top-right">
                 <i class="fa fa-plus" aria-hidden="true" ng-click="showmodal = !showmodal"></i>

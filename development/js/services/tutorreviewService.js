@@ -158,6 +158,7 @@ angular.module("App").service("tutorreviewService", function ($http, $q, $state)
         if (reviewparam.writereview && reviewparam.yourfirstname && reviewparam.yourlastname) {
             tutorReviews.push(reviewparam);
             console.log("Review info pushed to array");
+            console.log(reviewparam);
         }
     }
 });

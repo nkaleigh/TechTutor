@@ -75,14 +75,12 @@
                     font-size: .8em;
                     letter-spacing: 1px;
                 }
-                .rating-box-detail {
-                    .rating-detail {
-                        line-height: 1.5em;
-                        font-size: .4em;
-                    }
-                }
-                .tutor-zipcode-detail {
+                .tutor-citystate-detail {
                     font-size: .4em;
+                }
+                .fa-envelope-o {
+                    font-size: .7em;
+                    cursor: pointer;
                 }
             }
         }
@@ -210,7 +208,7 @@
         .reviews-padding-top {
             width: 100%;
             height: 20px;
-            background: orange;
+            // background: orange;
         }
         .box-reviews-inner {
             width: 95%;
@@ -221,30 +219,21 @@
                 height: 25px;
                 font-size: .8em;
                 @include flexSetUp(space-between, flex-start, row);
-                background: yellow;
+                // background: yellow;
                 .reviews-top-left {
                     width: 50%;
                     height: 100%;
-                    background: blue;
+                    // background: blue;
                     @include flexSetUp(flex-start, flex-start);
                     .reviews-top-title {
                         width: 27%;
                         height: 100%;
                     }
-                    .reviews-top-stars {
-                        width: 69px;
-                        height: 14px;
-                        background: black;
-                        background-image: url("../pictures/stars/star-ratings.png");
-                        background-repeat: no-repeat;
-                        background-size: cover;
-                        background-position: top;
-                    }
                 }
                     .reviews-top-right {
                         width: 50%;
                         height: 100%;
-                        background: red;
+                        // background: red;
                         @include flexSetUp(flex-end,
                         flex-start);
                         .fa-plus {
@@ -256,11 +245,11 @@
             .reviews-padding-bottom {
                 width: 100%;
                 height: 20px;
-                background: orange;
+                // background: orange;
             }
             .reviews-bottom {
                 width: 100%;
-                background: pink;
+                // background: pink;
                 .reviews-comment {
                     font-size: .6em;
                 }
