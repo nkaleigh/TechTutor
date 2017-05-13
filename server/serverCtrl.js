@@ -30,7 +30,6 @@ module.exports = {
     },
 
     getSpecificTutor: function(req, res) {
-        console.log(req.params);
         db.get_one_tutor([req.params.id], function(err, response) {
             if(err) {
                 console.log(err)
