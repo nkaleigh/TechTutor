@@ -18,13 +18,13 @@ app.use(cors());
 app.use(express.static(__dirname + './../dist'));
 
 
-//connects us to database (pgAdmin)
+//tells massive where our database is
 var conn = massive.connectSync({
     connectionString: config.elephantsql
 });
 
 
-//puts a key value ('db': conn) on the settings object inside the express object
+//puts a key value ('db': conn) on the settings object inside the express object, connecting us to database(elephantsql)
 app.set('db', conn);
 
 //controllers must be required after 'db' is set
@@ -36,6 +36,8 @@ var db = app.get('db');
 
 //endpoints
 
+app.post("/api/addtutorsignup", serverCtrl.tutorsignup);
+app.put("/api/updatetutorsignup", serverCtrl.tutorsignupform);
 app.get("/api/gettutors", serverCtrl.getTutors);
 app.post("/api/writereview", serverCtrl.writeReview);
 app.get("/api/getspecifictutor/:id", serverCtrl.getSpecificTutor);
