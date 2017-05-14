@@ -8,82 +8,85 @@
     background-position: center;
     color: white;
     font-family: chalk;
-    .head {
-        width: 100%;
-        height: 20vh;
-        // background: pink;
-        @include flexSetUp(center,
-        center);
-        .head-inner {
-            width: 95%;
-            height: 75%;
-            // border: 1px solid blue;
-            @include flexSetUp(flex-end,
-            flex-start);
-            .login-signup-box {
-                width: 85px;
+    @include flexSetUp(flex-start,
+    center,
+    column);
+    .home-border {
+        width: 425px;
+        height: 100%;
+        border: 6px double white;
+        .home-head {
+            border: 1px solid white;
+            border-right: none;
+            border-left: none;
+            border-top: none;
+            @include flexSetUp(center,
+            center,
+            column);
+            .home-head-padding-top {
+                width: 100%;
                 height: 20px;
-                // background: black;
-                @include flexSetUp(space-around,
+                // background: yellow;
+            }
+            .home-header-inner {
+                width: 95%;
+                height: 75%;
+                font-size: 1em;
+                // border: 1px solid blue;
+                @include flexSetUp(flex-start,
                 center);
-                .log-in {
+                .home-log-in {
                     cursor: pointer;
-                    background: none;
-                    color: white;
-                    text-align: center;
-                    font-family: chalk;
-                    font-size: .7em;
-                    white-space: no wrap;
-                    letter-spacing: 1px;
-                    // background: blue;
                 }
-                .divider {
+                .home-divider {
                     font-family: 'Open Sans Condensed', sans-serif;
-                    // background: green;
                 }
-                .sign-up {
+                .home-sign-up {
                     cursor: pointer;
-                    background: none;
-                    color: white;
-                    text-align: center;
-                    font-family: chalk;
-                    font-size: .7em;
-                    // white-space: no wrap;
-                    // border-style: solid;
-                    // border-color: white;
-                    border-width: 1px;
-                    letter-spacing: 1px;
-                    // background: red;
                 }
             }
+            .home-head-padding-bottom {
+                width: 100%;
+                height: 20px;
+                // background: yellow;
+            }
         }
-    }
-    .mid {
-        width: 100%;
-        height: 60vh;
-        // background: yellow;
-        @include flexSetUp(center,
-        center,
-        column);
-        .title {
-            letter-spacing: 2px;
-            font-size: 9em;
-            // background: black;
-        }
-        .arrow {
-            height: 110px;
-            width: 150px;
-            // background: pink;
-            background-image: url("../pictures/chalk-arrow-jake.png");
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: center;
-            cursor: pointer;
-        }
-    }
-    .footer {
-        width: 100%;
-        height: 20vh;
-        // background: lightblue;
+
+            .home-body {
+                width: 100%;
+                height: 340px;
+                // background: pink;
+                @include flexSetUp(center,
+                center,
+                column);
+                .home-body-inner {
+                    width: 100%;
+                    height: 100%;
+                    @include flexSetUp(center,
+                    center);
+                    .home-title-arrow {
+                        width: 95%;
+                        height: 75%;
+                        // border: 1px solid blue;
+                        @include flexSetUp(center,
+                        center,
+                        column);
+                        .home-title {
+                            letter-spacing: 2px;
+                            font-size: 6em;
+                        }
+                        .home-arrow {
+                            height: 50px;
+                            width: 150px;
+                            // background: pink;
+                            background-image: url("../pictures/chalk-arrow-jake.png");
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            background-position: center;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
     }
 }
