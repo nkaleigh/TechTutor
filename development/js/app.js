@@ -24,22 +24,24 @@ angular.module("App", ['ui.router'])
                 controller: 'signupCtrl',
                 url: '/signup'
             })
+            
             .state('signupform', {
                 templateUrl: './views/signupform.html',
                 controller: 'signupformCtrl',
                 url: '/signupform'
             })
+
             .state('tutorlist', {
                 templateUrl: './views/tutorlist.html',
                 controller: 'tutorlistCtrl',
                 url: '/tutorlist',
                 resolve: {
-                            getAllTutors: function($http) {
-                                return $http.get("/api/gettutors").then(function(response){
-                                console.log(response)
-                                return response.data;
-                            })
-                         }
+                    getAllTutors: function ($http) {
+                        return $http.get("/api/gettutors").then(function (response) {
+                            console.log(response)
+                            return response.data;
+                        })
+                    }
                 }
             })
             .state('tutorlistdetail', {

@@ -206,15 +206,6 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
         alert("incorrect password");
     }
 
-    ///////////DELETE WHEN DONE\\\\\\\\\\\\\\\\\\\
-    // this.signup = function (tutorparam) {
-    //     console.log("signup test service");
-    //     if (tutorparam.firstname && tutorparam.lastname && tutorparam.email && tutorparam.password) {
-    //         console.log(tutors);
-    //         tutors.push(tutorparam);
-    //         $state.go("signupform");
-    //     }
-    // }
 
 
     this.signup = function (tutorparam) {
@@ -227,17 +218,6 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
     }
 
 
-    //////////////////DELETE WHEN DONE\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-    // this.signupform = function (tutorformparam) {
-    //     console.log(tutorformparam);
-    //     if (tutorformparam.citystate && tutorformparam.rate && tutorformparam.jobtitle && tutorformparam.bio) {
-    //         console.log("tutors before", tutors);
-    //         tutors.push(tutorformparam);
-    //         console.log("tutors after", tutors);
-    //         $state.go("tutorlist");
-    //     }
-    // }
-
 
     this.signupform = function (tutorformparam) {
         console.log(tutorformparam);
@@ -247,6 +227,7 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
             return response;
         })
     }
+
 
 
     this.getSpecificTutor = function (id) {
