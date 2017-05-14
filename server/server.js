@@ -37,7 +37,7 @@ var db = app.get('db');
 //endpoints
 
 app.post("/api/addtutorsignup", serverCtrl.tutorsignup);
-app.put("/api/updatetutorsignup", serverCtrl.tutorsignupform);
+app.post("/api/updatetutorsignup", serverCtrl.tutorsignupform);
 app.get("/api/gettutors", serverCtrl.getTutors);
 app.post("/api/writereview", serverCtrl.writeReview);
 app.get("/api/getspecifictutor/:id", serverCtrl.getSpecificTutor);
