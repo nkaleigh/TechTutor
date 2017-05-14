@@ -1,26 +1,16 @@
 <div class="reviewdirective-outer-wrap" ng-click="showhide = !showhide"></div>
 <div class="reviewdirective-inner-wrap">
-    <div class="reviewdirective-head">
-        <div class="reviewdirective-head-padding-top"></div>
-        <div class="reviewdirective-head-inner">
-            <i class="fa fa-times" aria-hidden="true" ng-click="showhide = !showhide"></i>
+        <div class="reviewdirective-head">
+            <div class="reviewdirective-head-padding-top"></div>
+            <div class="reviewdirective-head-inner">
+                <i class="fa fa-times" aria-hidden="true" ng-click="showhide = !showhide"></i>
+            </div>
+            <div class="reviewdirective-head-padding-bottom"></div>
         </div>
-        <div class="reviewdirective-head-padding-bottom"></div>
-    </div>
-    <form class="reviewdirective-form" ng-submit="writereview({review:reviewObj}); showhide = !showhide">
-        <div class="reviewdirective-body-top">
-            <div class="reviewdirective-body-top-text">Write a Review for {{tutor.firstname}}</div>
-            <!--<div class="reviewdirective-body-top-rating">
-                <select class="rating-select" ng-model="reviewObj.rating">
-                        <option disabled selected>Choose your rating</option>
-                        <option>Excellent</option>
-                        <option>Good</option>
-                        <option>Average</option>
-                        <option>Fair</option>
-                        <option>Poor</option>
-                </select>
-            </div>-->
-        </div>
+        <form class="reviewdirective-form" ng-submit="writereview({review:reviewObj}); showhide = !showhide">
+            <div class="reviewdirective-body-top">
+                <div class="reviewdirective-body-top-text">Write a Review for {{tutor.firstname}}</div>
+            </div>
             <div class="reviewdirective-body-mid">
                 <div class="reviewdirective-reviewtext-box">
                     <input class="reviewdirective-reviewtext" ng-model="reviewObj.writereview" type="text" placeholder="Write your review here"
@@ -34,5 +24,5 @@
             <div class="reviewdirective-body-lower">
                 <input class="reviewdirective-reviewsubmit" type="submit" value="Submit">
             </div>
-    </form>
+        </form>
 </div>

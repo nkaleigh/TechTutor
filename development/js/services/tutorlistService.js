@@ -195,7 +195,7 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
 
 
     this.login = function (tutorparameter) {
-        console.log(tutorparameter);
+        console.log("tutorparameter", tutorparameter);
         for (var i = 0; i < tutors.length; i++) {
             if (tutors[i].email === tutorparameter.email && tutors[i].password === tutorparameter.password) {
                 console.log("found user");
@@ -207,7 +207,7 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
     }
 
     this.signup = function (tutorparam) {
-        console.log("test");
+        console.log("signup test service");
         if (tutorparam.firstname && tutorparam.lastname && tutorparam.email && tutorparam.password) {
             console.log(tutors);
             tutors.push(tutorparam);
