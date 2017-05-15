@@ -4,6 +4,7 @@ var bodyParser = require('body-parser');
 var cors = require('cors');
 var massive = require('massive');
 var config = require('../config');
+var session = require('express-session');
 var port = 3001;
 
 
@@ -12,7 +13,12 @@ var app = module.exports = express();
 
 //middleware
 app.use(bodyParser.json());
-app.use(cors());
+app.use(cors()); 
+app.use(session({
+    secret: config.secret,
+    resave: false,
+    saveUninitialized: false
+}));
 
 //looking for index.html file, which has everything imorted into it
 app.use(express.static(__dirname + './../dist'));

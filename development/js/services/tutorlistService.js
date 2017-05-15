@@ -211,8 +211,13 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
     this.login = function (tutorparameter) {
         console.log("tutorparameter", tutorparameter);
         return $http.post("/api/confirmtutorlogin", tutorparameter).then(function (response) {
-            $state.go("tutorlist");
+            console.log(response);
+            if (response.data.length === 0) {
+                alert("wrong username or password");
+            } else {
+             $state.go("tutorlist");
             return response;
+            }
         })
     }
 
@@ -231,7 +236,7 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
 
     this.signupform = function (tutorformparam) {
         console.log(tutorformparam);
-        return $http.post("/api/addtutorsignupform", tutorformparam).then(function (response) {
+        return $http.post("/api/updatetutorsignup", tutorformparam).then(function (response) {
             $state.go("tutorlist");
             console.log("tutorlistService: signupform param", response);
             return response;

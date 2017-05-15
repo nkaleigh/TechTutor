@@ -1,3 +1,18 @@
-INSERT INTO tutors (location, rate, title, bio, skill1, skill2, skill3, skill4, skill5, skill6, school1, school2, school3, degree1, degree2, degree3) 
-VALUES($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16)
-
+UPDATE tutors 
+SET citystate = $1, 
+rate = $2, 
+jobtitle = $3,
+bio = $4, 
+skillone = $5, 
+skilltwo = $6, 
+skillthree = $7, 
+skillfour = $8, 
+skillfive = $9, 
+skillsix = $10, 
+schoolone = $11, 
+schooltwo = $12, 
+schoolthree = $13, 
+degreeone = $14, 
+degreetwo = $15, 
+degreethree = $16 
+WHERE id = $17

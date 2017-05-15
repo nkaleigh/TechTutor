@@ -26,6 +26,5 @@ angular.module("App").controller("tutorlistdetailCtrl", function ($scope, tutorl
 
     getTutor();
     getTutorReview();
-
-
+    
 })

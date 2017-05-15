@@ -14,13 +14,16 @@ module.exports = {
                 console.log(err)
                 res.send(err);
             } else {
-                console.log(response)
+                req.session.user = response[0];
+                                console.log(response, req.session);
+
                 res.status(200).send(response);
             }
         })
     },
 
     tutorsignupform: function (req, res) {
+        console.log(req.body);
         let location = req.body.citystate;
         let rate = req.body.rate;
         let title = req.body.jobtitle;
@@ -37,8 +40,9 @@ module.exports = {
         let degree1 = req.body.degreeone;
         let degree2 = req.body.degreetwo;
         let degree3 = req.body.degreethree;
-        db.add_tutor_signup_form([location, rate, title, bio, skill1, skill2, skill3, skill4, skill5, skill6, school1, school2, school3, degree1, degree2, degree3], function (err, response) {
+        db.update_tutor_signup([location, rate, title, bio, skill1, skill2, skill3, skill4, skill5, skill6, school1, school2, school3, degree1, degree2, degree3, req.session.user.id], function (err, response) {
             if (err) {
+                console.log("err", err)
                 res.send(err);
             } else {
                 res.status(200).send(response);
@@ -52,10 +56,12 @@ module.exports = {
         let password = req.body.password;
         db.post_tutor_login([email, password], function (err, response) {
             console.log("ERROR OBJECT", err);
-            if (err == null) { //TODO: figure out why err isn't getting set if the credentials are invalid
-                console.log("HELLO");
+            if (err) { //TODO: figure out why err isn't getting set if the credentials are invalid
                 res.send(err);
             } else {
+                req.session.user = response[0];
+                console.log(response, req.session);
+
                 res.status(200).send(response);
             }
         })
