@@ -13,7 +13,7 @@ var app = module.exports = express();
 
 //middleware
 app.use(bodyParser.json());
-app.use(cors()); 
+app.use(cors());
 app.use(session({
     secret: config.secret,
     resave: false,

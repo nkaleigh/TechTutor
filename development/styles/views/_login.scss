@@ -59,55 +59,71 @@
                     // column);
                     .login-padding-top {
                         width: 100%;
-                        height: 20px;
+                        height: 70px;
                         // background: yellow;
                     }
                     .login-box-mid {
                         width: 100%;
                         // height: 150px;
-                        @include flexSetUp(center,
-                        center,
-                        column);
+          
                         // background: green;
                         .login-box-top {
                             width: 100%;
-                            height: 25px;
-                            font-size: 1em;
+                            height: 35px;
+                            font-size: 1.6em;
                             // background: black;
+                            text-align: center;
                         }
                         .login-box-bottom {
                             width: 100%;
                             height: 80%;
                             // border-top: solid white 1px;
                             // background: blue;
-                            // @include flexSetUp(center,
-                            // center,
-                            // column);
-                            .login-email {
-                                background: none;
-                                border: none;
-                                border-bottom: solid white 1px;
-                                color: white;
-                                font-family: chalk;
-                                font-size: .6em;
+                            .login-email-password-box {
+                                // width: 95%;
+                                height: 90px;
+                                // background: pink;
+                                @include flexSetUp(space-around,
+                                center,
+                                column);
+                                .login-email {
+                                    background: none;
+                                    border: none;
+                                    border-bottom: solid white 1px;
+                                    color: white;
+                                    font-family: chalk;
+                                    font-size: 1em;
+                                    text-align: center;
+                                }
+                                .login-password {
+                                    background: none;
+                                    border: none;
+                                    border-bottom: solid white 1px;
+                                    color: white;
+                                    font-family: chalk;
+                                    font-size: 1em;
+                                    text-align: center;
+                                }
                             }
-                            .login-password {
-                                background: none;
-                                border: none;
-                                border-bottom: solid white 1px;
-                                color: white;
-                                font-family: chalk;
-                                font-size: .6em;
-                            }
-                            .login-submit {
-                                cursor: pointer;
-                                background: none;
-                                border: none;
-                                color: white;
-                                font-family: chalk;
-                                font-size: .6em;
-                                position: relative;
-                                right: 6px;
+                            .login-submit-box {
+                                height: 40px;
+                                // background: red;
+                                @include flexSetUp(center,
+                                center,
+                                column);
+                                .login-submit {
+                                    cursor: pointer;
+                                    background: none;
+                                    border: none;
+                                    color: white;
+                                    font-family: chalk;
+                                    font-size: 1em;
+                                    position: relative;
+                                    right: 6px;
+                                    text-align: center;
+                                    position: relative;
+                                    left: 1px;
+                                }
                             }
                         }
                     }

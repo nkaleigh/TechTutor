@@ -11,7 +11,7 @@ module.exports = {
         let password = req.body.password;
         db.add_tutor_signup([firstname, lastname, email, password], function (err, response) {
             if (err) {
-                console.log(err)
+                console.log(err);
                 res.send(err);
             } else {
                 req.session.user = response[0];
