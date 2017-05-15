@@ -44,8 +44,25 @@ module.exports = {
                 res.status(200).send(response);
             }
         })
-
     },
+
+
+    confirmTutorLogin: function (req, res) {
+        let email = req.body.email;
+        let password = req.body.password;
+        db.post_tutor_login([email, password], function (err, response) {
+            console.log("ERROR OBJECT", err);
+            if (err == null) { //TODO: figure out why err isn't getting set if the credentials are invalid
+                console.log("HELLO");
+                res.send(err);
+            } else {
+                res.status(200).send(response);
+            }
+        })
+    },
+
+
+
 
     getTutors: function (req, res) {
         db.get_tutors(function (err, response) {
@@ -58,7 +75,6 @@ module.exports = {
     },
 
     writeReview: function (req, res) {
-        console.log("serverCtrl:req.body", req.body);
         let review = req.body.writereview;
         let first = req.body.yourfirstname;
         let last = req.body.yourlastname;

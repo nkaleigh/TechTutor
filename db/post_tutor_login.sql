@@ -1,0 +1,1 @@
+SELECT * FROM tutors where email = $1 AND password = $2

@@ -38,6 +38,7 @@ var db = app.get('db');
 
 app.post("/api/addtutorsignup", serverCtrl.tutorsignup);
 app.post("/api/updatetutorsignup", serverCtrl.tutorsignupform);
+app.post("/api/confirmtutorlogin", serverCtrl.confirmTutorLogin);
 app.get("/api/gettutors", serverCtrl.getTutors);
 app.post("/api/writereview", serverCtrl.writeReview);
 app.get("/api/getspecifictutor/:id", serverCtrl.getSpecificTutor);

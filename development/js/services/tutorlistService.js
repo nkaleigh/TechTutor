@@ -194,19 +194,29 @@ angular.module("App").service("tutorlistService", function ($http, $q, $state) {
     // }]
 
 
+    // this.login = function (tutorparameter) {
+    //     console.log("tutorparameter", tutorparameter);
+    //     for (var i = 0; i < tutors.length; i++) {
+    //         if (tutors[i].email === tutorparameter.email && tutors[i].password === tutorparameter.password) {
+    //             console.log("found user");
+    //             $state.go("tutorlist")
+    //             return;
+    //         }
+    //     }
+    //     alert("incorrect password");
+    // }
+
+
+
     this.login = function (tutorparameter) {
         console.log("tutorparameter", tutorparameter);
-        for (var i = 0; i < tutors.length; i++) {
-            if (tutors[i].email === tutorparameter.email && tutors[i].password === tutorparameter.password) {
-                console.log("found user");
-                $state.go("tutorlist")
-                return;
-            }
-        }
-        alert("incorrect password");
+        return $http.post("/api/confirmtutorlogin", tutorparameter).then(function (response) {
+            $state.go("tutorlist");
+            return response;
+        })
     }
 
-
+ 
 
     this.signup = function (tutorparam) {
         console.log("tutorlistService: tutorparam", tutorparam);
