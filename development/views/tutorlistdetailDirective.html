@@ -1,0 +1,103 @@
+<div class="tutorlist-detail-outer-border">
+    <div class="tutorlist-detail-head">
+        <div class="tutorlist-detail-head-padding-top"></div>
+        <div class="box-tutorlist-detail-header-inner">
+            <div class="tutorlist-detail-home" ui-sref="tutorlist">Back to List</div>
+        </div>
+        <div class="tutorlist-detail-head-padding-bottom"></div>
+    </div>
+    <div class="box-name">
+        <div class="name-padding-top"></div>
+        <div class="box-name-inner">
+            <div class="profilepic-box-detail">
+                <img class="profilepic-detail" src="https://unsplash.it/50" alt="profile picture">
+            </div>
+            <div class="name-box-detail">
+                <div class="title-detail">
+                    {{tutor.jobtitle}}
+                </div>
+                <p class="tutor-name-detail">{{tutor.firstname}} {{tutor.lastname[0]}}.</p>
+            </div>
+            <div class="bio-box-detail">
+                <div class="rate-detail">
+                    {{tutor.rate}}
+                </div>
+                <p class="tutor-citystate-detail">{{tutor.citystate}}</p>
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="name-padding-bottom"></div>
+    </div>
+    <div class="box-about">
+        <div class="about-padding-top"></div>
+        <div class="box-about-inner">
+            <div class="about-top">
+                <p class="about-title">About {{tutor.firstname}}</p>
+            </div>
+            <div class="about-mid">
+                <p class="about-text">{{tutor.bio}}</p>
+            </div>
+        </div>
+        <div class="about-padding-bottom"></div>
+    </div>
+    <div class="box-skills">
+        <div class="skills-padding-top"></div>
+        <div class="box-skills-inner">
+            <div class="skills-top">
+                <p class="skills-title">Skills</p>
+            </div>
+            <div class="skills-bottom">
+                <p class="skills-text">{{tutor.skillone}}</p>
+                <p class="skills-text">{{tutor.skilltwo}}</p>
+                <p class="skills-text">{{tutor.skillthree}}</p>
+                <p class="skills-text">{{tutor.skillfour}}</p>
+                <p class="skills-text">{{tutor.skillfive}}</p>
+                <p class="skills-text">{{tutor.skillsix}}</p>
+            </div>
+        </div>
+        <div class="skills-padding-bottom"></div>
+    </div>
+    <div class="box-education">
+        <div class="education-padding-top"></div>
+        <div class="box-education-inner">
+            <div class="education-top">
+                <p class="education-title">Education</p>
+            </div>
+            <div class="education-bottom">
+                <p class="school-text">{{tutor.schoolone}}</p>
+                <p class="degree-text">{{tutor.degreeone}}</p>
+                <br>
+                <p class="school-text">{{tutor.schooltwo}}</p>
+                <p class="degree-text">{{tutor.degreetwo}}</p>
+                <br>
+                <p class="school-text">{{tutor.schoolthree}}</p>
+                <p class="degree-text">{{tutor.degreethree}}</p>
+                <br>
+            </div>
+        </div>
+        <div class="education-padding-bottom"></div>
+    </div>
+    <div class="box-reviews">
+        <div class="reviews-padding-top"></div>
+        <div class="box-reviews-inner">
+            <div class="reviews-top">
+                <div class="reviews-top-left">
+                    <div class="reviews-top-title">Reviews</div>
+                </div>
+                <div class="reviews-top-right">
+                    <!--because showmodal isn't given a value, its default value is undefined, which is false.-->
+                    <i class="fa fa-plus" aria-hidden="true" ng-click="showmodal = !showmodal"></i>
+                    <review-directive tutor="tutor" showhide="showmodal" writereview="writereview" ng-show="showmodal"></review-directive>
+                </div>
+            </div>
+            <div class="reviews-bottom" ng-repeat="studentreviews in rd">
+                <p class="reviews-comment">
+                    "{{studentreviews.review}}" —{{studentreviews.studentfirstname}}
+                    <br>
+                    <br>
+                </p>
+            </div>
+        </div>
+        <div class="reviews-padding-bottom"></div>
+    </div>
+</div>

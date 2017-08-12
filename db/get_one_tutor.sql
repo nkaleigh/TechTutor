@@ -1,0 +1,1 @@
+select * from tutors where id = $1;

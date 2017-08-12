@@ -1,0 +1,260 @@
+    .tutorlistdetail-directive {
+        @include flexSetUp(center, center, column);
+        .tutorlist-detail-outer-border {
+            border: 6px double white;
+            .tutorlist-detail-head {
+                width: 425px;
+                // background: pink;
+                @include flexSetUp(center, center, column);
+                .tutorlist-detail-head-padding-top {
+                    width: 100%;
+                    height: 20px;
+                    // background: yellow;
+                }
+                .box-tutorlist-detail-header-inner {
+                    width: 95%;
+                    height: 75%;
+                    // border: 1px solid blue;
+                    @include flexSetUp(flex-start, center);
+                    .tutorlist-detail-home {
+                        cursor: pointer;
+                    }
+                }
+                .tutorlist-detail-head-padding-bottom {
+                    width: 100%;
+                    height: 20px;
+                    // background: yellow;
+                }
+            }
+            .box-name {
+                width: 425px;
+                border: 1px solid white;
+                border-right: none;
+                border-left: none;
+                @include flexSetUp(center, center, column);
+                letter-spacing: .7px;
+                .name-padding-top {
+                    width: 100%;
+                    height: 20px;
+                    // background: yellow;
+                }
+                .box-name-inner {
+                    width: 95%;
+                    height: 75%;
+                    // border: 1px solid blue;
+                    @include flexSetUp(flex-start, flex-start);
+                    .profilepic-box-detail {
+                        height: 100%;
+                        width: 60px;
+                        // background: yellow;
+                        .profilepic-detail {
+                            height: 50px;
+                            width: 50px;
+                            border-radius: 50%;
+                        }
+                    }
+                    .name-box-detail {
+                        height: 100%;
+                        width: 225px;
+                        // background: pink;
+                        .title-detail {
+                            font-size: 1.6em;
+                            // line-height: 2em;
+                        }
+                        .tutor-name-detail {
+                            font-size: 1em;
+                        }
+                    }
+                    .bio-box-detail {
+                        height: 100%;
+                        width: 120px;
+                        // background: lightblue;
+                        @include flexSetUp(flex-start, flex-end, column);
+                        .rate-detail {
+                            font-size: 1em;
+                            letter-spacing: 1px;
+                        }
+                        .tutor-citystate-detail {
+                            font-size: .6em;
+                            line-height: 1.5em;
+                        }
+                        .fa-envelope-o {
+                            font-size: .7em;
+                            cursor: pointer;
+                            line-height: 1.3em;
+                        }
+                    }
+                }
+                .name-padding-bottom {
+                    width: 100%;
+                    height: 20px;
+                    // background: yellow;
+                }
+            }
+            .box-about {
+                width: 425px;
+                border: 1px solid white;
+                border-right: none;
+                border-left: none;
+                @include flexSetUp(flex-start, center, column);
+                letter-spacing: .7px;
+                .about-padding-top {
+                    width: 100%;
+                    height: 20px;
+                    // background: orange;
+                }
+                .box-about-inner {
+                    width: 95%;
+                    // border: 1px solid blue;
+                    .about-top {
+                        width: 100%;
+                        height: 25px;
+                        font-size: 1em;
+                        // background: yellow;
+                    }
+                    .about-mid {
+                        width: 100%;
+                        font-size: .6em;
+                        // background: pink;
+                    }
+                }
+                .about-padding-bottom {
+                    width: 100%;
+                    height: 20px;
+                    // background: grey;
+                }
+            }
+            .box-skills {
+                width: 425px;
+                border: 1px solid white;
+                border-right: none;
+                border-left: none;
+                @include flexSetUp(flex-start, center, column);
+                letter-spacing: .7px;
+                .skills-padding-top {
+                    width: 100%;
+                    height: 20px;
+                    // background: orange;
+                }
+                .box-skills-inner {
+                    width: 95%;
+                    height: 75%;
+                    // border: 1px solid blue;
+                    @include flexSetUp(flex-start, flex-start, column);
+                    .skills-top {
+                        width: 100%;
+                        height: 25px;
+                        font-size: 1em;
+                        // background: yellow;
+                        .skills-title {}
+                    }
+                    .skills-bottom {
+                        width: 100%;
+                        height: 60%;
+                        font-size: .6em;
+                        // background: pink;
+                        .skills-text {}
+                    }
+                }
+                .skills-padding-bottom {
+                    width: 100%;
+                    height: 20px;
+                    // background: orange;
+                }
+            }
+            .box-education {
+                width: 425px;
+                border: 1px solid white;
+                border-right: none;
+                border-left: none;
+                @include flexSetUp(flex-start, center, column);
+                letter-spacing: .7px;
+                .education-padding-top {
+                    width: 100%;
+                    height: 20px;
+                    // background: orange;
+                }
+                .box-education-inner {
+                    width: 95%;
+                    // border: 1px solid blue;
+                    @include flexSetUp(flex-start, flex-start, column);
+                    .education-top {
+                        width: 100%;
+                        height: 25px;
+                        font-size: 1em;
+                        // background: yellow;
+                        .education-title {}
+                    }
+                    .education-bottom {
+                        width: 100%;
+                        font-size: .6em;
+                        // background: pink;
+                        .school-text {}
+                        .degree-text {}
+                    }
+                }
+                .education-padding-bottom {
+                    width: 100%;
+                    height: 20px;
+                    // background: orange;
+                }
+            }
+            .box-reviews {
+                width: 425px;
+                border: 1px solid white;
+                border-right: none;
+                border-left: none;
+                @include flexSetUp(flex-start, center, column);
+                letter-spacing: .7px;
+                .reviews-padding-top {
+                    width: 100%;
+                    height: 20px;
+                    // background: orange;
+                }
+                .box-reviews-inner {
+                    width: 95%;
+                    // border: 1px solid blue;
+                    @include flexSetUp(flex-start, flex-start, column);
+                    .reviews-top {
+                        width: 100%;
+                        height: 25px;
+                        font-size: 1em;
+                        @include flexSetUp(space-between, flex-start, row);
+                        // background: yellow;
+                        .reviews-top-left {
+                            width: 50%;
+                            height: 100%;
+                            // background: blue;
+                            @include flexSetUp(flex-start, flex-start);
+                            .reviews-top-title {
+                                width: 27%;
+                                height: 100%;
+                            }
+                        }
+                        .reviews-top-right {
+                            width: 50%;
+                            height: 100%;
+                            // background: red;
+                            @include flexSetUp(flex-end, flex-start);
+                            .fa-plus {
+                                cursor: pointer;
+                                color: #faee68;
+                            }
+                        }
+                    }
+                }
+                .reviews-padding-bottom {
+                    width: 100%;
+                    height: 20px;
+                    // background: orange;
+                }
+                .reviews-bottom {
+                    width: 100%;
+                    // background: pink;
+                    .reviews-comment {
+                        font-size: .6em;
+                    }
+                }
+            }
+        }
+    }

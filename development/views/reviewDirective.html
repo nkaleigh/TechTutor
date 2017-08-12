@@ -1,0 +1,28 @@
+<div class="reviewdirective-outer-wrap" ng-click="showhide = !showhide"></div>
+<div class="reviewdirective-inner-wrap">
+        <div class="reviewdirective-head">
+            <div class="reviewdirective-head-padding-top"></div>
+            <div class="reviewdirective-head-inner">
+                <i class="fa fa-times" aria-hidden="true" ng-click="showhide = !showhide"></i>
+            </div>
+            <div class="reviewdirective-head-padding-bottom"></div>
+        </div>
+        <form class="reviewdirective-form" ng-submit="writereview({review:reviewObj}); showhide = !showhide">
+            <div class="reviewdirective-body-top">
+                <div class="reviewdirective-body-top-text">Write a Review for {{tutor.firstname}}</div>
+            </div>
+            <div class="reviewdirective-body-mid">
+                <div class="reviewdirective-reviewtext-box">
+                    <input class="reviewdirective-reviewtext" ng-model="reviewObj.writereview" type="text" placeholder="Write your review here"
+                        required>
+                </div>
+                <div class="reviewdirective-reviewname-box">
+                    <input class="reviewdirective-firstname" ng-model="reviewObj.yourfirstname" type="text" placeholder="Your first name" required>
+                    <input class="reviewdirective-lastname" ng-model="reviewObj.yourlastname" type="text" placeholder="Your last name" required>
+                </div>
+            </div>
+            <div class="reviewdirective-body-lower">
+                <input class="reviewdirective-reviewsubmit" type="submit" value="Submit">
+            </div>
+        </form>
+</div>

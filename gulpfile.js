@@ -18,9 +18,9 @@ gulp.task('sass', function() {
     .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(cachebust.resources())
-    .pipe(concat('bundle.css'))
+    .pipe(concat('styles.css'))
     .pipe(sourcemaps.write('./maps'))
-    .pipe(gulp.dest('./dist'));
+    .pipe(gulp.dest('./dist/css'));
 });
 
 //JS task This will convert all ES6 to ES5
@@ -65,8 +65,13 @@ gulp.task('watch', function() {
     gulp.watch('./development/pictures/**/*', ['pictures']);
 });
 
+gulp.task('build', ['js', 'sass', 'index', 'pictures', 'views'], function() {
+   return gulp.src('./index.html')
+       .pipe(cachebust.references())
+       .pipe(gulp.dest('dist'));
+});
+
+
 //when you type gulp and run it in the command like this is the default task that runs.
 //this will run all the tasks listed in the array in order. when its done it watches for changes and will recompile if anything changes.
-gulp.task('default', ['js', 'sass', 'index', 'views', 'pictures',
-    'watch'
-]);
+gulp.task('default', ['build','watch']);

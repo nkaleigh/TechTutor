@@ -1,0 +1,33 @@
+<div class="outer-wrap-login">
+    <div class="login-border">
+        <div class="login-head">
+            <div class="login-head-padding-top"></div>
+            <div class="box-login-header-inner">
+                <div class="login-home" ui-sref="home">Home</div>
+            </div>
+            <div class="login-head-padding-bottom"></div>
+        </div>
+        <div class="login-box">
+            <div class="login-box-inner">
+                <div class="login-padding-top"></div>
+                <div class="login-box-mid">
+                    <div class="login-box-top">Log in</div>
+                    <div class="login-box-bottom">
+                        <form ng-submit="login(tutorlogin)">
+                            <div class="login-email-password-box">
+                                <input class="login-email" ng-model="tutorlogin.email" placeholder="Email" required>
+
+                                <input class="login-password" type="password" ng-model="tutorlogin.password" placeholder="Password" required>
+
+                            </div>
+                            <div class="login-submit-box">
+                                <input class="login-submit" type="submit" value="Go">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="login-padding-bottom"></div>
+            </div>
+        </div>
+    </div>
+</div>

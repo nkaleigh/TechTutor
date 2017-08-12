@@ -1,0 +1,94 @@
+<div class="outer-wrap-signupform">
+    <div class="signup-border">
+        <div class="signupform-head">
+            <div class="signupform-head-padding-top"></div>
+            <div class="box-signupform-header-inner">
+                <div class="signupform-home" ui-sref="home">Home</div>
+            </div>
+            <div class="signupform-head-padding-bottom"></div>
+        </div>
+        <form class="signupform-form" ng-submit="signupform(tutorsignupform)">
+            <div class="signupform-box-basic">
+                <div class="signupform-basic-padding-top"></div>
+                <div class="signupform-box-basic-inner">
+                    <div class="signupform-basic-top">
+                        <p class="signupform-basic-title">Basic Info</p>
+                    </div>
+                    <div class="signupform-basic-mid">
+                        <p class="signupform-basic-text">
+                            <input class="signupform-citystate" ng-model="tutorsignupform.citystate" placeholder="City, State" required>
+                            <br>
+                            <br>
+                            <input class="signupform-rate" ng-model="tutorsignupform.rate" placeholder="Hourly Rate" required>
+                        </p>
+                    </div>
+                </div>
+                <div class="signupform-basic-padding-bottom"></div>
+            </div>
+            <div class="signupform-box-about">
+                <div class="signupform-about-padding-top"></div>
+                <div class="signupform-box-about-inner">
+                    <div class="signupform-about-top">
+                        <p class="signupform-about-title">About</p>
+                    </div>
+                    <div class="signupform-about-mid">
+                        <p class="signupform-about-text">
+                            <input class="signupform-jobtitle" ng-model="tutorsignupform.jobtitle" placeholder="Job Title" required>
+                            <br>
+                            <br>
+                            <input class="signupform-bio" ng-model="tutorsignupform.bio" placeholder="Bio" required>
+                        </p>
+                    </div>
+                </div>
+                <div class="signupform-about-padding-bottom"></div>
+            </div>
+            <div class="signupform-box-skills">
+                <div class="signupform-skills-padding-top"></div>
+                <div class="signupform-box-skills-inner">
+                    <div class="signupform-skills-top">
+                        <p class="signupform-skills-title">Skills</p>
+                    </div>
+                    <div class="signupform-skills-bottom">
+                        <input class="signupform-skillone" ng-model="tutorsignupform.skillone" placeholder="Skill">
+                        <input class="signupform-skilltwo" ng-model="tutorsignupform.skilltwo" placeholder="Skill">
+                        <input class="signupform-skillthree" ng-model="tutorsignupform.skillthree" placeholder="Skill">
+                        <br>
+                        <br>
+                        <input class="signupform-skillfour" ng-model="tutorsignupform.skillfour" placeholder="Skill">
+                        <input class="signupform-skillfive" ng-model="tutorsignupform.skillfive" placeholder="Skill">
+                        <input class="signupform-skillsix" ng-model="tutorsignupform.skillsix" placeholder="Skill">
+                    </div>
+                </div>
+                <div class="signupform-skills-padding-bottom"></div>
+            </div>
+            <div class="signupform-box-education">
+                <div class="signupform-education-padding-top"></div>
+                <div class="signupform-box-education-inner">
+                    <div class="signupform-education-top">
+                        <p class="signupform-education-title">Education</p>
+                    </div>
+                    <div class="signupform-education-bottom">
+                        <div class="signupform-school">
+                            <input class="signupform-schoolone" ng-model="tutorsignupform.schoolone" placeholder="School Name">
+                            <input class="signupform-schooltwo" ng-model="tutorsignupform.schooltwo" placeholder="School Name">
+                            <input class="signupform-schoolthree" ng-model="schoolthree" placeholder="School Name">
+                        </div>
+                        <div class="signupform-degree">
+                            <input class="signupform-degreeone" ng-model="tutorsignupform.degreeone" placeholder="Degree">
+                            <input class="signupform-degreetwo" ng-model="tutorsignupform.degreetwo" placeholder="Degree">
+                            <input class="signupform-degreethree" ng-model="degreethree" placeholder="Degree">
+                        </div>
+                    </div>
+                </div>
+                <div class="signupform-education-padding-bottom"></div>
+            </div>
+            <div class="signupform-submit-box">
+                <div class="signupform-submit-padding-top"></div>
+                <div class="signupform-submit-inner">
+                    <input class="signupform-submit" type="submit" value="Submit">
+                </div>
+                <div class="signupform-submit-padding-bottom"></div>
+            </div>
+        </form>
+    </div>
+</div>

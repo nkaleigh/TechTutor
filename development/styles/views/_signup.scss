@@ -1,0 +1,159 @@
+    .outer-wrap-signup {
+        width: 100%;
+        height: 100vh;
+        background-image: url("../pictures/blankChalkboard.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        color: white;
+        font-family: chalk;
+        @include flexSetUp(flex-start,
+        center,
+        column);
+        .signup-border {
+            width: 425px;
+            height: 100%;
+            border: 6px double white;
+            .signup-head {
+                width: 100%;
+                // background: pink;
+                @include flexSetUp(center,
+                center,
+                column);
+                .signup-head-padding-top {
+                    width: 100%;
+                    height: 20px;
+                    // background: yellow;
+                }
+                .box-signup-header-inner {
+                    width: 95%;
+                    height: 75%;
+                    // border: 1px solid blue;
+                    @include flexSetUp(flex-start,
+                    center);
+                    .signup-home {
+                        cursor: pointer;
+                    }
+                }
+                .signup-head-padding-bottom {
+                    width: 100%;
+                    height: 20px;
+                    // background: yellow;
+                }
+            }
+            .signup-box {
+                width: 425px;
+                border: 1px solid white;
+                border-right: none;
+                border-left: none;
+                border-bottom: none;
+                // background: orange;
+                @include flexSetUp(center,
+                center);
+                .signup-box-inner {
+                    width: 95%;
+                    height: 75%;
+                    // border: 1px solid blue;
+                    // @include flexSetUp(center,
+                    // center,
+                    // column);
+                    .signup-padding-top {
+                        width: 100%;
+height: 70px;
+                        // background: yellow;
+                    }
+                    .signup-box-mid {
+                        width: 100%;
+                        // height: 150px;
+                        @include flexSetUp(center,
+                        center,
+                        column);
+                        // background: green;
+                        .signup-box-top {
+                            width: 100%;
+                            height: 35px;
+                            font-size: 1.6em;
+                            text-align: center;
+                            // background: black;
+                        }
+                        .signup-box-bottom {
+                            width: 100%;
+                            height: 80%;
+                            // border-top: solid white 1px;
+                            // background: blue;
+                            .signup-firstname-lastname-email-password-box {
+                                @include flexSetUp(space-around,
+                                center,
+                                column);
+                                .signup-firstname-lastname {
+                                    height: 45px;
+                                    // background: orange;
+                                    .signup-firstname {
+                                        background: none;
+                                        border: none;
+                                        border-bottom: solid white 1px;
+                                        font-family: chalk;
+                                        color: white;
+                                        font-size: 1em;
+                                        text-align: center;
+                                    }
+                                    .signup-lastname {
+                                        background: none;
+                                        border: none;
+                                        border-bottom: solid white 1px;
+                                        font-family: chalk;
+                                        color: white;
+                                        font-size: 1em;
+                                        text-align: center;
+                                    }
+                                }
+                                .signup-email-password {
+                                    height: 45px;
+                                    // background: purple;
+                                    .signup-email {
+                                        background: none;
+                                        border: none;
+                                        border-bottom: solid white 1px;
+                                        color: white;
+                                        font-family: chalk;
+                                        font-size: 1em;
+                                        text-align: center;
+                                    }
+                                    .signup-password {
+                                        background: none;
+                                        border: none;
+                                        border-bottom: solid white 1px;
+                                        color: white;
+                                        font-family: chalk;
+                                        font-size: 1em;
+                                        text-align: center;
+                                    }
+                                }
+                            }
+                            .signup-submit-box {
+                                // background: pink;
+                                @include flexSetUp(center,
+                                center,
+                                column);
+                                .signup-submit {
+                                    cursor: pointer;
+                                    background: none;
+                                    border: none;
+                                    color: white;
+                                    font-family: chalk;
+                                    font-size: 1em;
+                                    position: relative;
+                                    right: 6px;
+                                }
+                            }
+                        }
+                    }
+                    .signup-padding-bottom {
+                        width: 100%;
+                        height: 20px;
+                        // background: yellow;
+                    }
+                }
+            }
+        }
+    }
