@@ -85,6 +85,7 @@
                     <div class="reviews-top-title">Reviews</div>
                 </div>
                 <div class="reviews-top-right">
+                    <!--because showmodal isn't given a value, its default value is undefined, which is false.-->
                     <i class="fa fa-plus" aria-hidden="true" ng-click="showmodal = !showmodal"></i>
                     <review-directive tutor="tutor" showhide="showmodal" writereview="writereview" ng-show="showmodal"></review-directive>
                 </div>

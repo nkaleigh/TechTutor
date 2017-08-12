@@ -147,17 +147,13 @@ angular.module("App").service("tutorreviewService", function ($http, $q, $state)
 
 
     this.getTutorReview = function (id) {
-        console.log(id);
         return $http.get("/api/gettutorreviews/" + id).then(function (response) {
-            console.log(response.data);
             return response.data;
         })
     }
 
     this.writeTutorReview = function (reviewparam) {
-        console.log(reviewparam);
         return $http.post("/api/writereview", reviewparam).then(function (response) {
-            console.log(response);
             return response;
         })
     }

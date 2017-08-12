@@ -1,0 +1,2023 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)http://localhost:3000/#/login -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <link rel="shortcut icon" href="https://s.pinimg.com/webapp/style/images/favicon-9f8f9adf.png">
+    <link rel="stylesheet" href="./Pinterest • The world’s catalog of ideas_files/reset.css">
+    <link rel="stylesheet" href="./Pinterest • The world’s catalog of ideas_files/main.css">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Pinterest • The world’s catalog of ideas</title>
+  <style type="text/css">.belowNav {
+  width: 100%;
+  padding-top: 73px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+
+.feed {
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+</style><style type="text/css">*:focus {
+    outline: none;
+}
+svg,path {
+  width: 100%;
+  height: auto;
+}
+.nav-container {
+  width: calc(100% - 32px);
+  height: 48px;
+  background: #FFFFFF;
+  border-bottom: #DDDDDD solid 1px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  padding: 12px 16px;
+  position: fixed;
+  z-index: 10;
+}
+.nav-right ul,.nav-left {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 0px;
+}
+.nav-left {
+  width: 100%;
+}
+.nav-logo {
+  height: 100%;
+  width: 100%;
+}
+.nav-logo-container {
+  min-height: 28px;
+  height: 28px;
+  min-width: 28px;
+  width: 28px;
+  padding: 0px 16px;
+  cursor: pointer;
+}
+.nav-search-container {
+  margin: 0px 16px;
+  border-radius: 4px;
+  height: 40px;
+  width: 100%;
+  background-color: #EFEFEF;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.nav-magnifying-glass {
+  width: 20px;
+  height: 20px;
+  padding: 0px 16px;
+}
+.nav-search-bar {
+  background-color: transparent;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #555;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  width: 100%;
+
+}
+
+.nav-nav-item {
+  text-decoration: none;
+  list-style-type: none;
+  height: 48px;
+  width: 48px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  border-radius: 24px;
+  cursor: pointer;
+}
+.nav-nav-image {
+  height: 24px;
+  width: 24px;
+}
+.nav-nav-profile {
+  height: 24px;
+  width: 20px;
+}
+.nav-nav-item:hover {
+  background-color: #EEEEEE;
+}
+</style><style type="text/css">.login-container {
+  height:100%;
+  width:100%;
+
+}
+
+.login-background {
+  height:100%;
+  width:100%;
+  background-color:#000000;
+  background-image:url(https://s.pinimg.com/webapp/style/images/bg_multi_case_grid-9ede5d84.jpg);
+  Background-position:0px -700px;
+  Background-size:cover;
+  Padding-bottom:300px;
+  Position:fixed;
+
+}
+
+.animate-bg {
+   -webkit-animation: animate-move-bg 35s infinite;
+           animation: animate-move-bg 35s infinite;
+}
+
+@-webkit-keyframes animate-move-bg {
+  0%   { -webkit-transform: translateY(0px); transform: translateY(0px); }
+  100% { -webkit-transform: translateY(-200px); transform: translateY(-200px); }
+}
+
+@keyframes animate-move-bg {
+  0%   { -webkit-transform: translateY(0px); transform: translateY(0px); }
+  100% { -webkit-transform: translateY(-200px); transform: translateY(-200px); }
+}
+</style><style type="text/css">.loginsignup-form-shell {
+    width: 400px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+.loginsignup-form-outer-container {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+.loginsignup-form-logo-container {
+    height: 55px;
+    width: 384px;
+    margin: 30px auto 0;
+    position: relative;
+    /*background: blue;*/
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+}
+
+.loginsignup-form-logo {
+    height: 45px;
+    width: 45px;
+}
+
+.loginsignup-form-inner-login-container {
+    width: 100%;
+    margin: 15px auto 0;
+    /*background: green;*/
+    overflow: hidden;
+}
+
+.loginsignup-form-login-welcome {
+    width: 100%;
+    height: 39px;
+    color: #555;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: -1.2px;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    /*background: pink;*/
+}
+
+.login-catologofideas {
+  margin:-10px 26px 30px;
+  margin-top: 5px;
+  Text-align:center;
+  Font-weight:bold;
+  Font-size:14px;
+  color:#b5b5b5;
+
+}
+
+.loginsignup-form-login-form {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+    margin: 30px auto 0;
+}
+
+.loginsignup-form-login-form-username {
+    width: 268px;
+    height: 37px;
+    background-color: rgb(240, 240, 240);
+    border: 0px;
+    -webkit-font-smoothing: antialiased;
+    border-radius: 3px;
+    font-weight: bold;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    font-size: 14px;
+}
+
+.loginsignup-form-login-form-password {
+    width: 268px;
+    height: 37px;
+    background-color: rgb(240, 240, 240);
+    border: 0px;
+    -webkit-font-smoothing: antialiased;
+    border-radius: 3px;
+    font-weight: bold;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    font-size: 14px;
+    outline: none;
+    margin-top: 7px;
+}
+
+.loginsignup-form-login-form-submit {
+    width: 268px;
+    height: 36px;
+    border: 0px;
+    border-radius: 4px;
+    -webkit-font-smoothing: antialiased;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: rgb(189, 8, 28);
+    color: rgb(255, 255, 255);
+}
+
+.loginsignup-form-login-form-submit:hover {
+    background-color: #d50c22
+}
+
+.loginsignup-form-login-noaccount-container {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-top: 1px solid rgb(239, 239, 239);
+    width: 100%;
+}
+
+.loginsignup-form-login-noaccount {
+    margin-top: 20px;
+    color: rgb(33, 25, 34);
+    font-size: 13px;
+    text-align: center;
+    /*-webkit-font-smoothing: antialiased;*/
+}
+
+.loginsignup-form-login-noaccount-link {
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.loginsignup-form-login-noaccount-link:hover {
+    color: #8a8a8a;
+}
+
+.loginsignup-form-inner-signup-container {
+    width: 100%;
+    margin: 15px auto 0;
+    /*background: green;*/
+    overflow: hidden;
+    /*display: none;*/
+}
+
+.loginsignup-form-signup-welcome {
+    width: 100%;
+    height: 39px;
+    color: #555;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: -1.2px;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    /*background: pink;*/
+}
+
+.loginsignup-form-signup-form {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+    margin: 30px auto 0;
+}
+
+.loginsignup-form-signup-form-firstname {
+    width: 268px;
+    height: 37px;
+    background-color: rgb(240, 240, 240);
+    border: 0px;
+    -webkit-font-smoothing: antialiased;
+    border-radius: 3px;
+    font-weight: bold;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    font-size: 14px;
+}
+
+.loginsignup-form-signup-form-lastname {
+    width: 268px;
+    height: 37px;
+    background-color: rgb(240, 240, 240);
+    border: 0px;
+    -webkit-font-smoothing: antialiased;
+    border-radius: 3px;
+    font-weight: bold;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    font-size: 14px;
+        margin-top: 7px;
+
+}
+
+.loginsignup-form-signup-form-username {
+    width: 268px;
+    height: 37px;
+    background-color: rgb(240, 240, 240);
+    border: 0px;
+    -webkit-font-smoothing: antialiased;
+    border-radius: 3px;
+    font-weight: bold;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    font-size: 14px;
+        margin-top: 7px;
+
+}
+
+.loginsignup-form-signup-form-password {
+    width: 268px;
+    height: 37px;
+    background-color: rgb(240, 240, 240);
+    border: 0px;
+    -webkit-font-smoothing: antialiased;
+    border-radius: 3px;
+    font-weight: bold;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    font-size: 14px;
+    outline: none;
+    margin-top: 7px;
+}
+
+.loginsignup-form-signup-form-submit {
+    width: 268px;
+    height: 36px;
+    border: 0px;
+    border-radius: 4px;
+    -webkit-font-smoothing: antialiased;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: rgb(189, 8, 28);
+    color: rgb(255, 255, 255);
+}
+
+.loginsignup-form-signup-form-submit:hover {
+    background-color: #d50c22
+}
+
+.loginsignup-form-signup-existingaccount-container {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    border-top: 1px solid rgb(239, 239, 239);
+    width: 100%;
+}
+
+.loginsignup-form-signup-existingaccount {
+    margin-top: 10px;
+    color: rgb(33, 25, 34);
+    font-size: 13px;
+    text-align: center;
+    /*-webkit-font-smoothing: antialiased;*/
+}
+
+.loginsignup-form-signup-existingaccount-link {
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.loginsignup-form-signup-existingaccount-link:hover {
+    color: #8a8a8a;
+}
+</style><style type="text/css">/*SINGLE PIN*/
+p {
+  margin: 0;
+}
+.single-pin-shell {
+  margin: 0px 2px 30px 2px;
+  width: 236px;
+}
+.single-pin-outer-container {
+  background: #FFFFFF;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+  display: inline-block;
+}
+.single-pin-outer-container:hover {
+  background: #EEEEEE;
+}
+.single-pin-inner-container {
+  width: 100%;
+  height: auto;
+}
+.single-pin-pic-container {
+  width: 100%;
+  border-radius: 8px;
+  position: relative;
+}
+.single-pin-pic-container a {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #ffffff;
+  font-size: 12px;
+  display: none;
+  cursor: pointer;
+  z-index: 2;
+}
+.single-pin-outer-container:hover .single-pin-save,
+.single-pin-outer-container:hover a{
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.single-pin-pic {
+  width: 100%;
+  background-color: #B5B5B5;
+  border-radius: 8px;
+  /*height: 200px;*/
+  overflow: hidden;
+}
+.single-pin-pic-container:hover .dimOverlay {
+  bottom: 3px;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  /*height: 100%;*/
+  background-color: RGBA(0, 0, 0, 0.15);
+  border-radius: 8px;
+  position: absolute;
+  -webkit-transition: opacity .04s linear;
+  -o-transition: opacity .04s linear;
+  transition: opacity .04s linear;
+  z-index: 4;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+.single-pin-outer-container:hover .dimGradient {
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.15);
+  background: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.3));
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.3)));
+  background: -o-linear-gradient(transparent, rgba(0, 0, 0, 0.3));
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.3));
+  bottom: 3px;
+  border-radius: 8px;
+  height: 100px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: 6;
+}
+.dimGradient p {
+  font-weight: lighter;
+}
+.dimGradient span {
+  font-weight: normal;
+}
+
+.single-pin-save {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: none;
+  color: #FFFFFF;
+  background: #BD081C;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 14px;
+  -ms-flex-align: center;
+      align-items: center;
+  cursor: pointer;
+  z-index: 5;
+}
+.single-pin-save-pin {
+  width: 12px;
+  overflow: hidden;
+  margin: 0px 6px 0px 3px;
+}
+.single-pin-description-container {
+  padding:6px 4px 0px 4px;
+  width: 100%;
+}
+.single-pin-title {
+  font-family: sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
+  color: #444444;
+  width: 60%;
+  margin-bottom: 4px;
+}
+.single-pin-description {
+  font-family: sans-serif;
+  font-size: 12px;
+  color: #333333;
+  line-height: 14px;
+  margin-bottom: 4px;
+  width: 60%;
+}
+.single-pin-pinner-info {
+  width: calc(100% - 8px);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  padding: 4px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.single-pin-pinner-info:hover {
+  background: #DDDDDD;
+}
+.single-pin-pinner-pic {
+  height: 24px;
+  width: 24px;
+  min-width: 24px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-right: 6px;
+  background-color: #B5B5B5;
+}
+.single-pin-pinner-info-names {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.single-pin-pinner-info-names p {
+  width: calc(100% - 10px);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+}
+.single-pin-pinner-name {
+  font-family: sans-serif;
+  font-size: 11px;
+  color: #555555;
+  line-height: 12px;
+  font-weight: bold;
+}
+.single-pin-board-name {
+  font-family: sans-serif;
+  font-size: 11px;
+  color: #555555;
+  line-height: 12px;
+}
+</style><style type="text/css">@import url(https://fonts.googleapis.com/css?family=Open+Sans);</style><style type="text/css">.selected-pin-body {
+  background: rgba(0,0,0,.75);
+  position: fixed;
+  height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  z-index: 11;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  overflow-y: scroll;
+  padding-top: 40px;
+}
+.selected-pin-container {
+  width: 630px;
+  margin: auto;
+  background: white;
+  border-radius: 5px;
+  padding-bottom: 15px;
+  margin-bottom: 80px;
+}
+.selected-pin-header {
+  display: block;
+  background: white;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 60px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+  padding: 16px 32px;
+  margin: 0;
+  -webkit-transition: 0.2s padding ease;
+  -o-transition: 0.2s padding ease;
+  transition: 0.2s padding ease;
+  position: -webkit-sticky;
+  position: sticky;
+    top: -40px;
+  width: 100%;
+  z-index: 15;
+}
+.selected-pin-view {
+  margin: auto;
+  margin-top: -px;
+  margin-bottom: 20px;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center;
+  position: relative;
+}
+.selected-pin-img {
+  margin: 0 auto;
+  border-radius: 5px;
+  width: 100%;
+}
+.selected-pin-info {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  margin: auto;
+  /*margin-bottom: 20px;*/
+  width: 95%;
+  border-bottom: 1px solid grey;
+}
+.selected-pin-about {
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+.selected-pin-about-logo {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: black;
+}
+.selected-pin-user-info {
+  margin-left: 15px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 95%;
+  margin-top: 10px;
+  border-bottom: 1px solid grey;
+  padding: 5px;
+}
+.selected-pin-control {
+  width: 25%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  float: left;
+}
+.selected-pin-control-button {
+  border: none;
+  background: white;
+  margin-top: -5px;
+  color: grey;
+  height: 30px;
+  width: 30px;
+}
+.selected-pin-control-button-close {
+  background: none;
+  border: none;
+  position: fixed;
+    top: 40px;
+    right: 40px;
+}
+.selected-pin-control-button-close-mobile {
+  background: none;
+  border: none;
+  position: absolute;
+  display: none;
+    top: 20px;
+    right: 20px;
+}
+.selected-pin-control-button-img {
+  height: 30px;
+  width: 30px;
+}
+.selected-pin-save {
+  background: #bd081c;
+  color: #efefef;
+  cursor: pointer;
+  border: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  height: 36px;
+  width: 74px;
+  display: block;
+  float: right;
+  font-size: 14px;
+  border-radius: 4px;
+  padding: 7px 8px;
+  white-space: nowrap;
+  margin-top: -5px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+.selected-pin-save-img {
+  display: inline-block;
+  fill: #fff;
+  height: 25px;
+  width: 15px;
+  margin-right: 2px;
+  position: relative;
+  top: -3px;
+  vertical-align: middle;
+}
+.selected-pin-info-visit {
+  height: 35px;
+  width: 60px;
+  border: none;
+  border-radius: 3px;
+  font-size: 1em;
+}
+.selected-pin-control-button:focus {
+  outline: none;
+}
+
+@media (max-width: 650px) {
+  .selected-pin-container {
+    width: 95%;
+  }
+  .selected-pin-control-button-img {
+    height: 20px;
+    width: 20px;
+  }
+  .selected-pin-header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+}
+@media (max-width: 799px) {
+  .selected-pin-control-button-close {
+    display: none;
+  }
+  .selected-pin-control-button-close-mobile {
+    display: block;
+  }
+}
+</style><style type="text/css">@import url(https://fonts.googleapis.com/css?family=Open+Sans:400);</style><style type="text/css">.Pin2Board_wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .6);
+  opacity: 1;
+  font-family: 'Open Sans', sans-serif;
+  z-index: 751;
+  position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  z-index: 751;
+}
+
+.Pin2Board_Box {
+  width: 662px;
+  height: 540px;
+  background-color: #ffffff;
+  position: fixed;
+  border-radius: 8px;
+  margin:  auto;
+
+}
+
+.Pin2Board_leftBox {
+  width: 330px;
+  height: 540px;
+  border-radius: 8px 0px 0px 8px;
+  border
+  background-color: #ffffff;
+  float: left;
+  border-right: 1px solid #f5f5f5;
+}
+
+
+.Pin2Board_PinInfo {
+  width: 216px;
+  height: auto;
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+
+}
+
+.Pin2Board_DescBox {
+  height: 32px;
+}
+
+.Pin2Board_PinImg {
+  border: 0;
+    border-radius: 8px;
+    display: block;
+    height: auto;
+    max-width: 100%;
+    position: relative;
+    vertical-align: middle;
+
+}
+
+.Pin2Board_PinDescription {
+       border: none;
+    color: #333;
+    display: inline-block;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -.15px;
+    line-height: 16px;
+    margin: 5px 0 6px;
+    margin-top:10px;
+    overflow: hidden;
+    resize: none;
+    width: 216px;
+    word-spacing: 0;
+    word-wrap: break-word;
+}
+
+.Pin2Board_rightBox {
+  width: 330px;
+  height: 540px;
+  background-color: #ffffff;
+  float:right;
+  display:block;
+  border-radius: 0px 8px 8px 0px;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+
+.Pin2Board_ChooseBoard  {
+  display:block;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0px;
+  padding: 22px 25px 13px;
+  color: #555;
+}
+
+.Pin2Board_X {
+  height: 7px;
+  width: 7px;
+  background: url(https://image.ibb.co/cMtG0v/Xbutton.png);
+  background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+    border: 0;
+    cursor: pointer;
+    outline: 0;
+    padding: 10px;
+    position: absolute;
+    right: 18px;
+    top: 25px;
+    z-index: 1;
+}
+
+.Pin2Board_LowerRight {
+     display: -ms-flexbox;
+     display: flex;
+    -ms-flex: auto;
+    flex: auto;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    min-height: 0;
+}
+
+.Pin2Board_SearchDiv {
+  border-bottom: 1px solid #f5f5f5;
+    -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+    padding: 0 23px 15px;
+    position: relative;
+}
+
+.Pin2Board_SearchMag {
+  background: url(https://image.ibb.co/ePbEna/magnifying_glass.png);
+  background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+    height: 18px;
+    left: 35px;
+    position: absolute;
+    top: 12px;
+    width: 18px;
+
+}
+
+.Pin2Board_SearchBar {
+  background-color: #f5f5f5;
+    border: 1px solid #efefef;
+    border-radius: 4px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    outline: none;
+    overflow: hidden;
+    padding: 13px 13px 13px 44px;
+    width: 100%;
+}
+
+.Pin2Board_BoardScrollBox {
+    height: 354.55px;
+    border-bottom: 1px solid #f5f5f5;
+    overflow-y: scroll;
+}
+
+.Pin2Board_Header {
+    color: #555;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -.22px;
+    line-height: 16px;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 23px;
+}
+
+.Pin2Board_UL {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.Pin2Board_BoardDiv {
+  cursor: pointer;
+    display: block;
+    -webkit-font-smoothing: antialiased;
+    padding: 2px 23px;
+    position: relative;
+}
+
+.Pin2Board_BoardImgBox {
+  background: #efefef;
+    border-radius: 3px;
+    display: inline-block;
+    height: 36px;
+    margin-right: 10px;
+    overflow: hidden;
+    vertical-align: middle;
+    width: 36px;
+}
+
+.Pin2Board_BoardImg {
+    height: 100%;
+    margin-left: -5px;
+    max-width: inherit;
+}
+
+.Pin2Board_BoardTitle {
+    color: #555;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: -.25px;
+    line-height: 34px;
+    margin: 7px 0;
+    max-width: 180px;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.Pin2Board_BoardDiv:hover .Pin2Board_SaveButton {
+  display: block;
+  cursor:pointer;
+}
+
+.Pin2Board_BoardDiv:hover  {
+  background-color: #f5f5f5;
+  display: block;
+  cursor:pointer;
+}
+
+.Pin2Board_SaveButton {
+    background-color: #bd081c;
+    border: 0;
+    border-radius: 4px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    color: #efefef;
+    cursor: pointer;
+    display: none;
+    float: right;
+    font-size: 17px;
+    font-weight: bold;
+    height: 36px;
+    margin-top: 6px;
+    outline: none;
+    padding: 7px 8px;
+    white-space: nowrap;
+}
+
+.Pin2Board_PinIcon {
+    display: inline-block;
+    fill: #fff;
+    height:25px;
+    width: 15px;
+    margin-right: 2px;
+    position: relative;
+    top: -3px;
+    vertical-align: middle;
+}
+
+.Pin2Board_CreateBoardButton {
+  -webkit-box-align: center;
+  background-color: #fff;
+  border: none;
+  -ms-flex-align: center;
+      align-items: center;
+   border-radius: 0 0 6px;
+  display: -ms-flexbox;
+  display: flex;
+    -ms-flex: 0 1 64px;
+        flex: 0 1 64px;
+    min-height: 60px;
+  width: 100%
+}
+
+
+.Pin2Board_CreateBoardButton:hover {
+   background-color: #f5f5f5;
+  cursor:pointer;
+}
+
+.Pin2Board_PlusButton {
+  display: block;
+    fill: #bd081c;
+    float: left;
+    height: 42px;
+    margin-left: 12px;
+    margin-right: 12px;
+    vertical-align: middle;
+    width: 42px;
+}
+
+.Pin2Board_CreateBoard {
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+  font-size: 17px;
+  -ms-flex-align: center;
+      align-items: center;
+  color: #555;
+
+}
+
+.Pin2Board_rightBoxHidden {
+  display: hidden;
+  width: 330px;
+  height: 540px;
+  background-color: #ffffff;
+  float:right;
+  display:block;
+  border-radius: 0px 8px 8px 0px;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.Pin2Board_CreateBoardHeader  {
+  font-size: 22px;
+  color: #555;
+  font-weight: bold;
+  margin: 0px;
+  padding: 22px 25px 13px;
+}
+
+.Pin2Board_CreateBoardNameDiv {
+  border-bottom: 1px solid #efefef;
+  -ms-flex: 0 0 auto;
+      flex: 0 0 auto;
+  padding: 10px;
+  padding-right: 0px;
+  height: 72.11;
+}
+
+.Pin2Board_CreateBoardNameHeader {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 1px;
+  margin: 0;
+  color: #a5a5a5;
+
+}
+.Pin2Board_CreateBoardInput {
+  border: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #333;
+  font-size: 14.5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  outline: none;
+  padding: 6px;
+  width: 95%;
+}
+
+.Pin2Board_CreateBoardEmptyDiv {
+  -ms-flex: 1 0 auto;
+      flex: 1 0 auto;
+  height: 317.77px;
+  width: 100%;
+}
+
+.Pin2Board_CreateBoardButtonDiv {
+  border-top: 1px solid #efefef;
+  -ms-flex: 0 0 38px;
+      flex: 0 0 38px;
+  padding: 25px;
+  height: 89px;
+}
+
+.Pin2Board_CreateBoardCancelButton {
+      border: 0;
+      border-radius: 4px;
+      color: #5f5f5f;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: -.2px;
+      line-height: 18px;
+      outline: none;
+      padding: 10px 14px;
+      white-space: nowrap;
+      word-spacing: 0;
+}
+
+
+
+.Pin2Board_CreateBoardCreateButton {
+     background: #bd081c;
+    color: #fff;
+    cursor: default;
+    float: right;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: -.2px;
+    line-height: 18px;
+    outline: none;
+    padding: 10px 14px;
+    white-space: nowrap;
+    word-spacing: 0;
+      border: 0;
+    border-radius: 4px;
+}
+
+/*#textfield:invalid + #createBtn {
+     background-color: #ebebeb;
+    color: #aaa;
+}*/
+</style><style type="text/css">.feedWrapper {
+    width: 87.5%;
+    margin: auto;
+}
+.feed {
+  margin: auto;
+  margin-top: 15px;
+  display: block;
+  -webkit-column-gap: 4px;
+     -moz-column-gap: 4px;
+          column-gap: 4px;
+  -webkit-column-width: 256px;
+     -moz-column-width: 256px;
+          column-width: 256px;
+}
+
+
+@media (min-width: 260px) {
+  .feedWrapper {
+    width: 260px;
+  }
+}
+
+@media (min-width: 520px) {
+  .feedWrapper {
+    width: 520px;
+  }
+}
+
+@media (min-width: 780px) {
+  .feedWrapper {
+    width: 780px;
+  }
+}
+
+@media (min-width: 1040px) {
+  .feedWrapper {
+    width: 1040px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .feedWrapper {
+    width: 1300px;
+  }
+}
+
+@media (min-width: 1560px) {
+  .feedWrapper {
+    width: 1560px;
+  }
+}
+</style><style type="text/css">@import url(https://fonts.googleapis.com/css?family=Open+Sans:400);</style><style type="text/css">.ModalBoard_wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+  font-family: 'Open Sans', sans-serif;
+  z-index: 751;
+  position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.ModalBoard_Box {
+  width: 600px;
+  background-color: #ffffff;
+  position: fixed;
+  border-radius: 6px;
+  margin:  auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+
+.ModalBoard_TopBox {
+  max-height: 54.11px;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.Modal_title {
+   font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+   color: #333;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.ModalBoard_X {
+  height: 12px;
+  width: 12px;
+  background: url(https://s.pinimg.com/webapp/style/images/webapp-common-main-1x-c20ceaff.png) -261px -242px no-repeat;
+  float: right;
+  margin: -6px;
+    position: absolute;
+    right: 26px;
+    top: 33px;
+}
+
+.CreateBoard_CreateBroard  {
+  height: 62.11px;
+  font-size:16px;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+
+
+.CreateBoard_Name{
+  color: #5e5e5e;
+  float:left;
+  width: 140px;
+
+}
+
+
+
+.CreateBoard_Input {
+  float: left;
+  background-color: #f3f3f3;
+    background: -webkit-linear-gradient(#f0f0f0, #f5f5f5);
+    background: -webkit-gradient(linear, left top, left bottom, from(#f0f0f0), to(#f5f5f5));
+    background: -o-linear-gradient(#f0f0f0, #f5f5f5);
+    background: linear-gradient(#f0f0f0, #f5f5f5);
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 73%;
+    border-radius: 3px;
+    border: 1px solid #d6d3ce;
+    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.12) inset;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.12) inset;
+    color: #5e5e5e;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 7px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.CreateBoard_Input:focus {
+     background-color: #ffffff;
+}
+
+
+.ModalBoard_ButtonBox {
+  height: 57.44px;
+  font-size:16px;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+.Buttons_Component {
+  height: 37px;
+  font-family: 'Open Sans', sans-serif;
+  float: right;
+}
+
+.create_button{
+  color: #fff;
+  font-size: 16px;
+  background-color: #bd081c;
+   border: none;
+    border-radius: 4px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 10px 14px ;
+    position: relative;
+    text-shadow: none;
+
+}
+
+.cancel_button{
+  color: #5e5e5e;
+  font-size: 16px;
+  background-color: #efefef;
+   border: none;
+    border-radius: 4px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 10px 14px ;
+    position: relative;
+    text-shadow: none;
+  margin-right: 5px;
+
+}
+
+.cancel_button:hover {
+  background-color: #dbdbdb;
+}
+
+.create_button:hover {
+  background-color: #a30718;
+}
+
+
+@media (max-width: 600px) {
+  .ModalBoard_Box {
+    width: auto;
+    max-width:600px;
+    height:250px;
+  }
+}
+</style><style type="text/css">/*SINGLE BOARD*/
+
+p {
+    margin: 0;
+}
+
+.single-board-shell-container {
+  width: 321px;
+  height: 272px;
+  margin: 8px 2px;
+  z-index: 0;
+}
+.single-board-shell {
+    width: 301px;
+    height: 252px;
+}
+
+.single-board-outer-container {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.single-board-outer-container:hover {
+    background: #EEEEEE;
+}
+
+.single-board-outer-container:hover .single-board-edit {
+    display: -ms-flexbox;
+    display: flex;
+    /*background: #e2e2e2;
+    border: 1px solid #e2e2e2;*/
+}
+
+.single-board-inner-container {
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+}
+
+.single-board-pics-container {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+}
+
+.single-board-pic {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+.single-board-description-edit-container {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    padding-bottom: 6px;
+    padding-top: 16px;
+    /*background: brown;*/
+}
+
+.single-board-title {
+    font-family: sans-serif;
+    font-size: 18px;
+    letter-spacing: -.25px;
+    font-weight: bold;
+    line-height: 20px;
+    word-spacing: 0;
+    color: #555;
+    text-align: left;
+        -webkit-font-smoothing: antialiased;
+
+}
+
+.single-board-edit {
+    background-color: #e2e2e2;
+    border: 1px solid #e2e2e2;
+    color: #555;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 14px;
+    font-size: 14px;
+    letter-spacing: -.15px;
+    line-height: 16px;
+    word-spacing: 0;
+    border-radius: 8px;
+    display: none;
+}
+
+.single-board-edit:hover {
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #b5b5b5;
+    border: 1px solid #b5b5b5;
+}
+</style><style type="text/css">@import url(https://fonts.googleapis.com/css?family=Open+Sans:400);</style><style type="text/css">.UpdateBoard_wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+  font-family: 'Open Sans', sans-serif;
+  z-index: 800;
+  
+  position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.UpdateBoard_Box {
+  width: auto;
+  max-width:600px;
+  height: 265px;
+  background-color: #ffffff;
+  position: fixed;
+   top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  border-radius: 6px;
+  margin:  auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+
+.UpdateBoard_TopBox {
+ max- height: 54.11px;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.UpdateBoard_title {
+   font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+   color: #333;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.UpdateBoard_X {
+  height: 12px;
+  width: 12px;
+  background: url(https://s.pinimg.com/webapp/style/images/webapp-common-main-1x-c20ceaff.png) -261px -242px no-repeat;
+  float: right;
+  margin: -6px;
+    position: absolute;
+    right: 26px;
+    top: 33px;
+}
+
+.UpdateBoard_CreateBroard  {
+  height: 62.11 px;
+  font-size:16px;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+
+
+.UpdateBoard_Name{
+  color: #5e5e5e;
+  float:left;
+  width: 140px;
+
+}
+
+
+
+.UpdateBoard_Input {
+  float: left;
+  background-color: #f3f3f3;
+    background: -webkit-linear-gradient(#f0f0f0, #f5f5f5);
+    background: -webkit-gradient(linear, left top, left bottom, from(#f0f0f0), to(#f5f5f5));
+    background: -o-linear-gradient(#f0f0f0, #f5f5f5);
+    background: linear-gradient(#f0f0f0, #f5f5f5);
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 73%;
+    border-radius: 3px;
+    border: 1px solid #d6d3ce;
+    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.12) inset;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.12) inset;
+    color: #5e5e5e;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 7px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.UpdateBoard_Input:focus {
+     background-color: #ffffff;
+}
+
+
+.UpdateBoard_ButtonBox {
+  height: 57.44 px;
+  font-size:16px;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+.Buttons_Component {
+  height: 37 px;
+  font-family: 'Open Sans', sans-serif;
+  float: right;
+}
+
+.create_button{
+  color: #fff;
+  font-size: 16px;
+  background-color: #bd081c;
+   border: none;
+    border-radius: 4px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 10px 14px ;
+    position: relative;
+    text-shadow: nonet;
+
+}
+
+.cancel_button{
+  color: #5e5e5e;
+  font-size: 16px;
+  background-color: #efefef;
+   border: none;
+    border-radius: 4px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 10px 14px ;
+    position: relative;
+    text-shadow: nonet;
+  margin-right: 5px;
+
+}
+
+.CreateBoard_cancel_button:hover {
+  background-color: #dbdbdb;
+}
+
+.CreateBoard_create_button:hover {
+  background-color: #a30718;
+}
+
+
+@media (max-width: 600px) {
+.UpdateBoard_Box {
+  width: auto;
+  max-width:600px;
+  height:250px;
+}
+}
+
+</style><style type="text/css">.profile-container {
+  width: 100%;
+  min-height: calc(100vh - 73px);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  min-height: calc(100vh - 73px);
+}
+.profile-side-margin {
+  width: 800px;
+  margin: auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+}
+.profile-nav {
+  height: 63px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  position: fixed;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  
+}
+.profile-nut {
+  height: 26px;
+}
+.profile-dotdotdot {
+  width: 26px;
+}
+.profile-icon {
+  height: 48px;
+  width: 48px;
+  padding: 0px 8px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.profile-profile-info {
+  margin-top: 69px;
+}
+.profile-info-margin {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+.profile-name {
+  padding-left: 16px;
+}
+.profile-name h3 {
+  color: #555;
+  font-size: 36px;
+  line-height: 42px;
+  margin: 0px;
+  letter-spacing: -1.25px;
+  word-spacing: -2.25px;
+}
+.profile-profile-info-right {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+}
+.profile-info-bio {
+  margin: 24px 16px;
+  width: 170px;
+}
+.profile-info-pic-container {
+  margin: 12px 16px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.profile-info-pic {
+    width: 168px;
+}
+.profile-buttons {
+  margin-top: 12px;
+  padding: 6px 0px;
+}
+.profile-button {
+  padding: 12px 16px;
+  background: #FFFFFF;
+  border: 0px;
+  border-radius: 100px;
+  color: #b5b5b5;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 600;
+}
+.profile-button:hover {
+  background: #efefef;
+  color: #555;
+
+}
+.profile-button-boards {
+  margin-left: 16px;
+}
+.profile-button-pins {
+  padding: 12px 16px;
+  margin-left: 8px;
+}
+.profile-boards-pins {
+  margin: auto;
+  width: 325px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  z-index: 0;
+}
+
+
+
+@media (min-width: 650px) {
+  .profile-boards-pins {
+    width: 650px;
+  }
+}
+
+@media (min-width: 975px) {
+  .profile-boards-pins {
+    width: 975px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .profile-boards-pins {
+    width: 1300px;
+  }
+}
+
+@media (min-width: 1625px) {
+  .profile-boards-pins {
+    width: 1625px;
+  }
+}
+</style><style type="text/css">/*ADD BOARD*/
+
+p {
+    margin: 0;
+}
+
+.add-board-shell-container {
+  width: 321px;
+  height: 272px;
+  margin: 8px 2px;
+  z-index: 3;
+}
+
+.add-board-shell {
+    width: 301px;
+    height: 252px;
+}
+
+.add-board-outer-container {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.add-board-outer-container:hover {
+    background: #EEEEEE;
+}
+
+.add-board-outer-container:hover .add-board-add-container{
+    background: #d1d1d1;
+    color: #d1d1d1;
+}
+
+.add-board-inner-container {
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+}
+
+.add-board-add-container {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+        background: #efefef;
+
+}
+
+.add-board-add {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    overflow: hidden;
+    -o-object-fit: contain;
+       object-fit: contain;
+    cursor: pointer;
+}
+
+.add-board-title-container {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    padding-bottom: 6px;
+    padding-top: 16px;
+    /*background: brown;*/
+}
+
+.add-board-title {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: -.25px;
+    line-height: 20px;
+    word-spacing: 0;
+    color: #b5b5b5;
+    text-align: left;
+        -webkit-font-smoothing: antialiased;
+
+}</style><style type="text/css">body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+</style></head>
+  <body cz-shortcut-listen="true">
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"><div data-reactroot=""><div class="nav-container"><div class="nav-left"><div class="nav-logo-container"><a href="http://localhost:3000/#/"><img src="./Pinterest • The world’s catalog of ideas_files/badgeRGB.69d541d9.png" class="nav-logo" alt=""></a></div><div class="nav-search-container"><img class="nav-magnifying-glass" src="data:image/png;base64,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" alt=""><input class="nav-search-bar" placeholder="Search"></div></div><nav class="nav-right"><ul class="nav-nav-list"><li class="nav-nav-item"><a href="http://localhost:3000/#/"><img class="nav-nav-image" src="data:image/png;base64,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" alt=""></a></li><li class="nav-nav-item"><a href="http://localhost:3000/#/profile"><img class="nav-nav-profile" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAA1CAYAAADcdMIWAAAAAXNSR0IArs4c6QAAAVlpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IlhNUCBDb3JlIDUuNC4wIj4KICAgPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICAgICAgPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIKICAgICAgICAgICAgeG1sbnM6dGlmZj0iaHR0cDovL25zLmFkb2JlLmNvbS90aWZmLzEuMC8iPgogICAgICAgICA8dGlmZjpPcmllbnRhdGlvbj4xPC90aWZmOk9yaWVudGF0aW9uPgogICAgICA8L3JkZjpEZXNjcmlwdGlvbj4KICAgPC9yZGY6UkRGPgo8L3g6eG1wbWV0YT4KTMInWQAAAzlJREFUaAXtmLtvE0EQxuNXhSVq45KXlCIN/AF0tizLEhCkNNQ06RBS6OhSILo01DRIYJAs27L/h9BQRAqP0riOFCq/+L5jL7GXvcvsjS+xhE+6+G5v95vfztzM7mVjY338Rx7IaOfa7/evTafTJ7PZrIFzE2eZmplMZoDzCGcrm81+qFQqv5PaSgxJuNFotAuIlwC7HgeAPifos18oFA6SwCaC7PV6pclk0oLh+3Fw9jPAHuZyuUa1Wh3az+LuvSEN4BcAluKEo54BdAjQez6g2SgxVztDbDyYCJCanBw1qOWy4WrzguQ76Btil1FqUMv1zNUmDjdnPh6PBzAQmyQuI642JlM+ny9LEknsSVNmlgJIaE6Wmq4J2G1iSIg27MHae6mmD+SmFsoeD0iRpg9ksJLYhjT3gBRpiiE1MNqxYkhk40BrzB4v1fSBPLKNaO8BKdL0gWxpoezxgBRpiiG53YLoiW0o6T21qCkZL4bkyoBs3JeISvpQS7LaUEsMyc7cD8IDh7zWHNSgllRDvHaHgiu/VSMo94HcDybxKMf47iVp0yvcHMCDoNjBPMDlHgxfmEymzx7H+Gx2aYuHd7j/Djv/yy1c2h9i59bWVzoPqMLd7XZvItTbqHlbSIgb+C3hnP/uHuJ75hfeya8o3B9rtdrPJLjekKYEPYOxHQDd9TEK2GP0f48JvfVJIDGk+cZ5AbDnMFT0gXP0PQXwG2T7a8mqI4Jst9uPIHrAcDoMJm6C5hCau/V6/VOcyIV1stPpvIJAc9mAhDKaTWODTc4j0pMML176d0iMh86RS25EYn3Gu/rUFf5IT14mIOdLZ9Cma+5OSLr/sjw4D0WbrtD/E24mCQY25wdfwfXj+WRagDRl5nsaSeIzUWY9ytPt8P1cCDf+18M6uNQy4wMX9iUDWcL7M09yJcGDb3igLdShtvb3FN68w5XpzJPILC51qwLICRYN08Kmd0c79RTGB0xBuM1u5kcKRtSSKPK3gnCjPm2r1VISIFsAiWzaSsmGWpZsASQ3rGq1lATIFnryymtj1BxZM0NI0T8zo4TSbAdkOYCEkVWqj/aciyGk/WCl7teQKxWONQw88AeneIg5XT4ipQAAAABJRU5ErkJggg==" alt=""></a></li></ul></nav></div><div class="belowNav"><div class="login-container"><div class="login-background animate-bg"></div><div class="loginsignup-form-shell"><div class="loginsignup-form-outer-container"><div class="loginsignup-form-logo-container"><img class="loginsignup-form-logo" alt="logo" src="./Pinterest • The world’s catalog of ideas_files/badgeRGB.69d541d9.png"></div><div class="loginsignup-form-inner-login-container"><div class="loginsignup-form-login-welcome">Welcome to Pinterest</div><div class="login-catologofideas">The world’s catalog of ideas</div><form class="loginsignup-form-login-form"><input type="text" name="username" value="KaleighNiemelaStudent" class="loginsignup-form-login-form-username" placeholder="Username"><input type="password" name="password" value="sdfsfsdffdf" class="loginsignup-form-login-form-password" placeholder="Password"><button class="loginsignup-form-login-form-submit" type="submit">Log in</button></form><div class="loginsignup-form-login-noaccount-container"><div class="loginsignup-form-login-noaccount"><!-- react-text: 37 -->Need an account?<!-- /react-text --><span class="loginsignup-form-login-noaccount-link">&nbsp; Sign up</span></div></div></div></div></div></div><!-- react-empty: 20 --><!-- react-empty: 39 --></div></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+
+  <script type="text/javascript" src="./Pinterest • The world’s catalog of ideas_files/bundle.js"></script>
+
+<span style="border-radius: 3px; text-indent: 20px; width: auto; padding: 0px 4px 0px 0px; text-align: center; font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; font-size: 11px; line-height: 20px; font-family: &quot;Helvetica Neue&quot;, Helvetica, sans-serif; color: rgb(255, 255, 255); background: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMzBweCIgd2lkdGg9IjMwcHgiIHZpZXdCb3g9Ii0xIC0xIDMxIDMxIj48Zz48cGF0aCBkPSJNMjkuNDQ5LDE0LjY2MiBDMjkuNDQ5LDIyLjcyMiAyMi44NjgsMjkuMjU2IDE0Ljc1LDI5LjI1NiBDNi42MzIsMjkuMjU2IDAuMDUxLDIyLjcyMiAwLjA1MSwxNC42NjIgQzAuMDUxLDYuNjAxIDYuNjMyLDAuMDY3IDE0Ljc1LDAuMDY3IEMyMi44NjgsMC4wNjcgMjkuNDQ5LDYuNjAxIDI5LjQ0OSwxNC42NjIiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxIj48L3BhdGg+PHBhdGggZD0iTTE0LjczMywxLjY4NiBDNy41MTYsMS42ODYgMS42NjUsNy40OTUgMS42NjUsMTQuNjYyIEMxLjY2NSwyMC4xNTkgNS4xMDksMjQuODU0IDkuOTcsMjYuNzQ0IEM5Ljg1NiwyNS43MTggOS43NTMsMjQuMTQzIDEwLjAxNiwyMy4wMjIgQzEwLjI1MywyMi4wMSAxMS41NDgsMTYuNTcyIDExLjU0OCwxNi41NzIgQzExLjU0OCwxNi41NzIgMTEuMTU3LDE1Ljc5NSAxMS4xNTcsMTQuNjQ2IEMxMS4xNTcsMTIuODQyIDEyLjIxMSwxMS40OTUgMTMuNTIyLDExLjQ5NSBDMTQuNjM3LDExLjQ5NSAxNS4xNzUsMTIuMzI2IDE1LjE3NSwxMy4zMjMgQzE1LjE3NSwxNC40MzYgMTQuNDYyLDE2LjEgMTQuMDkzLDE3LjY0MyBDMTMuNzg1LDE4LjkzNSAxNC43NDUsMTkuOTg4IDE2LjAyOCwxOS45ODggQzE4LjM1MSwxOS45ODggMjAuMTM2LDE3LjU1NiAyMC4xMzYsMTQuMDQ2IEMyMC4xMzYsMTAuOTM5IDE3Ljg4OCw4Ljc2NyAxNC42NzgsOC43NjcgQzEwLjk1OSw4Ljc2NyA4Ljc3NywxMS41MzYgOC43NzcsMTQuMzk4IEM4Ljc3NywxNS41MTMgOS4yMSwxNi43MDkgOS43NDksMTcuMzU5IEM5Ljg1NiwxNy40ODggOS44NzIsMTcuNiA5Ljg0LDE3LjczMSBDOS43NDEsMTguMTQxIDkuNTIsMTkuMDIzIDkuNDc3LDE5LjIwMyBDOS40MiwxOS40NCA5LjI4OCwxOS40OTEgOS4wNCwxOS4zNzYgQzcuNDA4LDE4LjYyMiA2LjM4NywxNi4yNTIgNi4zODcsMTQuMzQ5IEM2LjM4NywxMC4yNTYgOS4zODMsNi40OTcgMTUuMDIyLDYuNDk3IEMxOS41NTUsNi40OTcgMjMuMDc4LDkuNzA1IDIzLjA3OCwxMy45OTEgQzIzLjA3OCwxOC40NjMgMjAuMjM5LDIyLjA2MiAxNi4yOTcsMjIuMDYyIEMxNC45NzMsMjIuMDYyIDEzLjcyOCwyMS4zNzkgMTMuMzAyLDIwLjU3MiBDMTMuMzAyLDIwLjU3MiAxMi42NDcsMjMuMDUgMTIuNDg4LDIzLjY1NyBDMTIuMTkzLDI0Ljc4NCAxMS4zOTYsMjYuMTk2IDEwLjg2MywyNy4wNTggQzEyLjA4NiwyNy40MzQgMTMuMzg2LDI3LjYzNyAxNC43MzMsMjcuNjM3IEMyMS45NSwyNy42MzcgMjcuODAxLDIxLjgyOCAyNy44MDEsMTQuNjYyIEMyNy44MDEsNy40OTUgMjEuOTUsMS42ODYgMTQuNzMzLDEuNjg2IiBmaWxsPSIjYmQwODFjIj48L3BhdGg+PC9nPjwvc3ZnPg==&quot;) 3px 50% / 14px 14px no-repeat rgb(189, 8, 28); position: absolute; opacity: 1; z-index: 8675309; display: none; cursor: pointer; border: none; -webkit-font-smoothing: antialiased;">Save</span><span style="border-radius: 3px; text-indent: 20px; width: 20px; height: 20px; background: url(&quot;data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHdpZHRoPSIzMHB4IiBoZWlnaHQ9IjMwcHgiIHZpZXdCb3g9IjAgMCAzMCAzMCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KPGc+CjxwYXRoIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSI0IiBkPSJNMTcsMTcgTDIyLDIyIFogIi8+CjxjaXJjbGUgc3Ryb2tlPSIjZmZmIiBjeD0iMTMiIGN5PSIxMyIgcj0iNiIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIzLjUiLz4KPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTAsMCBMOCwwIEw4LDMgTDMsMyBMMyw4IEwwLDggWiIvPgo8cGF0aCBmaWxsPSIjZmZmIiBkPSJNMzAsMjIgTDMwLDMwIEwyMiwzMCBMMjIsMjcgTDI3LDI3IEwyNywyMiBaIi8+CjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0zMCwwIEwzMCw4IEwyNyw4IEwyNywzIEwyMiwzIEwyMiwwIFoiLz4KPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTAsMjIgTDMsMjIgTDMsMjcgTDgsMjcgTDgsMzAgTDAsMzBaIi8+CjwvZz4KPC9zdmc+Cg==&quot;) 50% 50% / 14px 14px no-repeat rgba(0, 0, 0, 0.4); position: absolute; opacity: 1; z-index: 8675309; display: none; cursor: pointer; border: none;"></span></body></html>
